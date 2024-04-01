@@ -1,0 +1,63 @@
+<div class="header">
+  <mat-toolbar>
+    <mat-toolbar-row class="farbe">
+      <div class="button">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div class="title">
+        <h1> <span class="fullTitle" (click)="navigateToDashboard()"> I &hearts; DATA </span> </h1>
+      </div>
+      <div class="placeholder"></div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/dashboard">Dashboard</a>
+      <a mat-list-item (click)="onButtonClick()">Profil</a>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/inbox">Inbox</a>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/userlist">Nutzerliste</a>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/dataview">Datensätze</a>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/map">Landkarte</a>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/ticketerstellung">Support</a>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/chat">Chat</a>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/thread-uebersicht">Diskussionsforum</a>
+      <a mat-list-item (click)="sidenav.close()" routerLink="/chat-bot">Chatbot</a>
+
+
+      <mat-expansion-panel *ngIf="isAdmin">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Adminbereich</mat-panel-title>
+        </mat-expansion-panel-header>
+        <mat-nav-list>
+          <a mat-list-item routerLink="/geo">Geodaten einlesen</a>
+          <a mat-list-item routerLink="/userview">Nutzerübersicht</a>
+          <a mat-list-item (click)="sidenav.close()" routerLink="/ticketview">Supporttickets bearbeiten</a>
+          <a mat-list-item [matMenuTriggerFor]="dataMenu">Daten einlesen    </a>
+          <mat-menu #dataMenu="matMenu">
+            <button mat-menu-item routerLink="/tableview/1">Vorname Aachen</button>
+            <button mat-menu-item routerLink="/tableview/2">Sterbefälle Aachen</button>
+            <button mat-menu-item routerLink="/tableview/3">Anzahl der Arbeitssuchenden in der Städteregion Aachen</button>
+            <button mat-menu-item routerLink="/tableview/4">Anzahl der Arbeitslosen in der Städteregion Aachen</button>
+            <button mat-menu-item routerLink="/tableview/5">Mittlere Jahresbevölkerung nach Geschlecht - kreisfreie Städte und Kreise - Jahr (ab 1975)</button>
+            <button mat-menu-item routerLink="/tableview/6">Privathaushalte- kreisfreie Städte und Kreise – Jahr</button>
+            <button mat-menu-item routerLink="/tableview/7">Straßenliste Aachen</button>
+            <button mat-menu-item routerLink="/tableview/8">Geburten der Stadt Aachen nach Monat, 2015-2022</button>
+          </mat-menu>
+        </mat-nav-list>
+      </mat-expansion-panel>
+
+
+
+      <a mat-list-item (click)="sidenav.close()" (click)="logoutAndClose()">Logout</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+

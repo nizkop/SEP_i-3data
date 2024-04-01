@@ -1,0 +1,49 @@
+<mat-card class="thread">
+  <div class="openingpost">
+  <mat-card-header>
+    <div class="title" style="text-align: center;"><mat-card-title class="title"><b>{{thread.name}}</b></mat-card-title></div>
+  </mat-card-header>
+  <mat-card-content class="op">{{thread.threadDescription}}</mat-card-content>
+    <td class="liker">
+
+
+      <a>{{thread.timesLiked}} Likes </a>
+
+
+      <mat-button-toggle (click)="toggleLike(thread.id)" [checked]="isInLikes(thread.id)" class="likeBtn" >
+        <mat-icon>thumb_up</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle-group (change)="toggleFav(thread.id)">
+        <mat-button-toggle  [checked]="isInFavs(thread.id)"> <!-- Überprüfen, ob der Datensatz ein Favorit ist -->
+          <mat-icon>favorite</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle  [checked]="!isInFavs(thread.id)"> <!-- Überprüfen, ob der Datensatz kein Favorit ist -->
+          <mat-icon>favorite_border</mat-icon>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </td>
+  </div>
+
+  <div *ngFor="let comment of comments" class="commentbox">
+    <div class="commentauthor">
+      <p> Gepostet von <b>{{comment.writtenBy}}</b><button class="delete" *ngIf="isadmin" (click)="comment.id && deleteArticle(comment.id)">Löschen</button> </p>
+    </div>
+    <div class="comment">
+      <p>{{ comment.payload }}</p>
+    </div>
+  </div>
+
+  <div class="commentarea">
+    <mat-form-field>
+      <mat-label>Ihr Kommentar</mat-label>
+      <textarea matInput placeholder="Also ich finde ja, dass..." #commentInput class="textbox"></textarea>
+
+    </mat-form-field>
+    <div>
+      <button mat-raised-button (click)="sendArticle(commentInput.value)">Absenden</button>
+      <button mat-raised-button (click)="zurueck()" class="zuruckbtn">Zurück zur Forumsübersicht</button>
+    </div>
+  </div>
+
+</mat-card>
+

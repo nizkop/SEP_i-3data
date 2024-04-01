@@ -1,0 +1,29 @@
+<mat-card class="ground">
+
+<div class="container">
+
+  <button mat-button routerLink="/forumerstellung">Neue Diskussion starten</button>
+  <table>
+    <tbody>
+    <!-- Schleife über die Threads -->
+    <tr *ngFor="let thread of threads" (click)="onRowClick($event, thread.id)">
+      <td>{{ thread.name }}</td>
+
+      <td>
+        <mat-button-toggle (click)="toggleLike(thread.id)" [checked]="isInLikes(thread.id)" class="likeBtn">
+          <mat-icon>thumb_up</mat-icon>
+        </mat-button-toggle>
+        <mat-button-toggle-group (change)="toggleFav(thread.id)">
+          <mat-button-toggle [checked]="isInFavs(thread.id)"> <!-- Überprüfen, ob der Datensatz ein Favorit ist -->
+            <mat-icon>favorite</mat-icon>
+          </mat-button-toggle>
+          <mat-button-toggle  [checked]="!isInFavs(thread.id)"> <!-- Überprüfen, ob der Datensatz kein Favorit ist -->
+            <mat-icon>favorite_border</mat-icon>
+          </mat-button-toggle>
+        </mat-button-toggle-group>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</mat-card>

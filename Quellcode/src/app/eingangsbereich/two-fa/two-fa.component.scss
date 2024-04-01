@@ -1,0 +1,73 @@
+.two-fa-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.input{
+  padding:0px;
+  font-size: small;
+
+}
+
+
+
+.content{
+  padding-right: 0px;
+  padding-left: 0px;
+  width: 80%;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: -7vh;
+}
+
+.card-2fa{
+  height: 70vh;
+  width: 25vw;
+  background-color: #B5DDFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(86,67,145,1);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(86,67,145,1);
+  box-shadow: 10px 10px 5px -4px rgba(86,67,145,1);
+
+}
+
+.footer{
+  margin-top: -10vh;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+mat-card-content> p {
+  font-size: smaller;
+}
+
+.header{
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: -7vh;
+}
+
+.button{
+  background-color: #d9d2e9;
+  font-size: medium;
+  width: 10vw;
+}
+
+button:hover{
+  background-color: purple;
+}
+
+
+

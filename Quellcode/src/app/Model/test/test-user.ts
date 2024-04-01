@@ -14,7 +14,11 @@ export const testuser: User = {
   prfPicture: '',
   friends: [],
   friendrequests: [],
-  friendsPrivate: undefined
+  friendsPrivate: undefined,
+  selectedCharts: "00000000",
+  profileViewPrivate: false,
+  favThreadIds: [],
+  likedThreads: []
 };
 
 
@@ -31,5 +35,9 @@ export const testuser2: User = {
   prfPicture: '',
   friends: [],
   friendrequests: [],
-  friendsPrivate: undefined
+  friendsPrivate: undefined,
+  selectedCharts: "00000000",
+  profileViewPrivate: false,
+  favThreadIds: [],
+  likedThreads: []
 };

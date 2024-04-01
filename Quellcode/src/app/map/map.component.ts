@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {GeoDataService} from "../services/geo-data.service";
+import {GeoDataService} from "../services/datenservices/geo-data.service";
 import {GeoDatenPunkt} from "../Model/geoDatenPkt";
 import {IconArt} from "../Model/IconArt";
 import * as L from 'leaflet';
@@ -40,7 +40,6 @@ export class MapComponent implements OnInit {
   initMap(): void {
     this.map = L.map('map').setView([50.775346, 6.083887], 12); // Set initial map center and zoom level
 
-    // Add your desired tile layer (e.g., OpenStreetMap)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; OpenStreetMap contributors',
       maxZoom: 18

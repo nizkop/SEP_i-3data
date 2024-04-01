@@ -14,13 +14,14 @@ public interface UserRepository extends JpaRepository<User, Long>{
 
   User findByFirstName (String firstName);
 
-  User findByBirthDate (String birtdate);
+  User findByBirthDate (String birthDate);
 
   Optional<User> findByUserName (String userName);
 
   Optional<User> findByEmail(String email);
 
+  User findByPrfPicture(String prfPicture);
 
-
+  User findByFavData(String favData);
 
 }

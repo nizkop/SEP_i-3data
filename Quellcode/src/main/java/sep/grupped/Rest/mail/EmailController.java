@@ -43,4 +43,10 @@ public class EmailController {
     System.out.println("Ticket: Email wurde versandt");
   }
 
+  @PostMapping("/forumpost")
+  public void forumNotif(@RequestBody String emailAdress){
+    emailSenderService.sendForumnotif(emailAdress);
+    System.out.println("Forum: Email wurde versandt");
+  }
+
 }

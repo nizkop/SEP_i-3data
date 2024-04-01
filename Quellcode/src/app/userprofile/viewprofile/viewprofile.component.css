@@ -1,0 +1,63 @@
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 85vh;
+  overflow: auto;
+  flex-direction: row-reverse;
+}
+
+.tablecontainer, .profilecontainer, .friendscontainer, .friendscontainer-private{
+  flex: 1 0 40%;
+  max-width: 400px; /* adjust max-width as needed */
+  margin: 1em;
+  box-sizing: border-box;
+}
+
+.tablecontainer, .friendscontainer, .friendscontainer-private {
+  background-color: #d9d2e9;
+}
+
+.profilecontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  background-color: #B5DDFF;
+}
+
+.profileheader{
+  font-size: xx-large;
+  text-align: center;
+  background-color: #ADC6FF;
+  width: 100%;
+}
+
+.profiledatacontainer {
+  background-color: #ADC6FF;
+  width: 100%;
+  text-align: center;
+  font-size: large;
+  box-sizing: border-box;
+}
+
+.resized-image {
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.Lieblingsdatentabelle {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.lock-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Anpassen der Höhe nach Bedarf */
+}
+
+

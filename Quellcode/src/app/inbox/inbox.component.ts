@@ -24,18 +24,7 @@ export class InboxComponent implements OnInit{
   getProfileuser() {
     this.userService.getCurrentUser().subscribe((response: User) => {
       console.log('Response:', response); // Check the response object in the console
-      this.profileuser.id = response.id;
-      this.profileuser.firstName = response.firstName;
-      this.profileuser.lastName = response.lastName;
-      this.profileuser.userName = response.userName;
-      this.profileuser.favData = response.favData;
-      this.profileuser.email = response.email;
-      this.profileuser.password = response.password;
-      this.profileuser.role = response.role;
-      this.profileuser.birthDate = response.birthDate;
-      this.profileuser.prfPicture = response.prfPicture;
-      this.profileuser.friends = response.friends;
-      this.profileuser.friendrequests = response.friendrequests;
+      this.profileuser = response;
 
       console.log('Friend Requests:', this.profileuser.friendrequests); // Check the friend requests in the console
 

@@ -21,5 +21,9 @@ public class UserDTO {
   private List<User> friends;
   private List<User> friendrequests;
   private Boolean friendsPrivate;
-
+  private List<Long> favThreadIds;
+  private List<Long> likedThreads;
+  private String birthDate;
+  private String selectedCharts;
+  private Boolean profileViewPrivate;
 }

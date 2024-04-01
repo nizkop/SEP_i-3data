@@ -7,13 +7,13 @@
   </div>
 <ng-template #usersDialog>
   <div class="dialog-container">
-    <h2 class="dialog-title">Select User to Start Chat</h2>
+    <h2 class="dialog-title">Wählen Sie einen Nutzer für den neuen Chat aus</h2>
     <div class="user-list">
       <div *ngFor="let user of users" class="user-item">
         <div class="user-info">
           <span class="username">{{ user.userName }}</span>
         </div>
-        <button class="start-chat-button" (click)="startChat(user)">Start Chat</button>
+        <button class="start-chat-button" (click)="startChat(user)">Chat starten</button>
       </div>
     </div>
   </div>
@@ -21,9 +21,9 @@
 
 <ng-template #groupChatDialog>
   <div class="dialog-container">
-    <h2 class="dialog-title">Create Group Chat</h2>
+    <h2 class="dialog-title">Erstellen Sie einen Gruppenchat</h2>
     <div class="form-group">
-      <label for="groupName">Group Name:</label>
+      <label for="groupName">Gruppenname:</label>
       <input type="text" id="groupName" [(ngModel)]="groupName" class="form-control">
     </div>
     <div class="user-list">
@@ -33,6 +33,6 @@
         </mat-checkbox>
       </div>
     </div>
-    <button class="create-group-button" (click)="createGroup(groupName)">Create Group</button>
+    <button class="create-group-button" (click)="createGroup(groupName)">Gruppe erstellen</button>
   </div>
 </ng-template>

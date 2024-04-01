@@ -1,0 +1,4 @@
+.full-height-userlist {
+  min-height: calc(100vh - 30px);
+  overflow: auto;
+}

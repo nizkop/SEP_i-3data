@@ -4,7 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import {TicketService} from "../../services/ticket.service";
 import {Ticket} from "../../Model/ticket";
 import {ActivatedRoute, Router} from "@angular/router";
-import {EmailService} from "../../services/EmailService";
+import {EmailService} from "../../services/email.service";
 
 @Component({
   selector: 'app-ticket-details',

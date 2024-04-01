@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import {User} from "../Model/user";
-import {DataSet} from "../Model/dataset";
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {Sterbefaelle} from "../Model/sterbefaelle";
-import {Data} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";
+import { map, catchError } from 'rxjs/operators';
+import {of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +14,25 @@ export class UserService {
   private apiUrl = 'http://localhost:8080/User';
 
   constructor(private http: HttpClient) { }
+
+
+
+  addLikedThread(threadId: number, userId: number){
+    return this.http.post<number>(`${this.apiUrl}/like/${threadId}`, userId);
+  }
+
+  removeLikedThread(threadId: number, userId: number){
+    return this.http.put<number>(`${this.apiUrl}/dislike/${threadId}`, userId)
+  }
+
+  addFavThread(threadId:number, userId:number){
+    return this.http.post<number>(`${this.apiUrl}/save/${threadId}`, userId);
+  }
+
+  deleteFavThread(threadId:number, userId:number){
+    return this.http.put<number>(`${this.apiUrl}/delete/${threadId}`, userId);
+  }
+
 
   Login(username :String, password :String) :Observable<User> {
     return this.http.get<User>(`${this.apiUrl}/Login/${username}/${password}`);
@@ -50,8 +69,7 @@ export class UserService {
     }
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.put<User>(`${this.apiUrl}/update/${entryId}`, user, { headers });
-    console.log("test");
-    console.log(this.http.put<User>(`${this.apiUrl}/update/${entryId}`, user, { headers }));
+    console.log("updateUser: ", this.http.put<User>(`${this.apiUrl}/update/${entryId}`, user, { headers }));
   }
 
   deleteUser(entryId: number): Observable<{}> {
@@ -110,6 +128,23 @@ export class UserService {
     }
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.get<boolean>(`${this.apiUrl}/${entryId}/friendsprivacy`,);
+  }
+
+  viewImage(route: ActivatedRoute): Observable<string> {
+    // vereinheitlich hier, da mehrfach genutzt und sicherzustellen, dass editprofile und viewprofile die gleichen Pfade fürs Defautlbild nutzen
+    return this.http.get('http://localhost:8080/User/get/image/' + route.snapshot.params['id'])
+      .pipe(
+        map((res: any) => {
+          if (res.image) {
+            return 'data:image/jpeg;base64,' + res.image;
+          } else {
+            return '/assets/prfPictures/defaultpfp.jpg';
+          }
+        }),
+        catchError(() => {
+          return of('/assets/prfPictures/defaultpfp.jpg');
+        })
+      );
   }
 
 

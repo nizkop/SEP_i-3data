@@ -1,0 +1,104 @@
+
+stages: # bestimmt Reihenfolge der Ausführung
+  - build_frontend
+  - run_frontend
+  - build_backend
+  - run_backend
+  - test_backend
+  - test_frontend
+
+
+
+
+# Modultests im backend durchführen:
+test_backend:
+  stage: test_backend
+  image: maven:3.8.6-openjdk-18
+  script:
+    - mvn test
+
+
+test_frontend:
+  stage: test_frontend
+  image: node:16.14.2-bullseye
+  before_script:
+    - apt-get update
+    - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    - apt install -y ./google-chrome*.deb
+    - export CHROME_BIN=/usr/bin/google-chrome
+  script:
+    - rm -rf node_modules
+    - npm install
+    - npm install karma-chrome-launcher --save-dev
+#    - mv index.d.ts-copy node_modules/@angular/common/upgrade/index.d.ts # fürs Abfangen des static-Import-Fehlers
+    - npm run test -- --no-watch --browsers=ChromeHeadlessCI --karma-config=./karma.conf.js
+
+
+
+# Starten des Backends analog zum Dockerfile_backend:
+build_backend:
+  stage: build_backend
+  image: maven:3.8.6-openjdk-18
+  script:
+    # Kopierschritte aus Dockerfile ausgelassen, da hier im Gitlab-Ordner (/builds/sep/sommersemester_2023/gruppe-a-d/gruppe-d/target/) gearbeitet wird und werden muss
+    - mvn clean install -f pom.xml
+  artifacts:
+    paths:
+      - '/builds/sep/sommersemester_2023/gruppe-a-d/gruppe-d/target/Rest-0.0.1-SNAPSHOT.jar'
+
+run_backend:
+  stage: run_backend
+  image: openjdk:18-jdk-alpine
+  script:
+    - java -jar /builds/sep/sommersemester_2023/gruppe-a-d/gruppe-d/target/Rest-0.0.1-SNAPSHOT.jar > backend.log 2>&1 &
+    - sleep 30s # Zeit für das Backend zum Starten
+    - echo $! > backend_pid.txt  # Speichert die Prozess-ID des gestarteten Backends in einer Datei
+    - echo "Backend is running"
+    - cat backend.log
+  after_script:
+    - |
+      if grep -q "Admin token:" backend.log; then
+        echo "Backend erfolgreich gestartet"
+      else
+        echo "Backend-Start dubios: \"Admin token\" not found. Vermutlich braucht das Backend mehr Zeit?"
+        exit 1
+      fi
+
+
+
+
+# Starten des Frontends analog zum Dockerfile_frontend:
+build_frontend:
+  stage: build_frontend
+  image: node:latest
+  script:
+    - npm config set fund false
+    - npm install -g npm@9.6.6
+    - npm install -g @angular/cli # @15.2.0
+    - npm install
+#    - mv index.d.ts-copy node_modules/@angular/common/upgrade/index.d.ts # fürs Abfangen des static-Import-Fehlers
+    - ng build --configuration production --output-path=/builds/sep/sommersemester_2023/gruppe-a-d/gruppe-d/dist/out
+    - ls /builds/sep/sommersemester_2023/gruppe-a-d/gruppe-d/dist/out
+  artifacts:
+    paths:
+      - '/builds/sep/sommersemester_2023/gruppe-a-d/gruppe-d/dist/out'
+
+run_frontend:
+  stage: run_frontend
+  image: nginx:alpine
+  script:
+    - cp /builds/sep/sommersemester_2023/gruppe-a-d/gruppe-d/dist/out/* /usr/share/nginx/html -r
+    - cp ./default.conf /etc/nginx/conf.d/default.conf
+    - sed -i 's/listen       80;/listen       4200;/' /etc/nginx/conf.d/default.conf
+    - sh -c "exec nginx -g 'daemon off;'" & # ! startet auch fehlerlos, wenn einfach nichts konfiguriert wird
+    - sleep 5 # Warten, bis der Nginx-Server gestartet ist
+    - curl -I http://localhost:4200 # Überprüfung, ob das Frontend erreichbar ist
+  services:
+    - name: nginx:alpine
+      alias: frontend
+  before_script:
+    - apk add --no-cache curl
+
+
+
+

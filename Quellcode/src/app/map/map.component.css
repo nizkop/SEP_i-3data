@@ -49,5 +49,11 @@
   width: 100vw;
 }
 
-
+.download-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('/assets/download/download-solid.svg');
+  background-size: cover;
+}
 

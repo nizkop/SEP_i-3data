@@ -1,9 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import {HamburgermenuComponent} from "./hamburgermenu/hamburgermenu.component";
+import {HamburgermenuComponent} from "./layout/hamburgermenu/hamburgermenu.component";
 import {HttpClientTestingModule} from "@angular/common/http/testing";
-import {BottomComponent} from "./bottom/bottom.component";
+import {BottomComponent} from "./layout/bottom/bottom.component";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";

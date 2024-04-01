@@ -1,0 +1,1562 @@
+FID,gemeindeschluessel,strassenschluessel,strasse
+strassennamen.fid--3213a59_187d53d4470_cbc,5334002,1001,Abteiplatz
+strassennamen.fid--3213a59_187d53d4470_cbd,5334002,1002,Abteistraße
+strassennamen.fid--3213a59_187d53d4470_cbe,5334002,1004,Achterstraße
+strassennamen.fid--3213a59_187d53d4470_cbf,5334002,1005,Adalbert-Stifter-Straße
+strassennamen.fid--3213a59_187d53d4470_cc0,5334002,1006,Adalbertsberg
+strassennamen.fid--3213a59_187d53d4470_cc1,5334002,1008,Adalbertstift
+strassennamen.fid--3213a59_187d53d4470_cc2,5334002,1009,Adalbertstraße
+strassennamen.fid--3213a59_187d53d4470_cc3,5334002,1011,Adlerberg
+strassennamen.fid--3213a59_187d53d4470_cc4,5334002,1012,Nelly-Sachs-Straße
+strassennamen.fid--3213a59_187d53d4470_cc5,5334002,1013,Ahornstraße
+strassennamen.fid--3213a59_187d53d4470_cc6,5334002,1014,Albert-Maas-Straße
+strassennamen.fid--3213a59_187d53d4470_cc7,5334002,1015,Alexanderstraße
+strassennamen.fid--3213a59_187d53d4470_cc8,5334002,1016,Alexianergraben
+strassennamen.fid--3213a59_187d53d4470_cc9,5334002,1017,Alfonsstraße
+strassennamen.fid--3213a59_187d53d4470_cca,5334002,1018,Alkuinstraße
+strassennamen.fid--3213a59_187d53d4470_ccb,5334002,1019,Alsenstraße
+strassennamen.fid--3213a59_187d53d4470_ccc,5334002,1020,Altdorfstraße
+strassennamen.fid--3213a59_187d53d4470_ccd,5334002,1023,Altstraße
+strassennamen.fid--3213a59_187d53d4470_cce,5334002,1024,Altenberger Straße
+strassennamen.fid--3213a59_187d53d4470_ccf,5334002,1025,Am Backes
+strassennamen.fid--3213a59_187d53d4470_cd0,5334002,1026,Am Beverbach
+strassennamen.fid--3213a59_187d53d4470_cd1,5334002,1028,Am Blockhaus
+strassennamen.fid--3213a59_187d53d4470_cd2,5334002,1029,Am Branderhof
+strassennamen.fid--3213a59_187d53d4470_cd3,5334002,1030,Ambrosiusstraße
+strassennamen.fid--3213a59_187d53d4470_cd4,5334002,1031,Am Chorusberg
+strassennamen.fid--3213a59_187d53d4470_cd5,5334002,1032,Am Dorbach
+strassennamen.fid--3213a59_187d53d4470_cd6,5334002,1033,Am Friedrich
+strassennamen.fid--3213a59_187d53d4470_cd7,5334002,1034,Am Hangeweiher
+strassennamen.fid--3213a59_187d53d4470_cd8,5334002,1035,Am Hasselholz
+strassennamen.fid--3213a59_187d53d4470_cd9,5334002,1036,Am Höfling
+strassennamen.fid--3213a59_187d53d4470_cda,5334002,1037,Am Hügel
+strassennamen.fid--3213a59_187d53d4470_cdb,5334002,1038,Karolingerstraße
+strassennamen.fid--3213a59_187d53d4470_cdc,5334002,1039,Elleterweg
+strassennamen.fid--3213a59_187d53d4470_cdd,5334002,1040,Am Kupferofen
+strassennamen.fid--3213a59_187d53d4470_cde,5334002,1041,Am Lavenstein
+strassennamen.fid--3213a59_187d53d4470_cdf,5334002,1042,Am Neuenhof
+strassennamen.fid--3213a59_187d53d4470_ce0,5334002,1043,Am Pappelweiher
+strassennamen.fid--3213a59_187d53d4470_ce1,5334002,1044,Am Roskapellchen
+strassennamen.fid--3213a59_187d53d4470_ce2,5334002,1045,Am Römerhof
+strassennamen.fid--3213a59_187d53d4470_ce3,5334002,1046,Friedrichweg
+strassennamen.fid--3213a59_187d53d4470_ce4,5334002,1047,Alter Landgraben
+strassennamen.fid--3213a59_187d53d4470_ce5,5334002,1048,Am Viadukt
+strassennamen.fid--3213a59_187d53d4470_ce6,5334002,1049,Am Wassersprung
+strassennamen.fid--3213a59_187d53d4470_ce7,5334002,1050,Am Weberhof
+strassennamen.fid--3213a59_187d53d4470_ce8,5334002,1051,Am Weißenberg
+strassennamen.fid--3213a59_187d53d4470_ce9,5334002,1052,Am Wolf
+strassennamen.fid--3213a59_187d53d4470_cea,5334002,1054,Am Ziegelweiher
+strassennamen.fid--3213a59_187d53d4470_ceb,5334002,1055,An den Birkenweiden
+strassennamen.fid--3213a59_187d53d4470_cec,5334002,1056,An den Finkenweiden
+strassennamen.fid--3213a59_187d53d4470_ced,5334002,1057,An den Frauenbrüdern
+strassennamen.fid--3213a59_187d53d4470_cee,5334002,1058,An den Wurmquellen
+strassennamen.fid--3213a59_187d53d4470_cef,5334002,1059,An der Ellermühle
+strassennamen.fid--3213a59_187d53d4470_cf0,5334002,1060,Ginsterbrücksweg
+strassennamen.fid--3213a59_187d53d4470_cf1,5334002,1061,An der Junkersmühle
+strassennamen.fid--3213a59_187d53d4470_cf2,5334002,1062,An der Kulprie
+strassennamen.fid--3213a59_187d53d4470_cf3,5334002,1063,An der Schanz
+strassennamen.fid--3213a59_187d53d4470_cf4,5334002,1064,Andréstraße
+strassennamen.fid--3213a59_187d53d4470_cf5,5334002,1065,Am Gut Wolf
+strassennamen.fid--3213a59_187d53d4470_cf6,5334002,1067,Am Adamshäuschen
+strassennamen.fid--3213a59_187d53d4470_cf7,5334002,1068,Annuntiatenbach
+strassennamen.fid--3213a59_187d53d4470_cf8,5334002,1069,An der Kapelle
+strassennamen.fid--3213a59_187d53d4470_cf9,5334002,1070,Am Tivoli
+strassennamen.fid--3213a59_187d53d4470_cfa,5334002,1071,Antoniusstraße
+strassennamen.fid--3213a59_187d53d4470_cfb,5334002,1072,Grünweg
+strassennamen.fid--3213a59_187d53d4470_cfc,5334002,1074,Hühnertalweg
+strassennamen.fid--3213a59_187d53d4470_cfd,5334002,1075,Arndtstraße
+strassennamen.fid--3213a59_187d53d4470_cfe,5334002,1076,Karlshof
+strassennamen.fid--3213a59_187d53d4470_cff,5334002,1077,Arnoldstraße
+strassennamen.fid--3213a59_187d53d4470_d00,5334002,1078,Karlstreppe
+strassennamen.fid--3213a59_187d53d4470_d01,5334002,1079,Arthur-Kampf-Straße
+strassennamen.fid--3213a59_187d53d4470_d02,5334002,1080,Atherstraße
+strassennamen.fid--3213a59_187d53d4470_d03,5334002,1081,Auf Beverau
+strassennamen.fid--3213a59_187d53d4470_d04,5334002,1082,Auf dem Plue
+strassennamen.fid--3213a59_187d53d4470_d05,5334002,1083,Auf der Hörn
+strassennamen.fid--3213a59_187d53d4470_d06,5334002,1084,Auf der Hüls
+strassennamen.fid--3213a59_187d53d4470_d07,5334002,1085,Auf Krummerück
+strassennamen.fid--3213a59_187d53d4470_d08,5334002,1086,Auf Vogelsang
+strassennamen.fid--3213a59_187d53d4470_d09,5334002,1088,Augustinerbach
+strassennamen.fid--3213a59_187d53d4470_d0a,5334002,1089,Augustinergasse
+strassennamen.fid--3213a59_187d53d4470_d0b,5334002,1090,Augustinerplatz
+strassennamen.fid--3213a59_187d53d4470_d0c,5334002,1091,Aureliusstraße
+strassennamen.fid--3213a59_187d53d4470_d0d,5334002,1092,Aussemstraße
+strassennamen.fid--3213a59_187d53d4470_d0e,5334002,1093,Austraße
+strassennamen.fid--3213a59_187d53d4470_d0f,5334002,1094,Katzenpützweg
+strassennamen.fid--3213a59_187d53d4470_d10,5334002,1095,Bachstraße
+strassennamen.fid--3213a59_187d53d4470_d11,5334002,1096,Bädersteig
+strassennamen.fid--3213a59_187d53d4470_d12,5334002,1097,Bärenstraße
+strassennamen.fid--3213a59_187d53d4470_d13,5334002,1098,Bahnhofplatz
+strassennamen.fid--3213a59_187d53d4470_d14,5334002,1099,Bahnhofstraße
+strassennamen.fid--3213a59_187d53d4470_d15,5334002,1101,Barbarastraße
+strassennamen.fid--3213a59_187d53d4470_d16,5334002,1102,Barbarossaplatz
+strassennamen.fid--3213a59_187d53d4470_d17,5334002,1103,Klausbergweg
+strassennamen.fid--3213a59_187d53d4470_d18,5334002,1104,Bayernallee
+strassennamen.fid--3213a59_187d53d4470_d19,5334002,1105,Kreuzertal
+strassennamen.fid--3213a59_187d53d4470_d1a,5334002,1106,Beeckstraße
+strassennamen.fid--3213a59_187d53d4470_d1b,5334002,1107,Beethovenstraße
+strassennamen.fid--3213a59_187d53d4470_d1c,5334002,1108,Merlepützweg
+strassennamen.fid--3213a59_187d53d4470_d1d,5334002,1109,Beginenstraße
+strassennamen.fid--3213a59_187d53d4470_d1e,5334002,1110,Moresneter Weg
+strassennamen.fid--3213a59_187d53d4470_d1f,5334002,1111,Bendelstraße
+strassennamen.fid--3213a59_187d53d4470_d20,5334002,1112,Bendstraße
+strassennamen.fid--3213a59_187d53d4470_d21,5334002,1113,Benediktinerstraße
+strassennamen.fid--3213a59_187d53d4470_d22,5334002,1114,Oberer Backertsweg
+strassennamen.fid--3213a59_187d53d4470_d23,5334002,1115,Bergdriesch
+strassennamen.fid--3213a59_187d53d4470_d24,5334002,1116,Bergische Gasse
+strassennamen.fid--3213a59_187d53d4470_d25,5334002,1117,Bergstraße
+strassennamen.fid--3213a59_187d53d4470_d26,5334002,1118,Osterweg
+strassennamen.fid--3213a59_187d53d4470_d27,5334002,1119,Kaltbachgässchen
+strassennamen.fid--3213a59_187d53d4470_d28,5334002,1120,Philippionsweg
+strassennamen.fid--3213a59_187d53d4470_d29,5334002,1121,Revierweg
+strassennamen.fid--3213a59_187d53d4470_d2a,5334002,1122,Bertholdstraße
+strassennamen.fid--3213a59_187d53d4470_d2b,5334002,1123,Rotsiefweg
+strassennamen.fid--3213a59_187d53d4470_d2c,5334002,1124,Beverstraße
+strassennamen.fid--3213a59_187d53d4470_d2d,5334002,1125,Birkengrund
+strassennamen.fid--3213a59_187d53d4470_d2e,5334002,1126,Kopernikusstraße
+strassennamen.fid--3213a59_187d53d4470_d2f,5334002,1127,Hirschweg
+strassennamen.fid--3213a59_187d53d4470_d30,5334002,1128,Bischofstraße
+strassennamen.fid--3213a59_187d53d4470_d31,5334002,1129,Natternweg
+strassennamen.fid--3213a59_187d53d4470_d32,5334002,1131,Südweg
+strassennamen.fid--3213a59_187d53d4470_d33,5334002,1133,Trappenweg
+strassennamen.fid--3213a59_187d53d4470_d34,5334002,1135,Tunnelweg
+strassennamen.fid--3213a59_187d53d4470_d35,5334002,1136,Blücherplatz
+strassennamen.fid--3213a59_187d53d4470_d36,5334002,1137,Simpelvelder Straße
+strassennamen.fid--3213a59_187d53d4470_d37,5334002,1138,Bodelschwinghstraße
+strassennamen.fid--3213a59_187d53d4470_d38,5334002,1139,Vossenweg
+strassennamen.fid--3213a59_187d53d4470_d39,5334002,1140,Bonifatiusweg
+strassennamen.fid--3213a59_187d53d4470_d3a,5334002,1142,Borchersstraße
+strassennamen.fid--3213a59_187d53d4470_d3b,5334002,1150,Breslauer Straße
+strassennamen.fid--3213a59_187d53d4470_d3c,5334002,1151,Buchenallee
+strassennamen.fid--3213a59_187d53d4470_d3d,5334002,1152,Buchkremerstraße
+strassennamen.fid--3213a59_187d53d4470_d3e,5334002,1153,Büchel
+strassennamen.fid--3213a59_187d53d4470_d3f,5334002,1154,Bungert
+strassennamen.fid--3213a59_187d53d4470_d40,5334002,1155,Bunsenstraße
+strassennamen.fid--3213a59_187d53d4470_d41,5334002,1156,Burggrafenstraße
+strassennamen.fid--3213a59_187d53d4470_d42,5334002,1157,Brüggemannstraße
+strassennamen.fid--3213a59_187d53d4470_d43,5334002,1158,Brüsseler Ring
+strassennamen.fid--3213a59_187d53d4470_d44,5334002,1159,Brunssumstraße
+strassennamen.fid--3213a59_187d53d4470_d45,5334002,1160,Burtscheider Straße
+strassennamen.fid--3213a59_187d53d4470_d46,5334002,1161,Buschhäuserweg
+strassennamen.fid--3213a59_187d53d4470_d47,5334002,1162,Buschmühle
+strassennamen.fid--3213a59_187d53d4470_d48,5334002,1163,Carlasiedlung
+strassennamen.fid--3213a59_187d53d4470_d49,5334002,1164,César-Franck-Straße
+strassennamen.fid--3213a59_187d53d4470_d4a,5334002,1165,Champierweg
+strassennamen.fid--3213a59_187d53d4470_d4b,5334002,1167,Charles-de-Coster-Straße
+strassennamen.fid--3213a59_187d53d4470_d4c,5334002,1168,Charlottenstraße
+strassennamen.fid--3213a59_187d53d4470_d4d,5334002,1170,Chlodwigstraße
+strassennamen.fid--3213a59_187d53d4470_d4e,5334002,1171,Claßenstraße
+strassennamen.fid--3213a59_187d53d4470_d4f,5334002,1172,Clermontstraße
+strassennamen.fid--3213a59_187d53d4470_d50,5334002,1173,Colynshofstraße
+strassennamen.fid--3213a59_187d53d4470_d51,5334002,1174,Couvenstraße
+strassennamen.fid--3213a59_187d53d4470_d52,5334002,1176,Dachsbau
+strassennamen.fid--3213a59_187d53d4470_d53,5334002,1178,Dahlienweg
+strassennamen.fid--3213a59_187d53d4470_d54,5334002,1179,Dahmengraben
+strassennamen.fid--3213a59_187d53d4470_d55,5334002,1181,Damaschkestraße
+strassennamen.fid--3213a59_187d53d4470_d56,5334002,1183,Dammstraße
+strassennamen.fid--3213a59_187d53d4470_d57,5334002,1184,Danziger Straße
+strassennamen.fid--3213a59_187d53d4470_d58,5334002,1185,Dedolphstraße
+strassennamen.fid--3213a59_187d53d4470_d59,5334002,1187,Deliusstraße
+strassennamen.fid--3213a59_187d53d4470_d5a,5334002,1189,Dennewartstraße
+strassennamen.fid--3213a59_187d53d4470_d5b,5334002,1191,Diepenbenden
+strassennamen.fid--3213a59_187d53d4470_d5c,5334002,1193,Dr.-Hahn-Straße
+strassennamen.fid--3213a59_187d53d4470_d5d,5334002,1195,Dr.-Vitus-Metz-Straße
+strassennamen.fid--3213a59_187d53d4470_d5e,5334002,1197,Domhof
+strassennamen.fid--3213a59_187d53d4470_d5f,5334002,1199,Dresdener Straße
+strassennamen.fid--3213a59_187d53d4470_d60,5334002,1201,Driescher Gässchen
+strassennamen.fid--3213a59_187d53d4470_d61,5334002,1205,Drimbornstraße
+strassennamen.fid--3213a59_187d53d4470_d62,5334002,1207,Drosselweg
+strassennamen.fid--3213a59_187d53d4470_d63,5334002,1209,Düppelstraße
+strassennamen.fid--3213a59_187d53d4470_d64,5334002,1210,Düstergasse
+strassennamen.fid--3213a59_187d53d4470_d65,5334002,1211,Düsbergweg
+strassennamen.fid--3213a59_187d53d4470_d66,5334002,1212,Dunantstraße
+strassennamen.fid--3213a59_187d53d4470_d67,5334002,1214,Eberburgweg
+strassennamen.fid--3213a59_187d53d4470_d68,5334002,1216,Eckenberger Straße
+strassennamen.fid--3213a59_187d53d4470_d69,5334002,1217,Mataréstraße
+strassennamen.fid--3213a59_187d53d4470_d6a,5334002,1220,Eginhardstraße
+strassennamen.fid--3213a59_187d53d4470_d6b,5334002,1222,Eichendorffweg
+strassennamen.fid--3213a59_187d53d4470_d6c,5334002,1224,Eichhörnchenweg
+strassennamen.fid--3213a59_187d53d4470_d6d,5334002,1226,Eifelstraße
+strassennamen.fid--3213a59_187d53d4470_d6e,5334002,1228,Sonnenscheinstraße
+strassennamen.fid--3213a59_187d53d4470_d6f,5334002,1229,Eilfschornsteinstraße
+strassennamen.fid--3213a59_187d53d4470_d70,5334002,1231,Eintrachtstraße
+strassennamen.fid--3213a59_187d53d4470_d71,5334002,1233,Eisenbahnweg
+strassennamen.fid--3213a59_187d53d4470_d72,5334002,1235,Elisabethstraße
+strassennamen.fid--3213a59_187d53d4470_d73,5334002,1237,Malmedyer Straße
+strassennamen.fid--3213a59_187d53d4470_d74,5334002,1239,Elsa-Brändström-Straße
+strassennamen.fid--3213a59_187d53d4470_d75,5334002,1240,Elsassplatz
+strassennamen.fid--3213a59_187d53d4470_d76,5334002,1241,Elsassstraße
+strassennamen.fid--3213a59_187d53d4470_d77,5334002,1243,Emmastraße
+strassennamen.fid--3213a59_187d53d4470_d78,5334002,1245,Engelbertstraße
+strassennamen.fid--3213a59_187d53d4470_d79,5334002,1247,Entenfeld
+strassennamen.fid--3213a59_187d53d4470_d7a,5334002,1248,Entenpfuhler Weg
+strassennamen.fid--3213a59_187d53d4470_d7b,5334002,1250,Erckensstraße
+strassennamen.fid--3213a59_187d53d4470_d7c,5334002,1252,Erlenweg
+strassennamen.fid--3213a59_187d53d4470_d7d,5334002,1253,Eselsweg
+strassennamen.fid--3213a59_187d53d4470_d7e,5334002,1258,Europadorf
+strassennamen.fid--3213a59_187d53d4470_d7f,5334002,1259,Europaplatz
+strassennamen.fid--3213a59_187d53d4470_d80,5334002,1260,Eynattener Straße
+strassennamen.fid--3213a59_187d53d4470_d81,5334002,1261,Feldchen
+strassennamen.fid--3213a59_187d53d4470_d82,5334002,1262,Feldstraße
+strassennamen.fid--3213a59_187d53d4470_d83,5334002,1264,Felix-Timmermans-Straße
+strassennamen.fid--3213a59_187d53d4470_d84,5334002,1266,Fichtestraße
+strassennamen.fid--3213a59_187d53d4470_d85,5334002,1267,Fichthang
+strassennamen.fid--3213a59_187d53d4470_d86,5334002,1268,Fischmarkt
+strassennamen.fid--3213a59_187d53d4470_d87,5334002,1270,Flandrische Straße
+strassennamen.fid--3213a59_187d53d4470_d88,5334002,1272,Fliederweg
+strassennamen.fid--3213a59_187d53d4470_d89,5334002,1274,Försterstraße
+strassennamen.fid--3213a59_187d53d4470_d8a,5334002,1276,Forster Linde
+strassennamen.fid--3213a59_187d53d4470_d8b,5334002,1277,Forster Weg
+strassennamen.fid--3213a59_187d53d4470_d8c,5334002,1278,Frankenberger Straße
+strassennamen.fid--3213a59_187d53d4470_d8d,5334002,1279,Frankenstraße
+strassennamen.fid--3213a59_187d53d4470_d8e,5334002,1280,Franziskusweg
+strassennamen.fid--3213a59_187d53d4470_d8f,5334002,1281,Frans-Masereel-Straße
+strassennamen.fid--3213a59_187d53d4470_d90,5334002,1284,Freunder Weg
+strassennamen.fid--3213a59_187d53d4470_d91,5334002,1286,Aretzstraße
+strassennamen.fid--3213a59_187d53d4470_d92,5334002,1287,Friedlandstraße
+strassennamen.fid--3213a59_187d53d4470_d93,5334002,1288,Friedrich-Ebert-Allee
+strassennamen.fid--3213a59_187d53d4470_d94,5334002,1289,Friedrichstraße
+strassennamen.fid--3213a59_187d53d4470_d95,5334002,1290,Friedrich-Wilhelm-Platz
+strassennamen.fid--3213a59_187d53d4470_d96,5334002,1292,Friesenstraße
+strassennamen.fid--3213a59_187d53d4470_d97,5334002,1294,Fringsgraben
+strassennamen.fid--3213a59_187d53d4470_d98,5334002,1296,Fuchserde
+strassennamen.fid--3213a59_187d53d4470_d99,5334002,1298,Gartenstraße
+strassennamen.fid--3213a59_187d53d4470_d9a,5334002,1299,Gasborn
+strassennamen.fid--3213a59_187d53d4470_d9b,5334002,1300,Gerhart-Hauptmann-Straße
+strassennamen.fid--3213a59_187d53d4470_d9c,5334002,1301,Gemmenicher Weg
+strassennamen.fid--3213a59_187d53d4470_d9d,5334002,1302,Geschwister-Scholl-Straße
+strassennamen.fid--3213a59_187d53d4470_d9e,5334002,1303,Schumacherstraße
+strassennamen.fid--3213a59_187d53d4470_d9f,5334002,1304,Gerlachstraße
+strassennamen.fid--3213a59_187d53d4470_da0,5334002,1305,Glatzer Straße
+strassennamen.fid--3213a59_187d53d4470_da1,5334002,1306,Giselastraße
+strassennamen.fid--3213a59_187d53d4470_da2,5334002,1307,Gleiwitzer Straße
+strassennamen.fid--3213a59_187d53d4470_da3,5334002,1310,Prager Ring
+strassennamen.fid--3213a59_187d53d4470_da4,5334002,1311,Goethestraße
+strassennamen.fid--3213a59_187d53d4470_da5,5334002,1313,Goldbachstraße
+strassennamen.fid--3213a59_187d53d4470_da6,5334002,1314,Goldberg
+strassennamen.fid--3213a59_187d53d4470_da7,5334002,1315,Gottfriedstraße
+strassennamen.fid--3213a59_187d53d4470_da8,5334002,1318,Gut-Dämme-Straße
+strassennamen.fid--3213a59_187d53d4470_da9,5334002,1319,Grauenhofer Weg
+strassennamen.fid--3213a59_187d53d4470_daa,5334002,1320,Gustav-Freytag-Straße
+strassennamen.fid--3213a59_187d53d4470_dab,5334002,1321,Gregorstraße
+strassennamen.fid--3213a59_187d53d4470_dac,5334002,1323,Grindelweg
+strassennamen.fid--3213a59_187d53d4470_dad,5334002,1324,Gulpener Straße
+strassennamen.fid--3213a59_187d53d4470_dae,5334002,1325,Großkölnstraße
+strassennamen.fid--3213a59_187d53d4470_daf,5334002,1327,Grüneck
+strassennamen.fid--3213a59_187d53d4470_db0,5334002,1328,Grüner Winkel
+strassennamen.fid--3213a59_187d53d4470_db1,5334002,1329,Gut Steeg
+strassennamen.fid--3213a59_187d53d4470_db2,5334002,1330,Guaitastraße
+strassennamen.fid--3213a59_187d53d4470_db3,5334002,1332,Habsburgerallee
+strassennamen.fid--3213a59_187d53d4470_db4,5334002,1334,Hackländerstraße
+strassennamen.fid--3213a59_187d53d4470_db5,5334002,1336,Händelstraße
+strassennamen.fid--3213a59_187d53d4470_db6,5334002,1338,Hainbuchenstraße
+strassennamen.fid--3213a59_187d53d4470_db7,5334002,1340,Hammerweg
+strassennamen.fid--3213a59_187d53d4470_db8,5334002,1342,Hanbrucher Straße
+strassennamen.fid--3213a59_187d53d4470_db9,5334002,1343,Hanbrucher Weg
+strassennamen.fid--3213a59_187d53d4470_dba,5334002,1345,Hangstraße
+strassennamen.fid--3213a59_187d53d4470_dbb,5334002,1347,Hansemannplatz
+strassennamen.fid--3213a59_187d53d4470_dbc,5334002,1349,Harscampstraße
+strassennamen.fid--3213a59_187d53d4470_dbd,5334002,1351,Hartmannstraße
+strassennamen.fid--3213a59_187d53d4470_dbe,5334002,1353,Haselsteig
+strassennamen.fid--3213a59_187d53d4470_dbf,5334002,1354,Hasencleverstraße
+strassennamen.fid--3213a59_187d53d4470_dc0,5334002,1355,Hasenfeld
+strassennamen.fid--3213a59_187d53d4470_dc1,5334002,1357,Hasselholzer Weg
+strassennamen.fid--3213a59_187d53d4470_dc2,5334002,1358,Hauseter Weg
+strassennamen.fid--3213a59_187d53d4470_dc3,5334002,1360,Heerlener Straße
+strassennamen.fid--3213a59_187d53d4470_dc4,5334002,1361,Heidweg
+strassennamen.fid--3213a59_187d53d4470_dc5,5334002,1363,Spaakallee
+strassennamen.fid--3213a59_187d53d4470_dc6,5334002,1365,Hein-Görgen-Straße
+strassennamen.fid--3213a59_187d53d4470_dc7,5334002,1366,Hein-Janssen-Straße
+strassennamen.fid--3213a59_187d53d4470_dc8,5334002,1368,Heinzenstraße
+strassennamen.fid--3213a59_187d53d4470_dc9,5334002,1370,Heißbergstraße
+strassennamen.fid--3213a59_187d53d4470_dca,5334002,1372,Henricistraße
+strassennamen.fid--3213a59_187d53d4470_dcb,5334002,1374,Herbartstraße
+strassennamen.fid--3213a59_187d53d4470_dcc,5334002,1375,Hergenrather Weg
+strassennamen.fid--3213a59_187d53d4470_dcd,5334002,1376,Hermann-Sudermann-Straße
+strassennamen.fid--3213a59_187d53d4470_dce,5334002,1377,Hermann-Löns-Allee
+strassennamen.fid--3213a59_187d53d4470_dcf,5334002,1378,Hermannstraße
+strassennamen.fid--3213a59_187d53d4470_dd0,5334002,1379,Herstaler Straße
+strassennamen.fid--3213a59_187d53d4470_dd1,5334002,1380,Herzogstraße
+strassennamen.fid--3213a59_187d53d4470_dd2,5334002,1381,Hickelweg
+strassennamen.fid--3213a59_187d53d4470_dd3,5334002,1383,Hirschgraben
+strassennamen.fid--3213a59_187d53d4470_dd4,5334002,1386,Hitfelder Straße
+strassennamen.fid--3213a59_187d53d4470_dd5,5334002,1388,Höfchensweg
+strassennamen.fid--3213a59_187d53d4470_dd6,5334002,1389,Höhenweg
+strassennamen.fid--3213a59_187d53d4470_dd7,5334002,1390,Hörnhang
+strassennamen.fid--3213a59_187d53d4470_dd8,5334002,1391,Hörnstieg
+strassennamen.fid--3213a59_187d53d4470_dd9,5334002,1393,Hof
+strassennamen.fid--3213a59_187d53d4470_dda,5334002,1396,Hohenzollernplatz
+strassennamen.fid--3213a59_187d53d4470_ddb,5334002,1398,Holsteinstraße
+strassennamen.fid--3213a59_187d53d4470_ddc,5334002,1399,Holzgraben
+strassennamen.fid--3213a59_187d53d4470_ddd,5334002,1401,Horngasse
+strassennamen.fid--3213a59_187d53d4470_dde,5334002,1403,Hubertusplatz
+strassennamen.fid--3213a59_187d53d4470_ddf,5334002,1404,Hubertusstraße
+strassennamen.fid--3213a59_187d53d4470_de0,5334002,1406,Hühnermarkt
+strassennamen.fid--3213a59_187d53d4470_de1,5334002,1408,Hünefeldstraße
+strassennamen.fid--3213a59_187d53d4470_de2,5334002,1410,Hüttenstraße
+strassennamen.fid--3213a59_187d53d4470_de3,5334002,1412,Im Brockenfeld
+strassennamen.fid--3213a59_187d53d4470_de4,5334002,1415,Im Gillesbachtal
+strassennamen.fid--3213a59_187d53d4470_de5,5334002,1416,Im Grüntal
+strassennamen.fid--3213a59_187d53d4470_de6,5334002,1418,Im Johannistal
+strassennamen.fid--3213a59_187d53d4470_de7,5334002,1421,Im Mariental
+strassennamen.fid--3213a59_187d53d4470_de8,5334002,1422,Coudenhovestraße
+strassennamen.fid--3213a59_187d53d4470_de9,5334002,1423,In den Heimgärten
+strassennamen.fid--3213a59_187d53d4470_dea,5334002,1424,In den Küpperbenden
+strassennamen.fid--3213a59_187d53d4470_deb,5334002,1425,In den Zwanzigmorgen
+strassennamen.fid--3213a59_187d53d4470_dec,5334002,1426,Krantzstraße
+strassennamen.fid--3213a59_187d53d4470_ded,5334002,1428,Intzestraße
+strassennamen.fid--3213a59_187d53d4470_dee,5334002,1430,Jägerstraße
+strassennamen.fid--3213a59_187d53d4470_def,5334002,1432,Jahnplatz
+strassennamen.fid--3213a59_187d53d4470_df0,5334002,1433,Jahnstraße
+strassennamen.fid--3213a59_187d53d4470_df1,5334002,1434,Jakobsplatz
+strassennamen.fid--3213a59_187d53d4470_df2,5334002,1437,Jean-Lejeune-Straße
+strassennamen.fid--3213a59_187d53d4470_df3,5334002,1439,Jesuitenstraße
+strassennamen.fid--3213a59_187d53d4470_df4,5334002,1440,Johannes-von-den-Driesch-Weg
+strassennamen.fid--3213a59_187d53d4470_df5,5334002,1441,Johanniterstraße
+strassennamen.fid--3213a59_187d53d4470_df6,5334002,1442,Johannstraße
+strassennamen.fid--3213a59_187d53d4470_df7,5334002,1444,Drei-Rosen-Straße
+strassennamen.fid--3213a59_187d53d4470_df8,5334002,1445,Noppiusstraße
+strassennamen.fid--3213a59_187d53d4470_df9,5334002,1447,Judengasse
+strassennamen.fid--3213a59_187d53d4470_dfa,5334002,1449,Junkerstraße
+strassennamen.fid--3213a59_187d53d4470_dfb,5334002,1450,Jupp-Müller-Straße
+strassennamen.fid--3213a59_187d53d4470_dfc,5334002,1451,Juttastraße
+strassennamen.fid--3213a59_187d53d4470_dfd,5334002,1453,Kaiser-Friedrich-Allee
+strassennamen.fid--3213a59_187d53d4470_dfe,5334002,1455,Kaiserplatz
+strassennamen.fid--3213a59_187d53d4470_dff,5334002,1456,Goerdelerstraße
+strassennamen.fid--3213a59_187d53d4470_e00,5334002,1457,Kalverbenden
+strassennamen.fid--3213a59_187d53d4470_e01,5334002,1458,Kamper Straße
+strassennamen.fid--3213a59_187d53d4470_e02,5334002,1459,Kannegießerstraße
+strassennamen.fid--3213a59_187d53d4470_e03,5334002,1460,Kantstraße
+strassennamen.fid--3213a59_187d53d4470_e04,5334002,1461,Kapuzinergasse
+strassennamen.fid--3213a59_187d53d4470_e05,5334002,1462,Kapellenstraße
+strassennamen.fid--3213a59_187d53d4470_e06,5334002,1464,Kapitelstraße
+strassennamen.fid--3213a59_187d53d4470_e07,5334002,1466,Kapuzinergraben
+strassennamen.fid--3213a59_187d53d4470_e08,5334002,1468,Kardinalstraße
+strassennamen.fid--3213a59_187d53d4470_e09,5334002,1470,Karl-Marx-Allee
+strassennamen.fid--3213a59_187d53d4470_e0a,5334002,1471,Karlsburgweg
+strassennamen.fid--3213a59_187d53d4470_e0b,5334002,1472,Karlsgraben
+strassennamen.fid--3213a59_187d53d4470_e0c,5334002,1473,Karlshöher Hochweg
+strassennamen.fid--3213a59_187d53d4470_e0d,5334002,1474,Karlshöher Talweg
+strassennamen.fid--3213a59_187d53d4470_e0e,5334002,1475,Haßlerstraße
+strassennamen.fid--3213a59_187d53d4470_e0f,5334002,1476,Karmeliterstraße
+strassennamen.fid--3213a59_187d53d4470_e10,5334002,1478,Kasernenstraße
+strassennamen.fid--3213a59_187d53d4470_e11,5334002,1483,Katschhof
+strassennamen.fid--3213a59_187d53d4470_e12,5334002,1484,Kavenstraße
+strassennamen.fid--3213a59_187d53d4470_e13,5334002,1486,Kesselweg
+strassennamen.fid--3213a59_187d53d4470_e14,5334002,1487,Kettelerstraße
+strassennamen.fid--3213a59_187d53d4470_e15,5334002,1489,Kirberichshofer Weg
+strassennamen.fid--3213a59_187d53d4470_e16,5334002,1490,Kirchstraße
+strassennamen.fid--3213a59_187d53d4470_e17,5334002,1491,Kelmiser Straße
+strassennamen.fid--3213a59_187d53d4470_e18,5334002,1492,Klappergasse
+strassennamen.fid--3213a59_187d53d4470_e19,5334002,1493,Klara-Fey-Straße
+strassennamen.fid--3213a59_187d53d4470_e1a,5334002,1495,Klausenerstraße
+strassennamen.fid--3213a59_187d53d4470_e1b,5334002,1497,Kleinkölnstraße
+strassennamen.fid--3213a59_187d53d4470_e1c,5334002,1498,Kleinmarschierstraße
+strassennamen.fid--3213a59_187d53d4470_e1d,5334002,1500,Klemensstraße
+strassennamen.fid--3213a59_187d53d4470_e1e,5334002,1502,Kleverstraße
+strassennamen.fid--3213a59_187d53d4470_e1f,5334002,1505,Klosterplatz
+strassennamen.fid--3213a59_187d53d4470_e20,5334002,1506,Klostertreppe
+strassennamen.fid--3213a59_187d53d4470_e21,5334002,1507,Klosterweiher
+strassennamen.fid--3213a59_187d53d4470_e22,5334002,1508,Knöpgerweg
+strassennamen.fid--3213a59_187d53d4470_e23,5334002,1509,Kockerellstraße
+strassennamen.fid--3213a59_187d53d4470_e24,5334002,1510,Königsberger Straße
+strassennamen.fid--3213a59_187d53d4470_e25,5334002,1511,Köhlstraße
+strassennamen.fid--3213a59_187d53d4470_e26,5334002,1512,Königshügel
+strassennamen.fid--3213a59_187d53d4470_e27,5334002,1513,Königstraße
+strassennamen.fid--3213a59_187d53d4470_e28,5334002,1514,Körbergasse
+strassennamen.fid--3213a59_187d53d4470_e29,5334002,1515,Körnerstraße
+strassennamen.fid--3213a59_187d53d4470_e2a,5334002,1516,Kolberger Straße
+strassennamen.fid--3213a59_187d53d4470_e2b,5334002,1517,Don-Bosco-Straße
+strassennamen.fid--3213a59_187d53d4470_e2c,5334002,1519,Komphausbadstraße
+strassennamen.fid--3213a59_187d53d4470_e2d,5334002,1521,Kongressstraße
+strassennamen.fid--3213a59_187d53d4470_e2e,5334002,1523,Kornelimünsterweg
+strassennamen.fid--3213a59_187d53d4470_e2f,5334002,1524,Mefferdatisstraße
+strassennamen.fid--3213a59_187d53d4470_e30,5334002,1526,Krähenwäldchen
+strassennamen.fid--3213a59_187d53d4470_e31,5334002,1528,Krämerstraße
+strassennamen.fid--3213a59_187d53d4470_e32,5334002,1532,Krakaustraße
+strassennamen.fid--3213a59_187d53d4470_e33,5334002,1535,Krautmühlenweg
+strassennamen.fid--3213a59_187d53d4470_e34,5334002,1539,Kreuzerdriesch
+strassennamen.fid--3213a59_187d53d4470_e35,5334002,1540,Kreuzherrenstraße
+strassennamen.fid--3213a59_187d53d4470_e36,5334002,1546,Kronprinzenstraße
+strassennamen.fid--3213a59_187d53d4470_e37,5334002,1550,Kruppstraße
+strassennamen.fid--3213a59_187d53d4470_e38,5334002,1552,Kühlwetterstraße
+strassennamen.fid--3213a59_187d53d4470_e39,5334002,1553,Küpperstraße
+strassennamen.fid--3213a59_187d53d4470_e3a,5334002,1557,Kupferstraße
+strassennamen.fid--3213a59_187d53d4470_e3b,5334002,1559,Kurfürstenstraße
+strassennamen.fid--3213a59_187d53d4470_e3c,5334002,1560,Kurhausstraße
+strassennamen.fid--3213a59_187d53d4470_e3d,5334002,1561,Lagerhausstraße
+strassennamen.fid--3213a59_187d53d4470_e3e,5334002,1563,Landdrostenstraße
+strassennamen.fid--3213a59_187d53d4470_e3f,5334002,1565,Leipziger Straße
+strassennamen.fid--3213a59_187d53d4470_e40,5334002,1566,Lemierser Straße
+strassennamen.fid--3213a59_187d53d4470_e41,5334002,1567,Lennéstraße
+strassennamen.fid--3213a59_187d53d4470_e42,5334002,1568,Leo-Blech-Straße
+strassennamen.fid--3213a59_187d53d4470_e43,5334002,1569,Gottfried-Dossing-Platz
+strassennamen.fid--3213a59_187d53d4470_e44,5334002,1570,Leonhardstraße
+strassennamen.fid--3213a59_187d53d4470_e45,5334002,1571,Lerchenweg
+strassennamen.fid--3213a59_187d53d4470_e46,5334002,1574,Liebigstraße
+strassennamen.fid--3213a59_187d53d4470_e47,5334002,1576,Lilienthalstraße
+strassennamen.fid--3213a59_187d53d4470_e48,5334002,1577,Limburger Straße
+strassennamen.fid--3213a59_187d53d4470_e49,5334002,1578,Lindenplatz
+strassennamen.fid--3213a59_187d53d4470_e4a,5334002,1580,Lintertstraße
+strassennamen.fid--3213a59_187d53d4470_e4b,5334002,1582,Lintertweg
+strassennamen.fid--3213a59_187d53d4470_e4c,5334002,1583,Lisztstraße
+strassennamen.fid--3213a59_187d53d4470_e4d,5334002,1587,Löhergraben
+strassennamen.fid--3213a59_187d53d4470_e4e,5334002,1589,Lohmühlenstraße
+strassennamen.fid--3213a59_187d53d4470_e4f,5334002,1591,Lombardenstraße
+strassennamen.fid--3213a59_187d53d4470_e50,5334002,1593,Lortzingstraße
+strassennamen.fid--3213a59_187d53d4470_e51,5334002,1596,Louis-Beißel-Straße
+strassennamen.fid--3213a59_187d53d4470_e52,5334002,1597,Belvedereallee
+strassennamen.fid--3213a59_187d53d4470_e53,5334002,1598,Lousbergstraße
+strassennamen.fid--3213a59_187d53d4470_e54,5334002,1601,Luerweg
+strassennamen.fid--3213a59_187d53d4470_e55,5334002,1603,Lützowstraße
+strassennamen.fid--3213a59_187d53d4470_e56,5334002,1604,Luise-Hensel-Straße
+strassennamen.fid--3213a59_187d53d4470_e57,5334002,1606,Luxemburger Ring
+strassennamen.fid--3213a59_187d53d4470_e58,5334002,1607,Lutherweg
+strassennamen.fid--3213a59_187d53d4470_e59,5334002,1611,Mallinckrodtstraße
+strassennamen.fid--3213a59_187d53d4470_e5a,5334002,1615,Malteserstraße
+strassennamen.fid--3213a59_187d53d4470_e5b,5334002,1617,Margratenstraße
+strassennamen.fid--3213a59_187d53d4470_e5c,5334002,1619,Mariabrunnstraße
+strassennamen.fid--3213a59_187d53d4470_e5d,5334002,1620,Mariahilfstraße
+strassennamen.fid--3213a59_187d53d4470_e5e,5334002,1622,Marienbongard
+strassennamen.fid--3213a59_187d53d4470_e5f,5334002,1623,Marienplatz
+strassennamen.fid--3213a59_187d53d4470_e60,5334002,1624,Berdoletstraße
+strassennamen.fid--3213a59_187d53d4470_e61,5334002,1626,Marienburger Straße
+strassennamen.fid--3213a59_187d53d4470_e62,5334002,1627,Markt
+strassennamen.fid--3213a59_187d53d4470_e63,5334002,1628,Triebelsstraße
+strassennamen.fid--3213a59_187d53d4470_e64,5334002,1629,Martelenberger Weg
+strassennamen.fid--3213a59_187d53d4470_e65,5334002,1630,Marshallstraße
+strassennamen.fid--3213a59_187d53d4470_e66,5334002,1631,Martin-Luther-Straße
+strassennamen.fid--3213a59_187d53d4470_e67,5334002,1632,Martinstraße
+strassennamen.fid--3213a59_187d53d4470_e68,5334002,1634,Matthiashofstraße
+strassennamen.fid--3213a59_187d53d4470_e69,5334002,1636,Mauerstraße
+strassennamen.fid--3213a59_187d53d4470_e6a,5334002,1638,Maxstraße
+strassennamen.fid--3213a59_187d53d4470_e6b,5334002,1639,Mechtildisstraße
+strassennamen.fid--3213a59_187d53d4470_e6c,5334002,1640,Meerssener Straße
+strassennamen.fid--3213a59_187d53d4470_e6d,5334002,1641,Meisenweg
+strassennamen.fid--3213a59_187d53d4470_e6e,5334002,1644,Melatener Weg
+strassennamen.fid--3213a59_187d53d4470_e6f,5334002,1646,Merowingerstraße
+strassennamen.fid--3213a59_187d53d4470_e70,5334002,1648,Metzgerstraße
+strassennamen.fid--3213a59_187d53d4470_e71,5334002,1649,Michaelsbergstraße
+strassennamen.fid--3213a59_187d53d4470_e72,5334002,1650,Frère-Roger-Straße
+strassennamen.fid--3213a59_187d53d4470_e73,5334002,1651,Michaelstreppe
+strassennamen.fid--3213a59_187d53d4470_e74,5334002,1652,Middeldorfstraße
+strassennamen.fid--3213a59_187d53d4470_e75,5334002,1654,Mies-van-der-Rohe-Straße
+strassennamen.fid--3213a59_187d53d4470_e76,5334002,1656,Minoritenstraße
+strassennamen.fid--3213a59_187d53d4470_e77,5334002,1658,Leydelstraße
+strassennamen.fid--3213a59_187d53d4470_e78,5334002,1660,Mörgensstraße
+strassennamen.fid--3213a59_187d53d4470_e79,5334002,1662,Moltkestraße
+strassennamen.fid--3213a59_187d53d4470_e7a,5334002,1663,Monheimsallee
+strassennamen.fid--3213a59_187d53d4470_e7b,5334002,1666,Montzener Straße
+strassennamen.fid--3213a59_187d53d4470_e7c,5334002,1667,Moreller Weg
+strassennamen.fid--3213a59_187d53d4470_e7d,5334002,1668,Morillenhang
+strassennamen.fid--3213a59_187d53d4470_e7e,5334002,1670,Mostardstraße
+strassennamen.fid--3213a59_187d53d4470_e7f,5334002,1672,Mozartstraße
+strassennamen.fid--3213a59_187d53d4470_e80,5334002,1674,Mühlenberg
+strassennamen.fid--3213a59_187d53d4470_e81,5334002,1675,Mühlental
+strassennamen.fid--3213a59_187d53d4470_e82,5334002,1677,Mühlradstraße
+strassennamen.fid--3213a59_187d53d4470_e83,5334002,1678,Münsterplatz
+strassennamen.fid--3213a59_187d53d4470_e84,5334002,1679,Muffeter Weg
+strassennamen.fid--3213a59_187d53d4470_e85,5334002,1680,Münstergracht
+strassennamen.fid--3213a59_187d53d4470_e86,5334002,1681,Nachtigallenweg
+strassennamen.fid--3213a59_187d53d4470_e87,5334002,1683,Nekesstraße
+strassennamen.fid--3213a59_187d53d4470_e88,5334002,1684,Nelkenweg
+strassennamen.fid--3213a59_187d53d4470_e89,5334002,1685,Nellessenstraße
+strassennamen.fid--3213a59_187d53d4470_e8a,5334002,1687,Neuhausstraße
+strassennamen.fid--3213a59_187d53d4470_e8b,5334002,1689,Neumarkt
+strassennamen.fid--3213a59_187d53d4470_e8c,5334002,1690,Neupforte
+strassennamen.fid--3213a59_187d53d4470_e8d,5334002,1692,Neustraße
+strassennamen.fid--3213a59_187d53d4470_e8e,5334002,1694,Nikolausstraße
+strassennamen.fid--3213a59_187d53d4470_e8f,5334002,1696,Nizzaallee
+strassennamen.fid--3213a59_187d53d4470_e90,5334002,1697,Nordhoffstraße
+strassennamen.fid--3213a59_187d53d4470_e91,5334002,1698,Normannenstraße
+strassennamen.fid--3213a59_187d53d4470_e92,5334002,1700,Obere Drimbornstraße
+strassennamen.fid--3213a59_187d53d4470_e93,5334002,1702,Oberstraße
+strassennamen.fid--3213a59_187d53d4470_e94,5334002,1704,Oligsbendengasse
+strassennamen.fid--3213a59_187d53d4470_e95,5334002,1706,Oppenhoffallee
+strassennamen.fid--3213a59_187d53d4470_e96,5334002,1708,Oranienstraße
+strassennamen.fid--3213a59_187d53d4470_e97,5334002,1714,Kurbrunnenstraße
+strassennamen.fid--3213a59_187d53d4470_e98,5334002,1718,Pastorplatz
+strassennamen.fid--3213a59_187d53d4470_e99,5334002,1719,Paugasse
+strassennamen.fid--3213a59_187d53d4470_e9a,5334002,1720,Paulusstraße
+strassennamen.fid--3213a59_187d53d4470_e9b,5334002,1721,Paul-Röntgen-Straße
+strassennamen.fid--3213a59_187d53d4470_e9c,5334002,1724,Peterskirchhof
+strassennamen.fid--3213a59_187d53d4470_e9d,5334002,1726,Peterstraße
+strassennamen.fid--3213a59_187d53d4470_e9e,5334002,1727,Petronellastraße
+strassennamen.fid--3213a59_187d53d4470_e9f,5334002,1730,Pfeilstraße
+strassennamen.fid--3213a59_187d53d4470_ea0,5334002,1732,Piefenhäuschenweg
+strassennamen.fid--3213a59_187d53d4470_ea1,5334002,1734,Pieter-Bruegel-Straße
+strassennamen.fid--3213a59_187d53d4470_ea2,5334002,1736,Pippinstraße
+strassennamen.fid--3213a59_187d53d4470_ea3,5334002,1737,Piusstraße
+strassennamen.fid--3213a59_187d53d4470_ea4,5334002,1739,Pommerotter Weg
+strassennamen.fid--3213a59_187d53d4470_ea5,5334002,1740,Pontdriesch
+strassennamen.fid--3213a59_187d53d4470_ea6,5334002,1742,Pontwall
+strassennamen.fid--3213a59_187d53d4470_ea7,5334002,1744,Pottenmühlenweg
+strassennamen.fid--3213a59_187d53d4470_ea8,5334002,1746,Preusweg
+strassennamen.fid--3213a59_187d53d4470_ea9,5334002,1747,Prinzenhofstraße
+strassennamen.fid--3213a59_187d53d4470_eaa,5334002,1748,Prinz-Eugen-Straße
+strassennamen.fid--3213a59_187d53d4470_eab,5334002,1751,Professor-Pirlet-Straße
+strassennamen.fid--3213a59_187d53d4470_eac,5334002,1753,Promenadenstraße
+strassennamen.fid--3213a59_187d53d4470_ead,5334002,1755,Raerener Gracht
+strassennamen.fid--3213a59_187d53d4470_eae,5334002,1757,Rasostraße
+strassennamen.fid--3213a59_187d53d4470_eaf,5334002,1758,Rathenauallee
+strassennamen.fid--3213a59_187d53d4470_eb0,5334002,1759,Rehmannstraße
+strassennamen.fid--3213a59_187d53d4470_eb1,5334002,1760,Rehmplatz
+strassennamen.fid--3213a59_187d53d4470_eb2,5334002,1762,Reichsweg
+strassennamen.fid--3213a59_187d53d4470_eb3,5334002,1764,Reihstraße
+strassennamen.fid--3213a59_187d53d4470_eb4,5334002,1765,Reimanstraße
+strassennamen.fid--3213a59_187d53d4470_eb5,5334002,1767,Reimser Straße
+strassennamen.fid--3213a59_187d53d4470_eb6,5334002,1768,Rennbahn
+strassennamen.fid--3213a59_187d53d4470_eb7,5334002,1770,Republikplatz
+strassennamen.fid--3213a59_187d53d4470_eb8,5334002,1772,Rethelstraße
+strassennamen.fid--3213a59_187d53d4470_eb9,5334002,1777,Rhein-Maas-Straße
+strassennamen.fid--3213a59_187d53d4470_eba,5334002,1779,Richardstraße
+strassennamen.fid--3213a59_187d53d4470_ebb,5334002,1781,Ritter-Chorus-Straße
+strassennamen.fid--3213a59_187d53d4470_ebc,5334002,1783,Robensstraße
+strassennamen.fid--3213a59_187d53d4470_ebd,5334002,1784,Robert-Koch-Straße
+strassennamen.fid--3213a59_187d53d4470_ebe,5334002,1786,Robert-Schuman-Straße
+strassennamen.fid--3213a59_187d53d4470_ebf,5334002,1788,Rödgerheidweg
+strassennamen.fid--3213a59_187d53d4470_ec0,5334002,1790,Römerstraße
+strassennamen.fid--3213a59_187d53d4470_ec1,5334002,1791,Römerweg
+strassennamen.fid--3213a59_187d53d4470_ec2,5334002,1793,Roermonder Straße
+strassennamen.fid--3213a59_187d53d4470_ec3,5334002,1794,Rolandplatz
+strassennamen.fid--3213a59_187d53d4470_ec4,5334002,1797,Romaneygasse
+strassennamen.fid--3213a59_187d53d4470_ec5,5334002,1799,Rommelsgasse
+strassennamen.fid--3213a59_187d53d4470_ec6,5334002,1801,Ronheider Berg
+strassennamen.fid--3213a59_187d53d4470_ec7,5334002,1802,Ronheider Weg
+strassennamen.fid--3213a59_187d53d4470_ec8,5334002,1803,Ronheider Winkel
+strassennamen.fid--3213a59_187d53d4470_ec9,5334002,1804,Roonstraße
+strassennamen.fid--3213a59_187d53d4470_eca,5334002,1805,Rosberg
+strassennamen.fid--3213a59_187d53d4470_ecb,5334002,1806,Rosenweg
+strassennamen.fid--3213a59_187d53d4470_ecc,5334002,1807,Rosfeld
+strassennamen.fid--3213a59_187d53d4470_ecd,5334002,1808,Rosstraße
+strassennamen.fid--3213a59_187d53d4470_ece,5334002,1809,Rotbendenstraße
+strassennamen.fid--3213a59_187d53d4470_ecf,5334002,1811,I. Rote-Haag-Weg
+strassennamen.fid--3213a59_187d53d4470_ed0,5334002,1812,II. Rote-Haag-Weg
+strassennamen.fid--3213a59_187d53d4470_ed1,5334002,1813,Rotter Bruch
+strassennamen.fid--3213a59_187d53d4470_ed2,5334002,1814,Rottstraße
+strassennamen.fid--3213a59_187d53d4470_ed3,5334002,1817,Rütscher Straße
+strassennamen.fid--3213a59_187d53d4470_ed4,5334002,1819,Saarstraße
+strassennamen.fid--3213a59_187d53d4470_ed5,5334002,1821,Salierallee
+strassennamen.fid--3213a59_187d53d4470_ed6,5334002,1823,Salvatorberg
+strassennamen.fid--3213a59_187d53d4470_ed7,5334002,1824,Salvatorstraße
+strassennamen.fid--3213a59_187d53d4470_ed8,5334002,1825,Sanatoriumstraße
+strassennamen.fid--3213a59_187d53d4470_ed9,5334002,1826,Sandkaulbach
+strassennamen.fid--3213a59_187d53d4470_eda,5334002,1827,Sandkaulstraße
+strassennamen.fid--3213a59_187d53d4470_edb,5334002,1828,St. Johann
+strassennamen.fid--3213a59_187d53d4470_edc,5334002,1829,St.-Josefs-Platz
+strassennamen.fid--3213a59_187d53d4470_edd,5334002,1830,St.-Annaberg-Straße
+strassennamen.fid--3213a59_187d53d4470_ede,5334002,1831,St. Vither Straße
+strassennamen.fid--3213a59_187d53d4470_edf,5334002,1833,Scheibenstraße
+strassennamen.fid--3213a59_187d53d4470_ee0,5334002,1836,Schenkendorfstraße
+strassennamen.fid--3213a59_187d53d4470_ee1,5334002,1837,Schervierstraße
+strassennamen.fid--3213a59_187d53d4470_ee2,5334002,1839,Scheurenstraße
+strassennamen.fid--3213a59_187d53d4470_ee3,5334002,1841,Schießweg
+strassennamen.fid--3213a59_187d53d4470_ee4,5334002,1842,Schildstraße
+strassennamen.fid--3213a59_187d53d4470_ee5,5334002,1844,Schillerstraße
+strassennamen.fid--3213a59_187d53d4470_ee6,5334002,1846,Schindlerstraße
+strassennamen.fid--3213a59_187d53d4470_ee7,5334002,1848,Schinkelstraße
+strassennamen.fid--3213a59_187d53d4470_ee8,5334002,1852,Schleswigstraße
+strassennamen.fid--3213a59_187d53d4470_ee9,5334002,1854,Schlossstraße
+strassennamen.fid--3213a59_187d53d4470_eea,5334002,1855,Schmiedstraße
+strassennamen.fid--3213a59_187d53d4470_eeb,5334002,1859,Schönforststraße
+strassennamen.fid--3213a59_187d53d4470_eec,5334002,1860,Schönforstwinkel
+strassennamen.fid--3213a59_187d53d4470_eed,5334002,1861,Schönrathstraße
+strassennamen.fid--3213a59_187d53d4470_eee,5334002,1863,Schopenhauerstraße
+strassennamen.fid--3213a59_187d53d4470_eef,5334002,1865,Schützenstraße
+strassennamen.fid--3213a59_187d53d4470_ef0,5334002,1866,Schwalbenweg
+strassennamen.fid--3213a59_187d53d4470_ef1,5334002,1867,Schwarzer Weg
+strassennamen.fid--3213a59_187d53d4470_ef2,5334002,1868,Sebastianstraße
+strassennamen.fid--3213a59_187d53d4470_ef3,5334002,1872,Seffenter Weg
+strassennamen.fid--3213a59_187d53d4470_ef4,5334002,1874,Seilgraben
+strassennamen.fid--3213a59_187d53d4470_ef5,5334002,1876,Siedlung Daheim
+strassennamen.fid--3213a59_187d53d4470_ef6,5334002,1877,Kanonenwiese
+strassennamen.fid--3213a59_187d53d4470_ef7,5334002,1879,Siegelallee
+strassennamen.fid--3213a59_187d53d4470_ef8,5334002,1880,Siemensstraße
+strassennamen.fid--3213a59_187d53d4470_ef9,5334002,1881,Sigmundstraße
+strassennamen.fid--3213a59_187d53d4470_efa,5334002,1883,Sittarder Straße
+strassennamen.fid--3213a59_187d53d4470_efb,5334002,1885,Soerser Au
+strassennamen.fid--3213a59_187d53d4470_efc,5334002,1886,Soerser Tal
+strassennamen.fid--3213a59_187d53d4470_efd,5334002,1887,Soerser Weg
+strassennamen.fid--3213a59_187d53d4470_efe,5334002,1889,Soldatengässchen
+strassennamen.fid--3213a59_187d53d4470_eff,5334002,1891,Sophienstraße
+strassennamen.fid--3213a59_187d53d4470_f00,5334002,1893,Spitzgässchen
+strassennamen.fid--3213a59_187d53d4470_f01,5334002,1895,Staudenweg
+strassennamen.fid--3213a59_187d53d4470_f02,5334002,1897,Steffensplatz
+strassennamen.fid--3213a59_187d53d4470_f03,5334002,1899,Steinkaulstraße
+strassennamen.fid--3213a59_187d53d4470_f04,5334002,1901,Stephanstraße
+strassennamen.fid--3213a59_187d53d4470_f05,5334002,1902,Stettiner Straße
+strassennamen.fid--3213a59_187d53d4470_f06,5334002,1903,Steubenstraße
+strassennamen.fid--3213a59_187d53d4470_f07,5334002,1905,Stiftstraße
+strassennamen.fid--3213a59_187d53d4470_f08,5334002,1909,Sträterstraße
+strassennamen.fid--3213a59_187d53d4470_f09,5334002,1911,Stromgasse
+strassennamen.fid--3213a59_187d53d4470_f0a,5334002,1913,Südstraße
+strassennamen.fid--3213a59_187d53d4470_f0b,5334002,1914,Suermondtplatz
+strassennamen.fid--3213a59_187d53d4470_f0c,5334002,1915,Süsterfeldstraße
+strassennamen.fid--3213a59_187d53d4470_f0d,5334002,1917,Talbotstraße
+strassennamen.fid--3213a59_187d53d4470_f0e,5334002,1918,Talstraße
+strassennamen.fid--3213a59_187d53d4470_f0f,5334002,1919,Taubengasse
+strassennamen.fid--3213a59_187d53d4470_f10,5334002,1922,Theaterplatz
+strassennamen.fid--3213a59_187d53d4470_f11,5334002,1923,Theaterstraße
+strassennamen.fid--3213a59_187d53d4470_f12,5334002,1925,Theresienstraße
+strassennamen.fid--3213a59_187d53d4470_f13,5334002,1926,Thiensweg
+strassennamen.fid--3213a59_187d53d4470_f14,5334002,1927,Thomashofstraße
+strassennamen.fid--3213a59_187d53d4470_f15,5334002,1928,Tielmanweg
+strassennamen.fid--3213a59_187d53d4470_f16,5334002,1929,Tilsiter Straße
+strassennamen.fid--3213a59_187d53d4470_f17,5334002,1930,Tönnesrather Weg
+strassennamen.fid--3213a59_187d53d4470_f18,5334002,1931,Trichtergasse
+strassennamen.fid--3213a59_187d53d4470_f19,5334002,1932,Trierer Platz
+strassennamen.fid--3213a59_187d53d4470_f1a,5334002,1935,Tulpenweg
+strassennamen.fid--3213a59_187d53d4470_f1b,5334002,1940,Ungarnstraße
+strassennamen.fid--3213a59_187d53d4470_f1c,5334002,1942,Ursulinerstraße
+strassennamen.fid--3213a59_187d53d4470_f1d,5334002,1943,Unterer Backertsweg
+strassennamen.fid--3213a59_187d53d4470_f1e,5334002,1944,Valkenburger Straße
+strassennamen.fid--3213a59_187d53d4470_f1f,5334002,1946,Veltmanplatz
+strassennamen.fid--3213a59_187d53d4470_f20,5334002,1947,Venn
+strassennamen.fid--3213a59_187d53d4470_f21,5334002,1948,Vereinsstraße
+strassennamen.fid--3213a59_187d53d4470_f22,5334002,1949,Viehhofstraße
+strassennamen.fid--3213a59_187d53d4470_f23,5334002,1950,Viktoriaallee
+strassennamen.fid--3213a59_187d53d4470_f24,5334002,1952,Kármánstraße
+strassennamen.fid--3213a59_187d53d4470_f25,5334002,1953,Virchowstraße
+strassennamen.fid--3213a59_187d53d4470_f26,5334002,1954,Von-Brandis-Straße
+strassennamen.fid--3213a59_187d53d4470_f27,5334002,1955,Von-Görschen-Straße
+strassennamen.fid--3213a59_187d53d4470_f28,5334002,1956,Von-Halfern-Weg
+strassennamen.fid--3213a59_187d53d4470_f29,5334002,1957,Von-Pastor-Straße
+strassennamen.fid--3213a59_187d53d4470_f2a,5334002,1958,Wallstraße
+strassennamen.fid--3213a59_187d53d4470_f2b,5334002,1959,Warmweiherstraße
+strassennamen.fid--3213a59_187d53d4470_f2c,5334002,1960,Wilhelm-Pitz-Weg
+strassennamen.fid--3213a59_187d53d4470_f2d,5334002,1961,Weberstraße
+strassennamen.fid--3213a59_187d53d4470_f2e,5334002,1962,Waldenburger Straße
+strassennamen.fid--3213a59_187d53d4470_f2f,5334002,1963,Weidenweg
+strassennamen.fid--3213a59_187d53d4470_f30,5334002,1964,Weingartsberg
+strassennamen.fid--3213a59_187d53d4470_f31,5334002,1965,Weingartshof
+strassennamen.fid--3213a59_187d53d4470_f32,5334002,1966,Weißenbergweg
+strassennamen.fid--3213a59_187d53d4470_f33,5334002,1967,Weißenburger Straße
+strassennamen.fid--3213a59_187d53d4470_f34,5334002,1968,Weißhausstraße
+strassennamen.fid--3213a59_187d53d4470_f35,5334002,1969,Weißwasserstraße
+strassennamen.fid--3213a59_187d53d4470_f36,5334002,1970,Welkenrather Straße
+strassennamen.fid--3213a59_187d53d4470_f37,5334002,1971,Wenzelstraße
+strassennamen.fid--3213a59_187d53d4470_f38,5334002,1972,Wespienstraße
+strassennamen.fid--3213a59_187d53d4470_f39,5334002,1973,Westend
+strassennamen.fid--3213a59_187d53d4470_f3a,5334002,1974,Weststraße
+strassennamen.fid--3213a59_187d53d4470_f3b,5334002,1975,Weyhestraße
+strassennamen.fid--3213a59_187d53d4470_f3c,5334002,1976,Wiesenstraße
+strassennamen.fid--3213a59_187d53d4470_f3d,5334002,1977,Wiesental
+strassennamen.fid--3213a59_187d53d4470_f3e,5334002,1979,Wildparkweg
+strassennamen.fid--3213a59_187d53d4470_f3f,5334002,1980,Wichernstraße
+strassennamen.fid--3213a59_187d53d4470_f40,5334002,1981,Wilhelmstraße
+strassennamen.fid--3213a59_187d53d4470_f41,5334002,1982,Wurmbenden
+strassennamen.fid--3213a59_187d53d4470_f42,5334002,1983,Wirichsbongardstraße
+strassennamen.fid--3213a59_187d53d4470_f43,5334002,1984,Wittekindstraße
+strassennamen.fid--3213a59_187d53d4470_f44,5334002,1986,Walhorner Straße
+strassennamen.fid--3213a59_187d53d4470_f45,5334002,1987,Yorckstraße
+strassennamen.fid--3213a59_187d53d4470_f46,5334002,1988,Wüllnerstraße
+strassennamen.fid--3213a59_187d53d4470_f47,5334002,1989,Zehnthofweg
+strassennamen.fid--3213a59_187d53d4470_f48,5334002,1991,Zeise
+strassennamen.fid--3213a59_187d53d4470_f49,5334002,1993,Zur Scheidmühle
+strassennamen.fid--3213a59_187d53d4470_f4a,5334002,1994,Ziegelweg
+strassennamen.fid--3213a59_187d53d4470_f4b,5334002,1995,Zollamtstraße
+strassennamen.fid--3213a59_187d53d4470_f4c,5334002,1997,Zollernstraße
+strassennamen.fid--3213a59_187d53d4470_f4d,5334002,1998,Zum Kirschbäumchen
+strassennamen.fid--3213a59_187d53d4470_f4e,5334002,1999,Zweiweiherweg
+strassennamen.fid--3213a59_187d53d4470_f4f,5334002,2000,Adalbertsteinweg
+strassennamen.fid--3213a59_187d53d4470_f50,5334002,2003,Adenauerallee
+strassennamen.fid--3213a59_187d53d4470_f51,5334002,2006,Amsterdamer Ring
+strassennamen.fid--3213a59_187d53d4470_f52,5334002,2008,Amyastraße
+strassennamen.fid--3213a59_187d53d4470_f53,5334002,2010,Annastraße
+strassennamen.fid--3213a59_187d53d4470_f54,5334002,2012,Augustastraße
+strassennamen.fid--3213a59_187d53d4470_f55,5334002,2016,Augustinerweg
+strassennamen.fid--3213a59_187d53d4470_f56,5334002,2017,Berliner Ring
+strassennamen.fid--3213a59_187d53d4470_f57,5334002,2019,Bismarckstraße
+strassennamen.fid--3213a59_187d53d4470_f58,5334002,2022,Bleiberger Straße
+strassennamen.fid--3213a59_187d53d4470_f59,5334002,2024,Blondelstraße
+strassennamen.fid--3213a59_187d53d4470_f5a,5334002,2026,Borngasse
+strassennamen.fid--3213a59_187d53d4470_f5b,5334002,2028,Boxgraben
+strassennamen.fid--3213a59_187d53d4470_f5c,5334002,2031,Brabantstraße
+strassennamen.fid--3213a59_187d53d4470_f5d,5334002,2033,Branderhofer Weg
+strassennamen.fid--3213a59_187d53d4470_f5e,5334002,2035,Burtscheider Markt
+strassennamen.fid--3213a59_187d53d4470_f5f,5334002,2037,Erzbergerallee
+strassennamen.fid--3213a59_187d53d4470_f60,5334002,2039,Eupener Straße
+strassennamen.fid--3213a59_187d53d4470_f61,5334002,2041,Franzstraße
+strassennamen.fid--3213a59_187d53d4470_f62,5334002,2043,Gneisenaustraße
+strassennamen.fid--3213a59_187d53d4470_f63,5334002,2045,Grüner Weg
+strassennamen.fid--3213a59_187d53d4470_f64,5334002,2047,Hauptstraße
+strassennamen.fid--3213a59_187d53d4470_f65,5334002,2049,Heinrichsallee
+strassennamen.fid--3213a59_187d53d4470_f66,5334002,2051,Hohenstaufenallee
+strassennamen.fid--3213a59_187d53d4470_f67,5334002,2053,Jakobstraße
+strassennamen.fid--3213a59_187d53d4470_f68,5334002,2055,Joseph-von-Görres-Straße
+strassennamen.fid--3213a59_187d53d4470_f69,5334002,2058,Jülicher Straße
+strassennamen.fid--3213a59_187d53d4470_f6a,5334002,2063,Kasinostraße
+strassennamen.fid--3213a59_187d53d4470_f6b,5334002,2065,Katharinenstraße
+strassennamen.fid--3213a59_187d53d4470_f6c,5334002,2067,Krefelder Straße
+strassennamen.fid--3213a59_187d53d4470_f6d,5334002,2070,Kronenberg
+strassennamen.fid--3213a59_187d53d4470_f6e,5334002,2072,Krugenofen
+strassennamen.fid--3213a59_187d53d4470_f6f,5334002,2076,Lochnerstraße
+strassennamen.fid--3213a59_187d53d4470_f70,5334002,2078,Lothringerstraße
+strassennamen.fid--3213a59_187d53d4470_f71,5334002,2080,Ludwigsallee
+strassennamen.fid--3213a59_187d53d4470_f72,5334002,2082,Lütticher Straße
+strassennamen.fid--3213a59_187d53d4470_f73,5334002,2085,Luisenstraße
+strassennamen.fid--3213a59_187d53d4470_f74,5334002,2087,Maria-Theresia-Allee
+strassennamen.fid--3213a59_187d53d4470_f75,5334002,2089,Melatener Straße
+strassennamen.fid--3213a59_187d53d4470_f76,5334002,2091,Monschauer Straße
+strassennamen.fid--3213a59_187d53d4470_f77,5334002,2095,Ottostraße
+strassennamen.fid--3213a59_187d53d4470_f78,5334002,2097,Passstraße
+strassennamen.fid--3213a59_187d53d4470_f79,5334002,2099,Peliserkerstraße
+strassennamen.fid--3213a59_187d53d4470_f7a,5334002,2101,Pontstraße
+strassennamen.fid--3213a59_187d53d4470_f7b,5334002,2105,Reinhardstraße
+strassennamen.fid--3213a59_187d53d4470_f7c,5334002,2107,Reumontstraße
+strassennamen.fid--3213a59_187d53d4470_f7d,5334002,2109,Rochusstraße
+strassennamen.fid--3213a59_187d53d4470_f7e,5334002,2111,Rolandstraße
+strassennamen.fid--3213a59_187d53d4470_f7f,5334002,2115,Rudolfstraße
+strassennamen.fid--3213a59_187d53d4470_f80,5334002,2117,Sedanstraße
+strassennamen.fid--3213a59_187d53d4470_f81,5334002,2119,Stolberger Straße
+strassennamen.fid--3213a59_187d53d4470_f82,5334002,2121,Templergraben
+strassennamen.fid--3213a59_187d53d4470_f83,5334002,2123,Trierer Straße
+strassennamen.fid--3213a59_187d53d4470_f84,5334002,2126,Turmstraße
+strassennamen.fid--3213a59_187d53d4470_f85,5334002,2128,Turpinstraße
+strassennamen.fid--3213a59_187d53d4470_f86,5334002,2130,Vaalser Straße
+strassennamen.fid--3213a59_187d53d4470_f87,5334002,2132,Viktoriastraße
+strassennamen.fid--3213a59_187d53d4470_f88,5334002,2135,Zeppelinstraße
+strassennamen.fid--3213a59_187d53d4470_f89,5334002,2137,Pariser Ring
+strassennamen.fid--3213a59_187d53d4470_f8a,5334002,2141,An der Nikolauskirche
+strassennamen.fid--3213a59_187d53d4470_f8b,5334002,2147,Trautnerstraße
+strassennamen.fid--3213a59_187d53d4470_f8c,5334002,2148,Hoffmannallee
+strassennamen.fid--3213a59_187d53d4470_f8d,5334002,2201,Hexenberg
+strassennamen.fid--3213a59_187d53d4470_f8e,5334002,2202,Maastrichter Straße
+strassennamen.fid--3213a59_187d53d4470_f8f,5334002,2203,Merkesdellweg
+strassennamen.fid--3213a59_187d53d4470_f90,5334002,2204,Stachelkreuzweg
+strassennamen.fid--3213a59_187d53d4470_f91,5334002,2205,Dornbruchweg
+strassennamen.fid--3213a59_187d53d4470_f92,5334002,2206,Brückchenweg
+strassennamen.fid--3213a59_187d53d4470_f93,5334002,2207,Büfferweg
+strassennamen.fid--3213a59_187d53d4470_f94,5334002,2208,Jacques-Königstein-Promenade
+strassennamen.fid--3213a59_187d53d4470_f95,5334002,2209,Segnistraße
+strassennamen.fid--3213a59_187d53d4470_f96,5334002,2210,Rahrfeldweg
+strassennamen.fid--3213a59_187d53d4470_f97,5334002,2211,Siederstraße
+strassennamen.fid--3213a59_187d53d4470_f98,5334002,2212,Wilmersdorfer Straße
+strassennamen.fid--3213a59_187d53d4470_f99,5334002,2213,Lotharstraße
+strassennamen.fid--3213a59_187d53d4470_f9a,5334002,2214,Tempelhofer Straße
+strassennamen.fid--3213a59_187d53d4470_f9b,5334002,2215,Ritterstraße
+strassennamen.fid--3213a59_187d53d4470_f9c,5334002,2216,Herderstraße
+strassennamen.fid--3213a59_187d53d4470_f9d,5334002,2217,Monnetweg
+strassennamen.fid--3213a59_187d53d4470_f9e,5334002,2218,Lukasstraße
+strassennamen.fid--3213a59_187d53d4470_f9f,5334002,2219,Hermann-Heusch-Platz
+strassennamen.fid--3213a59_187d53d4470_fa0,5334002,2220,Emmi-Welter-Straße
+strassennamen.fid--3213a59_187d53d4470_fa1,5334002,2221,Madrider Ring
+strassennamen.fid--3213a59_187d53d4470_fa2,5334002,2222,Goldammerweg
+strassennamen.fid--3213a59_187d53d4470_fa3,5334002,2223,Wolfsschluchtweg
+strassennamen.fid--3213a59_187d53d4470_fa4,5334002,2224,Kuckhoffstraße
+strassennamen.fid--3213a59_187d53d4470_fa5,5334002,2225,Synagogenplatz
+strassennamen.fid--3213a59_187d53d4470_fa6,5334002,2226,Drei-Rosen-Winkel
+strassennamen.fid--3213a59_187d53d4470_fa7,5334002,2227,Brandenburgweg
+strassennamen.fid--3213a59_187d53d4470_fa8,5334002,2228,Philipsstraße
+strassennamen.fid--3213a59_187d53d4470_fa9,5334002,2229,Eckertweg
+strassennamen.fid--3213a59_187d53d4470_faa,5334002,2230,Aachener-und-Münchener-Allee
+strassennamen.fid--3213a59_187d53d4470_fab,5334002,2231,Mattschö-Moll-Weg
+strassennamen.fid--3213a59_187d53d4470_fac,5334002,2232,Anton-Kurze-Allee
+strassennamen.fid--3213a59_187d53d4470_fad,5334002,2233,Goffartstraße
+strassennamen.fid--3213a59_187d53d4470_fae,5334002,2234,Professor-Beltz-Weg
+strassennamen.fid--3213a59_187d53d4470_faf,5334002,2235,Johannes-Ernst-Platz
+strassennamen.fid--3213a59_187d53d4470_fb0,5334002,2236,Rudolf-Schwarz-Weg
+strassennamen.fid--3213a59_187d53d4470_fb1,5334002,2237,Willy-Brandt-Platz
+strassennamen.fid--3213a59_187d53d4470_fb2,5334002,2238,Bischof-Hemmerle-Weg
+strassennamen.fid--3213a59_187d53d4470_fb3,5334002,2239,Anna-Sittarz-Platz
+strassennamen.fid--3213a59_187d53d4470_fb4,5334002,2240,Ungarnplatz
+strassennamen.fid--3213a59_187d53d4470_fb5,5334002,2241,Bastogne City
+strassennamen.fid--3213a59_187d53d4470_fb6,5334002,2242,Elsternweg
+strassennamen.fid--3213a59_187d53d4470_fb7,5334002,2243,Heinrich-Hollands-Straße
+strassennamen.fid--3213a59_187d53d4470_fb8,5334002,2244,Hans-Stercken-Platz
+strassennamen.fid--3213a59_187d53d4470_fb9,5334002,2245,Hans-von-Reutlingen-Gasse
+strassennamen.fid--3213a59_187d53d4470_fba,5334002,2246,Alter Posthof
+strassennamen.fid--3213a59_187d53d4470_fbb,5334002,2247,Johannes-Paul-II.-Straße
+strassennamen.fid--3213a59_187d53d4470_fbc,5334002,2248,An der Glashütte
+strassennamen.fid--3213a59_187d53d4470_fbd,5334002,2501,Arensgasse
+strassennamen.fid--3213a59_187d53d4470_fbe,5334002,2502,Rindsbergweg
+strassennamen.fid--3213a59_187d53d4470_fbf,5334002,2503,Am Forsthaus
+strassennamen.fid--3213a59_187d53d4470_fc0,5334002,2504,Sigsfeldstraße
+strassennamen.fid--3213a59_187d53d4470_fc1,5334002,2505,Am Hoerfeld
+strassennamen.fid--3213a59_187d53d4470_fc2,5334002,2506,Am Pannes
+strassennamen.fid--3213a59_187d53d4470_fc3,5334002,2507,Am Rollefer Berg
+strassennamen.fid--3213a59_187d53d4470_fc4,5334002,2509,Brander Heide
+strassennamen.fid--3213a59_187d53d4470_fc5,5334002,2510,Auf der Ell
+strassennamen.fid--3213a59_187d53d4470_fc6,5334002,2514,Birkenstraße
+strassennamen.fid--3213a59_187d53d4470_fc7,5334002,2515,Buchenheck
+strassennamen.fid--3213a59_187d53d4470_fc8,5334002,2516,Buschstraße
+strassennamen.fid--3213a59_187d53d4470_fc9,5334002,2517,Deltourserb
+strassennamen.fid--3213a59_187d53d4470_fca,5334002,2518,Donatusstraße
+strassennamen.fid--3213a59_187d53d4470_fcb,5334002,2519,Dr.-Josef-Lamby-Straße
+strassennamen.fid--3213a59_187d53d4470_fcc,5334002,2520,Eckenerstraße
+strassennamen.fid--3213a59_187d53d4470_fcd,5334002,2521,Eilendorfer Straße
+strassennamen.fid--3213a59_187d53d4470_fce,5334002,2522,Ellerstraße
+strassennamen.fid--3213a59_187d53d4470_fcf,5334002,2523,Erberichshofstraße
+strassennamen.fid--3213a59_187d53d4470_fd0,5334002,2524,Erftstraße
+strassennamen.fid--3213a59_187d53d4470_fd1,5334002,2525,Freunder Heideweg
+strassennamen.fid--3213a59_187d53d4470_fd2,5334002,2526,Röhrigstraße
+strassennamen.fid--3213a59_187d53d4470_fd3,5334002,2527,Goertzbrunnstraße
+strassennamen.fid--3213a59_187d53d4470_fd4,5334002,2528,Jackstraße
+strassennamen.fid--3213a59_187d53d4470_fd5,5334002,2529,Grachtstraße
+strassennamen.fid--3213a59_187d53d4470_fd6,5334002,2531,Heidestraße
+strassennamen.fid--3213a59_187d53d4470_fd7,5334002,2532,Hermann-Löns-Straße
+strassennamen.fid--3213a59_187d53d4470_fd8,5334002,2533,Hochstraße
+strassennamen.fid--3213a59_187d53d4470_fd9,5334002,2534,Hubertusweg
+strassennamen.fid--3213a59_187d53d4470_fda,5334002,2535,Im Brander Feld
+strassennamen.fid--3213a59_187d53d4470_fdb,5334002,2536,Im Tannengrund
+strassennamen.fid--3213a59_187d53d4470_fdc,5334002,2537,Im Wiesengrund
+strassennamen.fid--3213a59_187d53d4470_fdd,5334002,2538,In den Heimstätten
+strassennamen.fid--3213a59_187d53d4470_fde,5334002,2539,Jägerspfad
+strassennamen.fid--3213a59_187d53d4470_fdf,5334002,2540,Josefsallee
+strassennamen.fid--3213a59_187d53d4470_fe0,5334002,2542,Karl-Kuck-Straße
+strassennamen.fid--3213a59_187d53d4470_fe1,5334002,2543,Katzensteinweg
+strassennamen.fid--3213a59_187d53d4470_fe2,5334002,2544,Kirchheidstraße
+strassennamen.fid--3213a59_187d53d4470_fe3,5334002,2545,Donatusplatz
+strassennamen.fid--3213a59_187d53d4470_fe4,5334002,2546,Kleinbahnstraße
+strassennamen.fid--3213a59_187d53d4470_fe5,5334002,2547,Kolpingstraße
+strassennamen.fid--3213a59_187d53d4470_fe6,5334002,2548,Komericher Weg
+strassennamen.fid--3213a59_187d53d4470_fe7,5334002,2549,Krauthausener Straße
+strassennamen.fid--3213a59_187d53d4470_fe8,5334002,2550,Marktplatz
+strassennamen.fid--3213a59_187d53d4470_fe9,5334002,2551,Marktstraße
+strassennamen.fid--3213a59_187d53d4470_fea,5334002,2553,Niederforstbacher Straße
+strassennamen.fid--3213a59_187d53d4470_feb,5334002,2554,Nordstraße
+strassennamen.fid--3213a59_187d53d4470_fec,5334002,2555,Pützgasse
+strassennamen.fid--3213a59_187d53d4470_fed,5334002,2556,Richard-Wagner-Straße
+strassennamen.fid--3213a59_187d53d4470_fee,5334002,2557,Ringstraße
+strassennamen.fid--3213a59_187d53d4470_fef,5334002,2558,Rollefstraße
+strassennamen.fid--3213a59_187d53d4470_ff0,5334002,2559,Sebastianusweg
+strassennamen.fid--3213a59_187d53d4470_ff1,5334002,2560,Brahmsstraße
+strassennamen.fid--3213a59_187d53d4470_ff2,5334002,2561,Schroufstraße
+strassennamen.fid--3213a59_187d53d4470_ff3,5334002,2562,Rollefbachweg
+strassennamen.fid--3213a59_187d53d4470_ff4,5334002,2563,Freunder Landstraße
+strassennamen.fid--3213a59_187d53d4470_ff5,5334002,2566,Vennblick
+strassennamen.fid--3213a59_187d53d4470_ff6,5334002,2567,Vinzenzstraße
+strassennamen.fid--3213a59_187d53d4470_ff7,5334002,2568,Weiern
+strassennamen.fid--3213a59_187d53d4470_ff8,5334002,2569,Wendelinstraße
+strassennamen.fid--3213a59_187d53d4470_ff9,5334002,2570,Wolferskaul
+strassennamen.fid--3213a59_187d53d4470_ffa,5334002,2571,Zehntstraße
+strassennamen.fid--3213a59_187d53d4470_ffb,5334002,2572,Am Reulert
+strassennamen.fid--3213a59_187d53d4470_ffc,5334002,2573,Georgstraße
+strassennamen.fid--3213a59_187d53d4470_ffd,5334002,2574,Albert-Schweitzer-Straße
+strassennamen.fid--3213a59_187d53d4470_ffe,5334002,2575,Indeweg
+strassennamen.fid--3213a59_187d53d4470_fff,5334002,2576,Am Finkenschlag
+strassennamen.fid--3213a59_187d53d4470_1000,5334002,2577,Amselweg
+strassennamen.fid--3213a59_187d53d4470_1001,5334002,2578,Am Tiergarten
+strassennamen.fid--3213a59_187d53d4470_1002,5334002,2580,Benediktusstraße
+strassennamen.fid--3213a59_187d53d4470_1003,5334002,2581,Drosselpfad
+strassennamen.fid--3213a59_187d53d4470_1004,5334002,2582,Eschenallee
+strassennamen.fid--3213a59_187d53d4470_1005,5334002,2583,Fuchspfad
+strassennamen.fid--3213a59_187d53d4470_1006,5334002,2585,Hamsterweg
+strassennamen.fid--3213a59_187d53d4470_1007,5334002,2587,Wolfsacker
+strassennamen.fid--3213a59_187d53d4470_1008,5334002,2588,Eichelhäherweg
+strassennamen.fid--3213a59_187d53d4470_1009,5334002,2590,Im Kollenbruch
+strassennamen.fid--3213a59_187d53d4470_100a,5334002,2591,Im Krähenfeld
+strassennamen.fid--3213a59_187d53d4470_100b,5334002,2592,Kitzenpfad
+strassennamen.fid--3213a59_187d53d4470_100c,5334002,2594,Wirtzstraße
+strassennamen.fid--3213a59_187d53d4470_100d,5334002,2595,Bonhoefferstraße
+strassennamen.fid--3213a59_187d53d4470_100e,5334002,2596,Zehntweg
+strassennamen.fid--3213a59_187d53d4470_100f,5334002,2597,Walkweg
+strassennamen.fid--3213a59_187d53d4470_1010,5334002,2598,Starenweg
+strassennamen.fid--3213a59_187d53d4470_1011,5334002,2601,Ulmenstraße
+strassennamen.fid--3213a59_187d53d4470_1012,5334002,2602,Am Bach
+strassennamen.fid--3213a59_187d53d4470_1013,5334002,2603,Am Bayerhaus
+strassennamen.fid--3213a59_187d53d4470_1014,5334002,2604,Am Bongard
+strassennamen.fid--3213a59_187d53d4470_1015,5334002,2606,Debyestraße
+strassennamen.fid--3213a59_187d53d4470_1016,5334002,2607,Am Tunnel
+strassennamen.fid--3213a59_187d53d4470_1017,5334002,2608,Urbanstraße
+strassennamen.fid--3213a59_187d53d4470_1018,5334002,2610,Apolloniastraße
+strassennamen.fid--3213a59_187d53d4470_1019,5334002,2612,Auf dem Foerbrich
+strassennamen.fid--3213a59_187d53d4470_101a,5334002,2613,Auf dem Juch
+strassennamen.fid--3213a59_187d53d4470_101b,5334002,2614,Hansmannstraße
+strassennamen.fid--3213a59_187d53d4470_101c,5334002,2615,Birkstraße
+strassennamen.fid--3213a59_187d53d4470_101d,5334002,2616,Brander Straße
+strassennamen.fid--3213a59_187d53d4470_101e,5334002,2618,Brückstraße
+strassennamen.fid--3213a59_187d53d4470_101f,5334002,2620,Bruchstraße
+strassennamen.fid--3213a59_187d53d4470_1020,5334002,2623,Forster Straße
+strassennamen.fid--3213a59_187d53d4470_1021,5334002,2625,Freunder Straße
+strassennamen.fid--3213a59_187d53d4470_1022,5334002,2626,Friedrich-Wilhelm-Straße
+strassennamen.fid--3213a59_187d53d4470_1023,5334002,2627,Galmeistraße
+strassennamen.fid--3213a59_187d53d4470_1024,5334002,2628,Grubenstraße
+strassennamen.fid--3213a59_187d53d4470_1025,5334002,2630,Gut Weide
+strassennamen.fid--3213a59_187d53d4470_1026,5334002,2633,Haarhofstraße
+strassennamen.fid--3213a59_187d53d4470_1027,5334002,2634,Halfendriesch
+strassennamen.fid--3213a59_187d53d4470_1028,5334002,2635,Heckstraße
+strassennamen.fid--3213a59_187d53d4470_1029,5334002,2636,Betzelterstraße
+strassennamen.fid--3213a59_187d53d4470_102a,5334002,2637,Herrenbergstraße
+strassennamen.fid--3213a59_187d53d4470_102b,5334002,2638,Kalkbergstraße
+strassennamen.fid--3213a59_187d53d4470_102c,5334002,2639,Im Ellerbruch
+strassennamen.fid--3213a59_187d53d4470_102d,5334002,2640,Johannesstraße
+strassennamen.fid--3213a59_187d53d4470_102e,5334002,2641,Josefstraße
+strassennamen.fid--3213a59_187d53d4470_102f,5334002,2642,Kaiserstraße
+strassennamen.fid--3213a59_187d53d4470_1030,5334002,2643,Apolloniaweg
+strassennamen.fid--3213a59_187d53d4470_1031,5334002,2644,Karlstraße
+strassennamen.fid--3213a59_187d53d4470_1032,5334002,2646,Kirchplatz
+strassennamen.fid--3213a59_187d53d4470_1033,5334002,2647,Kirchfeldstraße
+strassennamen.fid--3213a59_187d53d4470_1034,5334002,2648,Kehrbrückstraße
+strassennamen.fid--3213a59_187d53d4470_1035,5334002,2649,Krebsstraße
+strassennamen.fid--3213a59_187d53d4470_1036,5334002,2650,Müselterweg
+strassennamen.fid--3213a59_187d53d4470_1037,5334002,2651,Lindenstraße
+strassennamen.fid--3213a59_187d53d4470_1038,5334002,2652,Marienstraße
+strassennamen.fid--3213a59_187d53d4470_1039,5334002,2653,Markusstraße
+strassennamen.fid--3213a59_187d53d4470_103a,5334002,2654,Moritz-Braun-Straße
+strassennamen.fid--3213a59_187d53d4470_103b,5334002,2655,Cäcilienstraße
+strassennamen.fid--3213a59_187d53d4470_103c,5334002,2656,Nirmer Platz
+strassennamen.fid--3213a59_187d53d4470_103d,5334002,2657,Neuenhofstraße
+strassennamen.fid--3213a59_187d53d4470_103e,5334002,2658,Rödgerbachstraße
+strassennamen.fid--3213a59_187d53d4470_103f,5334002,2659,Nirmer Straße
+strassennamen.fid--3213a59_187d53d4470_1040,5334002,2661,Halfenstraße
+strassennamen.fid--3213a59_187d53d4470_1041,5334002,2662,Schlackstraße
+strassennamen.fid--3213a59_187d53d4470_1042,5334002,2663,Breitbendenstraße
+strassennamen.fid--3213a59_187d53d4470_1043,5334002,2664,Rödgener Straße
+strassennamen.fid--3213a59_187d53d4470_1044,5334002,2666,Schilderstraße
+strassennamen.fid--3213a59_187d53d4470_1045,5334002,2667,Kleebachstraße
+strassennamen.fid--3213a59_187d53d4470_1046,5334002,2668,Schulstraße
+strassennamen.fid--3213a59_187d53d4470_1047,5334002,2669,Severinstraße
+strassennamen.fid--3213a59_187d53d4470_1048,5334002,2670,Stapperstraße
+strassennamen.fid--3213a59_187d53d4470_1049,5334002,2671,Steinstraße
+strassennamen.fid--3213a59_187d53d4470_104a,5334002,2672,Kirchweidweg
+strassennamen.fid--3213a59_187d53d4470_104b,5334002,2673,Stollenweg
+strassennamen.fid--3213a59_187d53d4470_104c,5334002,2674,Von-Coels-Straße
+strassennamen.fid--3213a59_187d53d4470_104d,5334002,2675,Von-Stauffenberg-Straße
+strassennamen.fid--3213a59_187d53d4470_104e,5334002,2676,Wamichstraße
+strassennamen.fid--3213a59_187d53d4470_104f,5334002,2678,Suttnerstraße
+strassennamen.fid--3213a59_187d53d4470_1050,5334002,2680,Brühlstraße
+strassennamen.fid--3213a59_187d53d4470_1051,5334002,2685,Prunkweg
+strassennamen.fid--3213a59_187d53d4470_1052,5334002,2690,Auf Trimpersfeld
+strassennamen.fid--3213a59_187d53d4470_1053,5334002,2691,Kirchgässchen
+strassennamen.fid--3213a59_187d53d4470_1054,5334002,2692,Scheidmühlenweg
+strassennamen.fid--3213a59_187d53d4470_1055,5334002,2694,Johanneswinkel
+strassennamen.fid--3213a59_187d53d4470_1056,5334002,2695,Schubertstraße
+strassennamen.fid--3213a59_187d53d4470_1057,5334002,2696,Hahnweg
+strassennamen.fid--3213a59_187d53d4470_1058,5334002,2697,Zieglerstraße
+strassennamen.fid--3213a59_187d53d4470_1059,5334002,2702,Am Brombeerhang
+strassennamen.fid--3213a59_187d53d4470_105a,5334002,2703,Am Kreuz
+strassennamen.fid--3213a59_187d53d4470_105b,5334002,2704,Am Schlossteich
+strassennamen.fid--3213a59_187d53d4470_105c,5334002,2705,Am Schönauer Acker
+strassennamen.fid--3213a59_187d53d4470_105d,5334002,2706,Schönauer Bach
+strassennamen.fid--3213a59_187d53d4470_105e,5334002,2707,Am Schönauer Hang
+strassennamen.fid--3213a59_187d53d4470_105f,5334002,2708,Am Sonnenlehen
+strassennamen.fid--3213a59_187d53d4470_1060,5334002,2709,An der Vorburg
+strassennamen.fid--3213a59_187d53d4470_1061,5334002,2710,Auf der Schönauer Höhe
+strassennamen.fid--3213a59_187d53d4470_1062,5334002,2711,Amstelbachstraße
+strassennamen.fid--3213a59_187d53d4470_1063,5334002,2712,Banker-Feld-Straße
+strassennamen.fid--3213a59_187d53d4470_1064,5334002,2713,Berensberger Straße
+strassennamen.fid--3213a59_187d53d4470_1065,5334002,2714,Berensberger Winkel
+strassennamen.fid--3213a59_187d53d4470_1066,5334002,2715,Butzweide
+strassennamen.fid--3213a59_187d53d4470_1067,5334002,2716,Fassinstraße
+strassennamen.fid--3213a59_187d53d4470_1068,5334002,2717,Freiherrenstraße
+strassennamen.fid--3213a59_187d53d4470_1069,5334002,2718,Schreberstraße
+strassennamen.fid--3213a59_187d53d4470_106a,5334002,2719,Gierstraße
+strassennamen.fid--3213a59_187d53d4470_106b,5334002,2720,Pützdriesch
+strassennamen.fid--3213a59_187d53d4470_106c,5334002,2721,Grünenthal
+strassennamen.fid--3213a59_187d53d4470_106d,5334002,2722,Grünenthaler Straße
+strassennamen.fid--3213a59_187d53d4470_106e,5334002,2723,Dellstraße
+strassennamen.fid--3213a59_187d53d4470_106f,5334002,2724,Richtericher Straße
+strassennamen.fid--3213a59_187d53d4470_1070,5334002,2725,Hander Weg
+strassennamen.fid--3213a59_187d53d4470_1071,5334002,2726,Hasenwaldstraße
+strassennamen.fid--3213a59_187d53d4470_1072,5334002,2727,Siebweg
+strassennamen.fid--3213a59_187d53d4470_1073,5334002,2729,Elsenborn
+strassennamen.fid--3213a59_187d53d4470_1074,5334002,2730,Horbacher Straße
+strassennamen.fid--3213a59_187d53d4470_1075,5334002,2732,Im Erkfeld
+strassennamen.fid--3213a59_187d53d4470_1076,5334002,2733,In der Heide
+strassennamen.fid--3213a59_187d53d4470_1077,5334002,2734,In der Schönauer Aue
+strassennamen.fid--3213a59_187d53d4470_1078,5334002,2735,Josef-Ponten-Straße
+strassennamen.fid--3213a59_187d53d4470_1079,5334002,2738,Küppershofweg
+strassennamen.fid--3213a59_187d53d4470_107a,5334002,2739,Tittardsfeld
+strassennamen.fid--3213a59_187d53d4470_107b,5334002,2740,Martinusstraße
+strassennamen.fid--3213a59_187d53d4470_107c,5334002,2741,Parkstraße
+strassennamen.fid--3213a59_187d53d4470_107d,5334002,2742,Rathausplatz
+strassennamen.fid--3213a59_187d53d4470_107e,5334002,2746,Schloss-Schönau-Straße
+strassennamen.fid--3213a59_187d53d4470_107f,5334002,2747,Schönauer Allee
+strassennamen.fid--3213a59_187d53d4470_1080,5334002,2748,Schönauer Pfad
+strassennamen.fid--3213a59_187d53d4470_1081,5334002,2749,Uersfeld
+strassennamen.fid--3213a59_187d53d4470_1082,5334002,2750,Vetschauer Weg
+strassennamen.fid--3213a59_187d53d4470_1083,5334002,2751,Von-Broich-Straße
+strassennamen.fid--3213a59_187d53d4470_1084,5334002,2752,Weinhauser Weid
+strassennamen.fid--3213a59_187d53d4470_1085,5334002,2753,Weinweg
+strassennamen.fid--3213a59_187d53d4470_1086,5334002,2754,Lehnsherrenstraße
+strassennamen.fid--3213a59_187d53d4470_1087,5334002,2755,Bremenberg
+strassennamen.fid--3213a59_187d53d4470_1088,5334002,2756,Forsterheider Straße
+strassennamen.fid--3213a59_187d53d4470_1089,5334002,2757,Haus-Heyden-Straße
+strassennamen.fid--3213a59_187d53d4470_108a,5334002,2760,Oberdorfstraße
+strassennamen.fid--3213a59_187d53d4470_108b,5334002,2761,Rosenstraße
+strassennamen.fid--3213a59_187d53d4470_108c,5334002,2762,Scherbstraße
+strassennamen.fid--3213a59_187d53d4470_108d,5334002,2763,Katschenbruchstraße
+strassennamen.fid--3213a59_187d53d4470_108e,5334002,2764,Wiesenweg
+strassennamen.fid--3213a59_187d53d4470_108f,5334002,2765,Bückerhofer Weg
+strassennamen.fid--3213a59_187d53d4470_1090,5334002,2766,Geuchter Weg
+strassennamen.fid--3213a59_187d53d4470_1091,5334002,2773,Fischweiher
+strassennamen.fid--3213a59_187d53d4470_1092,5334002,2774,Kohlweg
+strassennamen.fid--3213a59_187d53d4470_1093,5334002,2775,Alter Heerler Weg
+strassennamen.fid--3213a59_187d53d4470_1094,5334002,2776,Bocholtzer Weg
+strassennamen.fid--3213a59_187d53d4470_1095,5334002,2777,Dicker-Busch-Weg
+strassennamen.fid--3213a59_187d53d4470_1096,5334002,2778,Franzosenweg
+strassennamen.fid--3213a59_187d53d4470_1097,5334002,2779,Frohnrather Feldweg
+strassennamen.fid--3213a59_187d53d4470_1098,5334002,2780,Frohnrather Weg
+strassennamen.fid--3213a59_187d53d4470_1099,5334002,2781,Geuchter Feldweg
+strassennamen.fid--3213a59_187d53d4470_109a,5334002,2784,Heyder Feldweg
+strassennamen.fid--3213a59_187d53d4470_109b,5334002,2785,Katzenpolsweg
+strassennamen.fid--3213a59_187d53d4470_109c,5334002,2788,Pütz-Eich-Weg
+strassennamen.fid--3213a59_187d53d4470_109d,5334002,2789,Schelmshager Weg
+strassennamen.fid--3213a59_187d53d4470_109e,5334002,2790,Soreter Weg
+strassennamen.fid--3213a59_187d53d4470_109f,5334002,2791,Steinkauler Weg
+strassennamen.fid--3213a59_187d53d4470_10a0,5334002,2792,Tute Patt
+strassennamen.fid--3213a59_187d53d4470_10a1,5334002,2793,Uersfelder Fußpfad
+strassennamen.fid--3213a59_187d53d4470_10a2,5334002,2795,Mühlenfeldweg
+strassennamen.fid--3213a59_187d53d4470_10a3,5334002,2797,Erkwiesenstraße
+strassennamen.fid--3213a59_187d53d4470_10a4,5334002,2801,Ahornweg
+strassennamen.fid--3213a59_187d53d4470_10a5,5334002,2802,Am Burgberg
+strassennamen.fid--3213a59_187d53d4470_10a6,5334002,2803,Am Haarberg
+strassennamen.fid--3213a59_187d53d4470_10a7,5334002,2804,Am Kaninsberg
+strassennamen.fid--3213a59_187d53d4470_10a8,5334002,2805,Am Mühlenteich
+strassennamen.fid--3213a59_187d53d4470_10a9,5334002,2806,Am Ravelsberg
+strassennamen.fid--3213a59_187d53d4470_10aa,5334002,2807,Am Rosengarten
+strassennamen.fid--3213a59_187d53d4470_10ab,5334002,2808,Auf Überhaaren
+strassennamen.fid--3213a59_187d53d4470_10ac,5334002,2809,Haarener Gracht
+strassennamen.fid--3213a59_187d53d4470_10ad,5334002,2810,Birkenweg
+strassennamen.fid--3213a59_187d53d4470_10ae,5334002,2811,Buschfeldweg
+strassennamen.fid--3213a59_187d53d4470_10af,5334002,2812,Würselener Straße
+strassennamen.fid--3213a59_187d53d4470_10b0,5334002,2813,Eichenstraße
+strassennamen.fid--3213a59_187d53d4470_10b1,5334002,2814,Haarbachtalstraße
+strassennamen.fid--3213a59_187d53d4470_10b2,5334002,2815,Eibenweg
+strassennamen.fid--3213a59_187d53d4470_10b3,5334002,2816,Friedenstraße
+strassennamen.fid--3213a59_187d53d4470_10b4,5334002,2817,Hainbuchenweg
+strassennamen.fid--3213a59_187d53d4470_10b5,5334002,2818,Broichweidener Weg
+strassennamen.fid--3213a59_187d53d4470_10b6,5334002,2819,Alt-Haarener Straße
+strassennamen.fid--3213a59_187d53d4470_10b7,5334002,2820,Heidchenweg
+strassennamen.fid--3213a59_187d53d4470_10b8,5334002,2821,Heimstraße
+strassennamen.fid--3213a59_187d53d4470_10b9,5334002,2822,Hergelsmühlenweg
+strassennamen.fid--3213a59_187d53d4470_10ba,5334002,2823,Burghöhenweg
+strassennamen.fid--3213a59_187d53d4470_10bb,5334002,2824,Hofenburger Straße
+strassennamen.fid--3213a59_187d53d4470_10bc,5334002,2825,In den Atzenbenden
+strassennamen.fid--3213a59_187d53d4470_10bd,5334002,2826,Hofenbornstraße
+strassennamen.fid--3213a59_187d53d4470_10be,5334002,2827,Germanusstraße
+strassennamen.fid--3213a59_187d53d4470_10bf,5334002,2828,Kirchweg
+strassennamen.fid--3213a59_187d53d4470_10c0,5334002,2829,Kochstraße
+strassennamen.fid--3213a59_187d53d4470_10c1,5334002,2830,Gärtnerstraße
+strassennamen.fid--3213a59_187d53d4470_10c2,5334002,2831,Kreuzstraße
+strassennamen.fid--3213a59_187d53d4470_10c3,5334002,2832,Laachgasse
+strassennamen.fid--3213a59_187d53d4470_10c4,5334002,2833,Lindenweg
+strassennamen.fid--3213a59_187d53d4470_10c5,5334002,2834,Bogenstraße
+strassennamen.fid--3213a59_187d53d4470_10c6,5334002,2835,Mühlenstraße
+strassennamen.fid--3213a59_187d53d4470_10c7,5334002,2836,Hergelsbendenstraße
+strassennamen.fid--3213a59_187d53d4470_10c8,5334002,2837,Pappelweg
+strassennamen.fid--3213a59_187d53d4470_10c9,5334002,2838,Reuterweg
+strassennamen.fid--3213a59_187d53d4470_10ca,5334002,2839,Hochwaldweg
+strassennamen.fid--3213a59_187d53d4470_10cb,5334002,2840,Sackgasse
+strassennamen.fid--3213a59_187d53d4470_10cc,5334002,2842,Tonbrennerstraße
+strassennamen.fid--3213a59_187d53d4470_10cd,5334002,2843,Akazienstraße
+strassennamen.fid--3213a59_187d53d4470_10ce,5334002,2844,Alte Würselener Straße
+strassennamen.fid--3213a59_187d53d4470_10cf,5334002,2845,Am Berghang
+strassennamen.fid--3213a59_187d53d4470_10d0,5334002,2846,Am Keilbusch
+strassennamen.fid--3213a59_187d53d4470_10d1,5334002,2847,Gut-Knapp-Straße
+strassennamen.fid--3213a59_187d53d4470_10d2,5334002,2848,An der Weide
+strassennamen.fid--3213a59_187d53d4470_10d3,5334002,2849,Endstraße
+strassennamen.fid--3213a59_187d53d4470_10d4,5334002,2850,Blumenstraße
+strassennamen.fid--3213a59_187d53d4470_10d5,5334002,2851,Kahlgrachtstraße
+strassennamen.fid--3213a59_187d53d4470_10d6,5334002,2852,Verlautenheidener Straße
+strassennamen.fid--3213a59_187d53d4470_10d7,5334002,2853,Wambacher Straße
+strassennamen.fid--3213a59_187d53d4470_10d8,5334002,2854,Heckenweg
+strassennamen.fid--3213a59_187d53d4470_10d9,5334002,2855,Im Hesselter
+strassennamen.fid--3213a59_187d53d4470_10da,5334002,2856,Im Reichswald
+strassennamen.fid--3213a59_187d53d4470_10db,5334002,2858,Pastoratsweg
+strassennamen.fid--3213a59_187d53d4470_10dc,5334002,2859,Kleinheidstraße
+strassennamen.fid--3213a59_187d53d4470_10dd,5334002,2860,Quinxer Straße
+strassennamen.fid--3213a59_187d53d4470_10de,5334002,2861,Heider-Hof-Weg
+strassennamen.fid--3213a59_187d53d4470_10df,5334002,2864,Kleinheider Weg
+strassennamen.fid--3213a59_187d53d4470_10e0,5334002,2865,Türmchenweg
+strassennamen.fid--3213a59_187d53d4470_10e1,5334002,2866,Verbindungsstraße
+strassennamen.fid--3213a59_187d53d4470_10e2,5334002,2867,Waldstraße
+strassennamen.fid--3213a59_187d53d4470_10e3,5334002,2868,Weidener Viehweg
+strassennamen.fid--3213a59_187d53d4470_10e4,5334002,2876,Strangenhäuschen
+strassennamen.fid--3213a59_187d53d4470_10e5,5334002,2900,Ackerstraße
+strassennamen.fid--3213a59_187d53d4470_10e6,5334002,2901,Adele-Weidtman-Straße
+strassennamen.fid--3213a59_187d53d4470_10e7,5334002,2902,Alte Vaalser Straße
+strassennamen.fid--3213a59_187d53d4470_10e8,5334002,2904,Am Büschchen
+strassennamen.fid--3213a59_187d53d4470_10e9,5334002,2905,Tittardshang
+strassennamen.fid--3213a59_187d53d4470_10ea,5334002,2906,Hofweg
+strassennamen.fid--3213a59_187d53d4470_10eb,5334002,2907,Am Pannhaus
+strassennamen.fid--3213a59_187d53d4470_10ec,5334002,2908,Am Rosenhügel
+strassennamen.fid--3213a59_187d53d4470_10ed,5334002,2909,Am Weyenberg
+strassennamen.fid--3213a59_187d53d4470_10ee,5334002,2910,Am Beulardstein
+strassennamen.fid--3213a59_187d53d4470_10ef,5334002,2911,Schlossweiherstraße
+strassennamen.fid--3213a59_187d53d4470_10f0,5334002,2912,An der Rahemühle
+strassennamen.fid--3213a59_187d53d4470_10f1,5334002,2913,An der Rast
+strassennamen.fid--3213a59_187d53d4470_10f2,5334002,2914,An der Schurzelter Brücke
+strassennamen.fid--3213a59_187d53d4470_10f3,5334002,2915,Am Treut
+strassennamen.fid--3213a59_187d53d4470_10f4,5334002,2916,Auf der Maar
+strassennamen.fid--3213a59_187d53d4470_10f5,5334002,2917,Walkmühlenstraße
+strassennamen.fid--3213a59_187d53d4470_10f6,5334002,2918,Dreiländerweg
+strassennamen.fid--3213a59_187d53d4470_10f7,5334002,2919,Orthstraße
+strassennamen.fid--3213a59_187d53d4470_10f8,5334002,2920,Albert-Servais-Allee
+strassennamen.fid--3213a59_187d53d4470_10f9,5334002,2921,Bocholtzer Straße
+strassennamen.fid--3213a59_187d53d4470_10fa,5334002,2922,Brunnenstraße
+strassennamen.fid--3213a59_187d53d4470_10fb,5334002,2923,Buchenweg
+strassennamen.fid--3213a59_187d53d4470_10fc,5334002,2924,Buchweg
+strassennamen.fid--3213a59_187d53d4470_10fd,5334002,2925,Bungartsweg
+strassennamen.fid--3213a59_187d53d4470_10fe,5334002,2926,Burgstraße
+strassennamen.fid--3213a59_187d53d4470_10ff,5334002,2927,Burgwinkel
+strassennamen.fid--3213a59_187d53d4470_1100,5334002,2928,Beulardsteiner Feld
+strassennamen.fid--3213a59_187d53d4470_1101,5334002,2929,Diepekuhl
+strassennamen.fid--3213a59_187d53d4470_1102,5334002,2930,Düserhofstraße
+strassennamen.fid--3213a59_187d53d4470_1103,5334002,2931,Eburonenstraße
+strassennamen.fid--3213a59_187d53d4470_1104,5334002,2932,Eulersweg
+strassennamen.fid--3213a59_187d53d4470_1105,5334002,2933,Ferberberg
+strassennamen.fid--3213a59_187d53d4470_1106,5334002,2934,Finkenhag
+strassennamen.fid--3213a59_187d53d4470_1107,5334002,2935,Hans-Böckler-Allee
+strassennamen.fid--3213a59_187d53d4470_1108,5334002,2936,Nonnenhofstraße
+strassennamen.fid--3213a59_187d53d4470_1109,5334002,2939,Hangweg
+strassennamen.fid--3213a59_187d53d4470_110a,5334002,2940,Laurensberger Straße
+strassennamen.fid--3213a59_187d53d4470_110b,5334002,2941,Hochbrück
+strassennamen.fid--3213a59_187d53d4470_110c,5334002,2942,Hubert-Wienen-Straße
+strassennamen.fid--3213a59_187d53d4470_110d,5334002,2943,Hohlweg
+strassennamen.fid--3213a59_187d53d4470_110e,5334002,2944,Im Mittelfeld
+strassennamen.fid--3213a59_187d53d4470_110f,5334002,2945,Schurzelter Mühle
+strassennamen.fid--3213a59_187d53d4470_1110,5334002,2946,Im Purweider Feld
+strassennamen.fid--3213a59_187d53d4470_1111,5334002,2947,Im Ring
+strassennamen.fid--3213a59_187d53d4470_1112,5334002,2948,Im Weingarten
+strassennamen.fid--3213a59_187d53d4470_1113,5334002,2949,Teichstraße
+strassennamen.fid--3213a59_187d53d4470_1114,5334002,2950,Karl-Friedrich-Straße
+strassennamen.fid--3213a59_187d53d4470_1115,5334002,2953,Konradstraße
+strassennamen.fid--3213a59_187d53d4470_1116,5334002,2955,Kuhlweg
+strassennamen.fid--3213a59_187d53d4470_1117,5334002,2956,Landgraben
+strassennamen.fid--3213a59_187d53d4470_1118,5334002,2957,Laurentiusstraße
+strassennamen.fid--3213a59_187d53d4470_1119,5334002,2959,Lemierser Berg
+strassennamen.fid--3213a59_187d53d4470_111a,5334002,2963,Mittelstraße
+strassennamen.fid--3213a59_187d53d4470_111b,5334002,2964,Forellenweg
+strassennamen.fid--3213a59_187d53d4470_111c,5334002,2965,Neuenhofer Weg
+strassennamen.fid--3213a59_187d53d4470_111d,5334002,2966,Orsbacher Straße
+strassennamen.fid--3213a59_187d53d4470_111e,5334002,2967,Pannhauser Straße
+strassennamen.fid--3213a59_187d53d4470_111f,5334002,2968,Teichwinkel
+strassennamen.fid--3213a59_187d53d4470_1120,5334002,2969,Püngelerstraße
+strassennamen.fid--3213a59_187d53d4470_1121,5334002,2970,Purweider Weg
+strassennamen.fid--3213a59_187d53d4470_1122,5334002,2971,Quellenweg
+strassennamen.fid--3213a59_187d53d4470_1123,5334002,2972,Rastfeldchen
+strassennamen.fid--3213a59_187d53d4470_1124,5334002,2973,Rathausstraße
+strassennamen.fid--3213a59_187d53d4470_1125,5334002,2974,Reutershagweg
+strassennamen.fid--3213a59_187d53d4470_1126,5334002,2975,Wildbachstraße
+strassennamen.fid--3213a59_187d53d4470_1127,5334002,2977,Rotbusch
+strassennamen.fid--3213a59_187d53d4470_1128,5334002,2979,Schlossparkstraße
+strassennamen.fid--3213a59_187d53d4470_1129,5334002,2980,Schloss-Rahe-Straße
+strassennamen.fid--3213a59_187d53d4470_112a,5334002,2981,Schlottfelder Straße
+strassennamen.fid--3213a59_187d53d4470_112b,5334002,2982,Schmiedgasse
+strassennamen.fid--3213a59_187d53d4470_112c,5334002,2984,Keltenstraße
+strassennamen.fid--3213a59_187d53d4470_112d,5334002,2985,Schurzelter Straße
+strassennamen.fid--3213a59_187d53d4470_112e,5334002,2986,Seffenter Berg
+strassennamen.fid--3213a59_187d53d4470_112f,5334002,2990,Sonnenweg
+strassennamen.fid--3213a59_187d53d4470_1130,5334002,2991,Strüverweg
+strassennamen.fid--3213a59_187d53d4470_1131,5334002,2992,Süsterau
+strassennamen.fid--3213a59_187d53d4470_1132,5334002,2993,Talbothof
+strassennamen.fid--3213a59_187d53d4470_1133,5334002,2997,Vetschauer Berg
+strassennamen.fid--3213a59_187d53d4470_1134,5334002,2998,Vetschauer Straße
+strassennamen.fid--3213a59_187d53d4470_1135,5334002,3001,Brunnenweg
+strassennamen.fid--3213a59_187d53d4470_1136,5334002,3003,Zum Blauen Stein
+strassennamen.fid--3213a59_187d53d4470_1137,5334002,3010,Sandweg
+strassennamen.fid--3213a59_187d53d4470_1138,5334002,3012,Fitzeberg
+strassennamen.fid--3213a59_187d53d4470_1139,5334002,3013,Geusenweg
+strassennamen.fid--3213a59_187d53d4470_113a,5334002,3014,Grensstraat
+strassennamen.fid--3213a59_187d53d4470_113b,5334002,3015,Senserbachweg
+strassennamen.fid--3213a59_187d53d4470_113c,5334002,3016,Steppenbergweg
+strassennamen.fid--3213a59_187d53d4470_113d,5334002,3017,Hausener Gasse
+strassennamen.fid--3213a59_187d53d4470_113e,5334002,3018,Herzogsweg
+strassennamen.fid--3213a59_187d53d4470_113f,5334002,3019,Ochsenstock
+strassennamen.fid--3213a59_187d53d4470_1140,5334002,3021,Rohrbergweg
+strassennamen.fid--3213a59_187d53d4470_1141,5334002,3023,Schiefdell
+strassennamen.fid--3213a59_187d53d4470_1142,5334002,3024,Schlangenweg
+strassennamen.fid--3213a59_187d53d4470_1143,5334002,3025,Silberpatweg
+strassennamen.fid--3213a59_187d53d4470_1144,5334002,3028,Halifaxstraße
+strassennamen.fid--3213a59_187d53d4470_1145,5334002,3029,Kohlscheider Straße
+strassennamen.fid--3213a59_187d53d4470_1146,5334002,3101,Napoleonsberg
+strassennamen.fid--3213a59_187d53d4470_1147,5334002,3102,Abteigarten
+strassennamen.fid--3213a59_187d53d4470_1148,5334002,3103,Alfons-Gerson-Straße
+strassennamen.fid--3213a59_187d53d4470_1149,5334002,3104,Am Berg
+strassennamen.fid--3213a59_187d53d4470_114a,5334002,3105,Antoniusberg
+strassennamen.fid--3213a59_187d53d4470_114b,5334002,3106,Auf dem Anger
+strassennamen.fid--3213a59_187d53d4470_114c,5334002,3107,Auf der Gallich
+strassennamen.fid--3213a59_187d53d4470_114d,5334002,3108,Benediktinerweg
+strassennamen.fid--3213a59_187d53d4470_114e,5334002,3109,Benediktusplatz
+strassennamen.fid--3213a59_187d53d4470_114f,5334002,3110,Bilstermühler Straße
+strassennamen.fid--3213a59_187d53d4470_1150,5334002,3111,Braunebusch
+strassennamen.fid--3213a59_187d53d4470_1151,5334002,3112,Breiniger Straße
+strassennamen.fid--3213a59_187d53d4470_1152,5334002,3113,Korneliusstraße
+strassennamen.fid--3213a59_187d53d4470_1153,5334002,3114,Cyprianusweg
+strassennamen.fid--3213a59_187d53d4470_1154,5334002,3115,Dorffer Straße
+strassennamen.fid--3213a59_187d53d4470_1155,5334002,3116,Eurensteg
+strassennamen.fid--3213a59_187d53d4470_1156,5334002,3118,Frankensteg
+strassennamen.fid--3213a59_187d53d4470_1157,5334002,3119,Fronhofer Weg
+strassennamen.fid--3213a59_187d53d4470_1158,5334002,3120,Schildchenweg
+strassennamen.fid--3213a59_187d53d4470_1159,5334002,3121,Iternberg
+strassennamen.fid--3213a59_187d53d4470_115a,5334002,3122,Gangolfsweg
+strassennamen.fid--3213a59_187d53d4470_115b,5334002,3123,In der Lohn
+strassennamen.fid--3213a59_187d53d4470_115c,5334002,3124,Kapellenberg
+strassennamen.fid--3213a59_187d53d4470_115d,5334002,3127,Klauser Straße
+strassennamen.fid--3213a59_187d53d4470_115e,5334002,3128,Lufter Weg
+strassennamen.fid--3213a59_187d53d4470_115f,5334002,3129,Lufter Weid
+strassennamen.fid--3213a59_187d53d4470_1160,5334002,3130,Korneliusmarkt
+strassennamen.fid--3213a59_187d53d4470_1161,5334002,3131,Meischenfeld
+strassennamen.fid--3213a59_187d53d4470_1162,5334002,3132,Mühlenweg
+strassennamen.fid--3213a59_187d53d4470_1163,5334002,3133,Münsterstraße
+strassennamen.fid--3213a59_187d53d4470_1164,5334002,3135,Oberforstbacher Straße
+strassennamen.fid--3213a59_187d53d4470_1165,5334002,3136,Promenade
+strassennamen.fid--3213a59_187d53d4470_1166,5334002,3138,Schleckheimer Straße
+strassennamen.fid--3213a59_187d53d4470_1167,5334002,3139,Schnepfenberg
+strassennamen.fid--3213a59_187d53d4470_1168,5334002,3140,Schraungracht
+strassennamen.fid--3213a59_187d53d4470_1169,5334002,3141,Schulberg
+strassennamen.fid--3213a59_187d53d4470_116a,5334002,3142,Steinkaulplatz
+strassennamen.fid--3213a59_187d53d4470_116b,5334002,3143,Steinkaulweid
+strassennamen.fid--3213a59_187d53d4470_116c,5334002,3145,St. Gangolfsberg
+strassennamen.fid--3213a59_187d53d4470_116d,5334002,3147,Unter den Weiden
+strassennamen.fid--3213a59_187d53d4470_116e,5334002,3148,Venwegener Straße
+strassennamen.fid--3213a59_187d53d4470_116f,5334002,3149,Am Bahnhof
+strassennamen.fid--3213a59_187d53d4470_1170,5334002,3200,Aachener Straße
+strassennamen.fid--3213a59_187d53d4470_1171,5334002,3204,Am Schaafweg
+strassennamen.fid--3213a59_187d53d4470_1172,5334002,3205,Am Wackerpütz
+strassennamen.fid--3213a59_187d53d4470_1173,5334002,3206,An der Höhe
+strassennamen.fid--3213a59_187d53d4470_1174,5334002,3207,Vogelstangenweg
+strassennamen.fid--3213a59_187d53d4470_1175,5334002,3208,Am Fassenhof
+strassennamen.fid--3213a59_187d53d4470_1176,5334002,3209,Pingsheimstraße
+strassennamen.fid--3213a59_187d53d4470_1177,5334002,3211,Florastraße
+strassennamen.fid--3213a59_187d53d4470_1178,5334002,3212,Auf der Heide
+strassennamen.fid--3213a59_187d53d4470_1179,5334002,3213,Auf der Kier
+strassennamen.fid--3213a59_187d53d4470_117a,5334002,3214,Senkestraße
+strassennamen.fid--3213a59_187d53d4470_117b,5334002,3215,Bahnesweg
+strassennamen.fid--3213a59_187d53d4470_117c,5334002,3216,Vennbahnstraße
+strassennamen.fid--3213a59_187d53d4470_117d,5334002,3217,Kiefernweg
+strassennamen.fid--3213a59_187d53d4470_117e,5334002,3218,Bechheim
+strassennamen.fid--3213a59_187d53d4470_117f,5334002,3219,Bergfeld
+strassennamen.fid--3213a59_187d53d4470_1180,5334002,3220,Bierstrauch
+strassennamen.fid--3213a59_187d53d4470_1181,5334002,3223,Albert-Einstein-Straße
+strassennamen.fid--3213a59_187d53d4470_1182,5334002,3225,Friesenrather Weg
+strassennamen.fid--3213a59_187d53d4470_1183,5334002,3226,Dorfstraße
+strassennamen.fid--3213a59_187d53d4470_1184,5334002,3227,Ardennenstraße
+strassennamen.fid--3213a59_187d53d4470_1185,5334002,3232,Nütheimer Straße
+strassennamen.fid--3213a59_187d53d4470_1186,5334002,3234,Eichenheck
+strassennamen.fid--3213a59_187d53d4470_1187,5334002,3235,Eisenhütte
+strassennamen.fid--3213a59_187d53d4470_1188,5334002,3236,Falkenberg
+strassennamen.fid--3213a59_187d53d4470_1189,5334002,3238,Frennetstraße
+strassennamen.fid--3213a59_187d53d4470_118a,5334002,3239,Gracht
+strassennamen.fid--3213a59_187d53d4470_118b,5334002,3240,Grünstraße
+strassennamen.fid--3213a59_187d53d4470_118c,5334002,3241,Hahner Straße
+strassennamen.fid--3213a59_187d53d4470_118d,5334002,3242,Hasbach
+strassennamen.fid--3213a59_187d53d4470_118e,5334002,3243,Heidchen
+strassennamen.fid--3213a59_187d53d4470_118f,5334002,3244,Heidchenberg
+strassennamen.fid--3213a59_187d53d4470_1190,5334002,3245,Wacholderweg
+strassennamen.fid--3213a59_187d53d4470_1191,5334002,3246,Iltisweg
+strassennamen.fid--3213a59_187d53d4470_1192,5334002,3247,Hundertsweg
+strassennamen.fid--3213a59_187d53d4470_1193,5334002,3248,Im Fuchsbau
+strassennamen.fid--3213a59_187d53d4470_1194,5334002,3249,Im Pützbend
+strassennamen.fid--3213a59_187d53d4470_1195,5334002,3250,Im Steinfeld
+strassennamen.fid--3213a59_187d53d4470_1196,5334002,3251,Im Winkel
+strassennamen.fid--3213a59_187d53d4470_1197,5334002,3252,In den Hehnen
+strassennamen.fid--3213a59_187d53d4470_1198,5334002,3253,Hunsrückweg
+strassennamen.fid--3213a59_187d53d4470_1199,5334002,3254,Vogesenstraße
+strassennamen.fid--3213a59_187d53d4470_119a,5334002,3256,Kirchberg
+strassennamen.fid--3213a59_187d53d4470_119b,5334002,3260,Knipp
+strassennamen.fid--3213a59_187d53d4470_119c,5334002,3261,Königsmühlenweg
+strassennamen.fid--3213a59_187d53d4470_119d,5334002,3262,Biberweg
+strassennamen.fid--3213a59_187d53d4470_119e,5334002,3263,Kroitzheider Weg
+strassennamen.fid--3213a59_187d53d4470_119f,5334002,3264,Maarweg
+strassennamen.fid--3213a59_187d53d4470_11a0,5334002,3265,Marderweg
+strassennamen.fid--3213a59_187d53d4470_11a1,5334002,3266,Werkstraße
+strassennamen.fid--3213a59_187d53d4470_11a2,5334002,3270,Mühle
+strassennamen.fid--3213a59_187d53d4470_11a3,5334002,3271,Himmelsleiter
+strassennamen.fid--3213a59_187d53d4470_11a4,5334002,3273,Nerscheider Weg
+strassennamen.fid--3213a59_187d53d4470_11a5,5334002,3275,Nievelshecker Straße
+strassennamen.fid--3213a59_187d53d4470_11a6,5334002,3276,Pannekogweg
+strassennamen.fid--3213a59_187d53d4470_11a7,5334002,3277,Pastor-Franzen-Straße
+strassennamen.fid--3213a59_187d53d4470_11a8,5334002,3278,Pontsheide
+strassennamen.fid--3213a59_187d53d4470_11a9,5334002,3280,Josef-Büchel-Straße
+strassennamen.fid--3213a59_187d53d4470_11aa,5334002,3282,Hochhausring
+strassennamen.fid--3213a59_187d53d4470_11ab,5334002,3283,Ritscheider Weg
+strassennamen.fid--3213a59_187d53d4470_11ac,5334002,3284,Schwinningstraße
+strassennamen.fid--3213a59_187d53d4470_11ad,5334002,3285,Rotterdell
+strassennamen.fid--3213a59_187d53d4470_11ae,5334002,3286,Schieferstraße
+strassennamen.fid--3213a59_187d53d4470_11af,5334002,3287,Schmithofer Straße
+strassennamen.fid--3213a59_187d53d4470_11b0,5334002,3288,Binsenweg
+strassennamen.fid--3213a59_187d53d4470_11b1,5334002,3289,Speerwinkel
+strassennamen.fid--3213a59_187d53d4470_11b2,5334002,3290,Föhrenweg
+strassennamen.fid--3213a59_187d53d4470_11b3,5334002,3291,Wermutsbrunnstraße
+strassennamen.fid--3213a59_187d53d4470_11b4,5334002,3292,Tannenallee
+strassennamen.fid--3213a59_187d53d4470_11b5,5334002,3293,Schleidener Straße
+strassennamen.fid--3213a59_187d53d4470_11b6,5334002,3296,Zedernweg
+strassennamen.fid--3213a59_187d53d4470_11b7,5334002,3297,Sinziger Weg
+strassennamen.fid--3213a59_187d53d4470_11b8,5334002,3298,Kitzenhausweg
+strassennamen.fid--3213a59_187d53d4470_11b9,5334002,3301,Buchenstraße
+strassennamen.fid--3213a59_187d53d4470_11ba,5334002,3303,Prämienstraße
+strassennamen.fid--3213a59_187d53d4470_11bb,5334002,3304,Sperberweg
+strassennamen.fid--3213a59_187d53d4470_11bc,5334002,3305,Hohlgradweg
+strassennamen.fid--3213a59_187d53d4470_11bd,5334002,3309,Montebourgstraße
+strassennamen.fid--3213a59_187d53d4470_11be,5334002,3312,Zeisigweg
+strassennamen.fid--3213a59_187d53d4470_11bf,5334002,3313,Pirolweg
+strassennamen.fid--3213a59_187d53d4470_11c0,5334002,3314,Hundskaulweg
+strassennamen.fid--3213a59_187d53d4470_11c1,5334002,3315,Walheimer Straße
+strassennamen.fid--3213a59_187d53d4470_11c2,5334002,3317,Grüne Eiche
+strassennamen.fid--3213a59_187d53d4470_11c3,5334002,3318,Kesselstraße
+strassennamen.fid--3213a59_187d53d4470_11c4,5334002,3319,Kinkebahn
+strassennamen.fid--3213a59_187d53d4470_11c5,5334002,3321,Raafstraße
+strassennamen.fid--3213a59_187d53d4470_11c6,5334002,3322,Raerener Straße
+strassennamen.fid--3213a59_187d53d4470_11c7,5334002,3323,Scheidstraße
+strassennamen.fid--3213a59_187d53d4470_11c8,5334002,3324,Baumgartsweg
+strassennamen.fid--3213a59_187d53d4470_11c9,5334002,3325,Eisenhüttenweg
+strassennamen.fid--3213a59_187d53d4470_11ca,5334002,3327,Grenzweg
+strassennamen.fid--3213a59_187d53d4470_11cb,5334002,3328,Im Langfeld
+strassennamen.fid--3213a59_187d53d4470_11cc,5334002,3329,Magelspfad
+strassennamen.fid--3213a59_187d53d4470_11cd,5334002,3330,Marientalweg
+strassennamen.fid--3213a59_187d53d4470_11ce,5334002,3332,Pfeiferweg
+strassennamen.fid--3213a59_187d53d4470_11cf,5334002,3335,Schmithofer Weg
+strassennamen.fid--3213a59_187d53d4470_11d0,5334002,3336,Siefer Weg
+strassennamen.fid--3213a59_187d53d4470_11d1,5334002,3337,Triftweg
+strassennamen.fid--3213a59_187d53d4470_11d2,5334002,3338,Wilbankstraße
+strassennamen.fid--3213a59_187d53d4470_11d3,5334002,3401,Kastanienweg
+strassennamen.fid--3213a59_187d53d4470_11d4,5334002,3402,Granitweg
+strassennamen.fid--3213a59_187d53d4470_11d5,5334002,3403,Gringelstraße
+strassennamen.fid--3213a59_187d53d4470_11d6,5334002,3404,Kitzeterweg
+strassennamen.fid--3213a59_187d53d4470_11d7,5334002,3405,Kullenhofstraße
+strassennamen.fid--3213a59_187d53d4470_11d8,5334002,3406,Steinbergweg
+strassennamen.fid--3213a59_187d53d4470_11d9,5334002,3407,Beckerstraße
+strassennamen.fid--3213a59_187d53d4470_11da,5334002,3408,Charlottenburger Allee
+strassennamen.fid--3213a59_187d53d4470_11db,5334002,3409,Neuköllner Straße
+strassennamen.fid--3213a59_187d53d4470_11dc,5334002,3410,Steinmühlenweg
+strassennamen.fid--3213a59_187d53d4470_11dd,5334002,3411,Messweg
+strassennamen.fid--3213a59_187d53d4470_11de,5334002,3412,Worringerweg
+strassennamen.fid--3213a59_187d53d4470_11df,5334002,3413,Sommerfeldstraße
+strassennamen.fid--3213a59_187d53d4470_11e0,5334002,3414,Wendlingweg
+strassennamen.fid--3213a59_187d53d4470_11e1,5334002,3415,Helmertweg
+strassennamen.fid--3213a59_187d53d4470_11e2,5334002,3417,Otto-Blumenthal-Straße
+strassennamen.fid--3213a59_187d53d4470_11e3,5334002,3418,Mathieustraße
+strassennamen.fid--3213a59_187d53d4470_11e4,5334002,3419,Steinbachstraße
+strassennamen.fid--3213a59_187d53d4470_11e5,5334002,3420,Rabentalweg
+strassennamen.fid--3213a59_187d53d4470_11e6,5334002,3421,Willkommsweg
+strassennamen.fid--3213a59_187d53d4470_11e7,5334002,3422,Kelmesbergweg
+strassennamen.fid--3213a59_187d53d4470_11e8,5334002,3423,Eicher Weg
+strassennamen.fid--3213a59_187d53d4470_11e9,5334002,3424,Heussstraße
+strassennamen.fid--3213a59_187d53d4470_11ea,5334002,3425,Forckenbeckstraße
+strassennamen.fid--3213a59_187d53d4470_11eb,5334002,3426,Septfontainesweg
+strassennamen.fid--3213a59_187d53d4470_11ec,5334002,3427,Schneebergweg
+strassennamen.fid--3213a59_187d53d4470_11ed,5334002,3428,Kirchrather Straße
+strassennamen.fid--3213a59_187d53d4470_11ee,5334002,3429,Langenbruchweg
+strassennamen.fid--3213a59_187d53d4470_11ef,5334002,3430,Am Alten Bahndamm
+strassennamen.fid--3213a59_187d53d4470_11f0,5334002,3431,Kleiberweg
+strassennamen.fid--3213a59_187d53d4470_11f1,5334002,3432,Dinkermichsweg
+strassennamen.fid--3213a59_187d53d4470_11f2,5334002,3433,Kackertstraße
+strassennamen.fid--3213a59_187d53d4470_11f3,5334002,3434,Rombachstraße
+strassennamen.fid--3213a59_187d53d4470_11f4,5334002,3435,Schagenstraße
+strassennamen.fid--3213a59_187d53d4470_11f5,5334002,3436,Wilhelm-Ziemons-Straße
+strassennamen.fid--3213a59_187d53d4470_11f6,5334002,3437,Lonweg
+strassennamen.fid--3213a59_187d53d4470_11f7,5334002,3438,Am Kleebach
+strassennamen.fid--3213a59_187d53d4470_11f8,5334002,3439,Eburonenwinkel
+strassennamen.fid--3213a59_187d53d4470_11f9,5334002,3441,Dirgeltweg
+strassennamen.fid--3213a59_187d53d4470_11fa,5334002,3443,Saurensgasse
+strassennamen.fid--3213a59_187d53d4470_11fb,5334002,3444,Hufer Fußpfad
+strassennamen.fid--3213a59_187d53d4470_11fc,5334002,3445,Kierstraß
+strassennamen.fid--3213a59_187d53d4470_11fd,5334002,3446,Mameliser Mühlenweg
+strassennamen.fid--3213a59_187d53d4470_11fe,5334002,3447,Auenrathweg
+strassennamen.fid--3213a59_187d53d4470_11ff,5334002,3448,Dauffenbachstraße
+strassennamen.fid--3213a59_187d53d4470_1200,5334002,3449,Ellerhofweg
+strassennamen.fid--3213a59_187d53d4470_1201,5334002,3450,Galaterstraße
+strassennamen.fid--3213a59_187d53d4470_1202,5334002,3451,Gallierstraße
+strassennamen.fid--3213a59_187d53d4470_1203,5334002,3452,Helvetierstraße
+strassennamen.fid--3213a59_187d53d4470_1204,5334002,3453,Hötenigweg
+strassennamen.fid--3213a59_187d53d4470_1205,5334002,3454,Kandelfeldstraße
+strassennamen.fid--3213a59_187d53d4470_1206,5334002,3455,Morinerweg
+strassennamen.fid--3213a59_187d53d4470_1207,5334002,3456,Nervierstraße
+strassennamen.fid--3213a59_187d53d4470_1208,5334002,3457,Roder Weg
+strassennamen.fid--3213a59_187d53d4470_1209,5334002,3458,Steppenbergallee
+strassennamen.fid--3213a59_187d53d4470_120a,5334002,3459,Tauriskerweg
+strassennamen.fid--3213a59_187d53d4470_120b,5334002,3460,Trevererstraße
+strassennamen.fid--3213a59_187d53d4470_120c,5334002,3461,Veneterstraße
+strassennamen.fid--3213a59_187d53d4470_120d,5334002,3462,Wegscheider Pfad
+strassennamen.fid--3213a59_187d53d4470_120e,5334002,3463,Wierigspfad
+strassennamen.fid--3213a59_187d53d4470_120f,5334002,3464,Wierigsweg
+strassennamen.fid--3213a59_187d53d4470_1210,5334002,3465,Schiltsgasse
+strassennamen.fid--3213a59_187d53d4470_1211,5334002,3466,Am Bilderstock
+strassennamen.fid--3213a59_187d53d4470_1212,5334002,3467,Am Bollet
+strassennamen.fid--3213a59_187d53d4470_1213,5334002,3469,Astenetweg
+strassennamen.fid--3213a59_187d53d4470_1214,5334002,3470,Bobenden
+strassennamen.fid--3213a59_187d53d4470_1215,5334002,3471,Dr.-Bernhard-Klein-Straße
+strassennamen.fid--3213a59_187d53d4470_1216,5334002,3472,Franz-Wallraff-Straße
+strassennamen.fid--3213a59_187d53d4470_1217,5334002,3473,Großheidstraße
+strassennamen.fid--3213a59_187d53d4470_1218,5334002,3474,Im Ginster
+strassennamen.fid--3213a59_187d53d4470_1219,5334002,3475,Liefenweg
+strassennamen.fid--3213a59_187d53d4470_121a,5334002,3476,Membachweg
+strassennamen.fid--3213a59_187d53d4470_121b,5334002,3477,Wildbacher Mühle
+strassennamen.fid--3213a59_187d53d4470_121c,5334002,3480,An der Weingass
+strassennamen.fid--3213a59_187d53d4470_121d,5334002,3481,In Grafen Weid
+strassennamen.fid--3213a59_187d53d4470_121e,5334002,3482,Melanieweg
+strassennamen.fid--3213a59_187d53d4470_121f,5334002,3483,Pfalzgrafenstraße
+strassennamen.fid--3213a59_187d53d4470_1220,5334002,3484,Fingerhutsmühlenweg
+strassennamen.fid--3213a59_187d53d4470_1221,5334002,3485,Kuckelkornweg
+strassennamen.fid--3213a59_187d53d4470_1222,5334002,3486,Mühlenweidweg
+strassennamen.fid--3213a59_187d53d4470_1223,5334002,3487,Schuttenhofweg
+strassennamen.fid--3213a59_187d53d4470_1224,5334002,3488,Wolfsbendenstraße
+strassennamen.fid--3213a59_187d53d4470_1225,5334002,3489,Kaubendenstraße
+strassennamen.fid--3213a59_187d53d4470_1226,5334002,3490,Kellershaustraße
+strassennamen.fid--3213a59_187d53d4470_1227,5334002,3491,Lontzenweg
+strassennamen.fid--3213a59_187d53d4470_1228,5334002,3492,Pauwelsstraße
+strassennamen.fid--3213a59_187d53d4470_1229,5334002,3493,Am Gut Bau
+strassennamen.fid--3213a59_187d53d4470_122a,5334002,3494,Am Lütterbüschgen
+strassennamen.fid--3213a59_187d53d4470_122b,5334002,3495,Im Erb
+strassennamen.fid--3213a59_187d53d4470_122c,5334002,3496,Krauthausener Heide
+strassennamen.fid--3213a59_187d53d4470_122d,5334002,3497,Kullenhofwinkel
+strassennamen.fid--3213a59_187d53d4470_122e,5334002,3498,Paul-Gerhardt-Straße
+strassennamen.fid--3213a59_187d53d4470_122f,5334002,3499,Purweider Winkel
+strassennamen.fid--3213a59_187d53d4470_1230,5334002,3500,Schönauer Friede
+strassennamen.fid--3213a59_187d53d4470_1231,5334002,3501,Soerser Winkel
+strassennamen.fid--3213a59_187d53d4470_1232,5334002,3502,Buschweg
+strassennamen.fid--3213a59_187d53d4470_1233,5334002,3503,Girlachsgraben
+strassennamen.fid--3213a59_187d53d4470_1234,5334002,3504,Bayersbusch
+strassennamen.fid--3213a59_187d53d4470_1235,5334002,3505,Buschbenden
+strassennamen.fid--3213a59_187d53d4470_1236,5334002,3506,Gringelsbach
+strassennamen.fid--3213a59_187d53d4470_1237,5334002,3507,Hirzenrott
+strassennamen.fid--3213a59_187d53d4470_1238,5334002,3508,Pascalstraße
+strassennamen.fid--3213a59_187d53d4470_1239,5334002,3509,Romerich
+strassennamen.fid--3213a59_187d53d4470_123a,5334002,3510,Toledoring
+strassennamen.fid--3213a59_187d53d4470_123b,5334002,3511,Rote Gasse
+strassennamen.fid--3213a59_187d53d4470_123c,5334002,3512,Vennbahnweg
+strassennamen.fid--3213a59_187d53d4470_123d,5334002,3513,Tuchmacherweg
+strassennamen.fid--3213a59_187d53d4470_123e,5334002,3514,Corrgasse
+strassennamen.fid--3213a59_187d53d4470_123f,5334002,3515,Severinusplatz
+strassennamen.fid--3213a59_187d53d4470_1240,5334002,3517,Neukellerweg
+strassennamen.fid--3213a59_187d53d4470_1241,5334002,3518,Zieglersteg
+strassennamen.fid--3213a59_187d53d4470_1242,5334002,3519,Wilburgpfad
+strassennamen.fid--3213a59_187d53d4470_1243,5334002,3520,Philipp-Neri-Weg
+strassennamen.fid--3213a59_187d53d4470_1244,5334002,3521,Schwester-Sibylla-Weg
+strassennamen.fid--3213a59_187d53d4470_1245,5334002,3522,Franz-Pauly-Straße
+strassennamen.fid--3213a59_187d53d4470_1246,5334002,3523,Schönebergstraße
+strassennamen.fid--3213a59_187d53d4470_1247,5334002,3524,Am Schiefen Eck
+strassennamen.fid--3213a59_187d53d4470_1248,5334002,3525,Schlottfelder Winkel
+strassennamen.fid--3213a59_187d53d4470_1249,5334002,3526,Auf dem Knopp
+strassennamen.fid--3213a59_187d53d4470_124a,5334002,3527,Paul-Küpper-Platz
+strassennamen.fid--3213a59_187d53d4470_124b,5334002,3528,Reutershagwinkel
+strassennamen.fid--3213a59_187d53d4470_124c,5334002,3529,Wolferskaulwinkel
+strassennamen.fid--3213a59_187d53d4470_124d,5334002,3530,Heinrich-Thomas-Platz
+strassennamen.fid--3213a59_187d53d4470_124e,5334002,3531,Am Venskyhäuschen
+strassennamen.fid--3213a59_187d53d4470_124f,5334002,3532,Weißdornweg
+strassennamen.fid--3213a59_187d53d4470_1250,5334002,3533,Heinrich-Lehmann-Platz
+strassennamen.fid--3213a59_187d53d4470_1251,5334002,3534,Müselterwinkel
+strassennamen.fid--3213a59_187d53d4470_1252,5334002,3535,Heinrich-Heuser-Weg
+strassennamen.fid--3213a59_187d53d4470_1253,5334002,3536,Im Süsterfeld
+strassennamen.fid--3213a59_187d53d4470_1254,5334002,3537,Jean-Bremen-Straße
+strassennamen.fid--3213a59_187d53d4470_1255,5334002,3538,Lichtenbuscher Weg
+strassennamen.fid--3213a59_187d53d4470_1256,5334002,3539,Wilhelm-Grasmehr-Straße
+strassennamen.fid--3213a59_187d53d4470_1257,5334002,3540,Am Alten Wasserwerk
+strassennamen.fid--3213a59_187d53d4470_1258,5334002,3541,Schurzelter Winkel
+strassennamen.fid--3213a59_187d53d4470_1259,5334002,3542,Laurentiushang
+strassennamen.fid--3213a59_187d53d4470_125a,5334002,3543,Schwester-Zita-Weg
+strassennamen.fid--3213a59_187d53d4470_125b,5334002,3544,Hans-Haase-Weg
+strassennamen.fid--3213a59_187d53d4470_125c,5334002,3545,An der Ölmühle
+strassennamen.fid--3213a59_187d53d4470_125d,5334002,3546,Avantisallee
+strassennamen.fid--3213a59_187d53d4470_125e,5334002,3547,Forum
+strassennamen.fid--3213a59_187d53d4470_125f,5334002,3550,Bohr
+strassennamen.fid--3213a59_187d53d4470_1260,5334002,3551,Cavendish
+strassennamen.fid--3213a59_187d53d4470_1261,5334002,3552,Diesel
+strassennamen.fid--3213a59_187d53d4470_1262,5334002,3554,Fourier
+strassennamen.fid--3213a59_187d53d4470_1263,5334002,3557,Galvani
+strassennamen.fid--3213a59_187d53d4470_1264,5334002,3559,Huygens
+strassennamen.fid--3213a59_187d53d4470_1265,5334002,3576,Rutherford
+strassennamen.fid--3213a59_187d53d4470_1266,5334002,3577,Ramsay
+strassennamen.fid--3213a59_187d53d4470_1267,5334002,3578,Snellius
+strassennamen.fid--3213a59_187d53d4470_1268,5334002,3583,Auf der Wildnis
+strassennamen.fid--3213a59_187d53d4470_1269,5334002,3584,Sandkull
+strassennamen.fid--3213a59_187d53d4470_126a,5334002,3585,Ulmenallee
+strassennamen.fid--3213a59_187d53d4470_126b,5334002,3586,Benno-Levy-Weg
+strassennamen.fid--3213a59_187d53d4470_126c,5334002,3587,Im Husebruch
+strassennamen.fid--3213a59_187d53d4470_126d,5334002,3588,Cockerillpark
+strassennamen.fid--3213a59_187d53d4470_126e,5334002,3589,An der Wurm
+strassennamen.fid--3213a59_187d53d4470_126f,5334002,3590,Am Gastes
+strassennamen.fid--3213a59_187d53d4470_1270,5334002,3591,Nirmer Weg
+strassennamen.fid--3213a59_187d53d4470_1271,5334002,3592,Pannhauser Winkel
+strassennamen.fid--3213a59_187d53d4470_1272,5334002,3593,Camp Pirotte
+strassennamen.fid--3213a59_187d53d4470_1273,5334002,3594,Im Erdbeerfeld
+strassennamen.fid--3213a59_187d53d4470_1274,5334002,3595,Marita-Loersch-Weg
+strassennamen.fid--3213a59_187d53d4470_1275,5334002,3596,Henger Herrjotts Fott
+strassennamen.fid--3213a59_187d53d4470_1276,5334002,3597,Am Alten Kloster
+strassennamen.fid--3213a59_187d53d4470_1277,5334002,3598,Rollefhof
+strassennamen.fid--3213a59_187d53d4470_1278,5334002,3599,An der Unterbahn
+strassennamen.fid--3213a59_187d53d4470_1279,5334002,3600,Gut Lehmkülchen
+strassennamen.fid--3213a59_187d53d4470_127a,5334002,3601,Auguste-von-Sartorius-Weg
+strassennamen.fid--3213a59_187d53d4470_127b,5334002,3602,In Jenem End
+strassennamen.fid--3213a59_187d53d4470_127c,5334002,3603,Landoltweg
+strassennamen.fid--3213a59_187d53d4470_127d,5334002,3604,An der Kirschkaul
+strassennamen.fid--3213a59_187d53d4470_127e,5334002,3605,Franz-Delheid-Straße
+strassennamen.fid--3213a59_187d53d4470_127f,5334002,3606,Hubert-Spickernagel-Straße
+strassennamen.fid--3213a59_187d53d4470_1280,5334002,3607,Leinergasse
+strassennamen.fid--3213a59_187d53d4470_1281,5334002,3608,Maargasse
+strassennamen.fid--3213a59_187d53d4470_1282,5334002,3609,Maarwinkel
+strassennamen.fid--3213a59_187d53d4470_1283,5334002,3610,Reutersgasse
+strassennamen.fid--3213a59_187d53d4470_1284,5334002,3611,Steinrötsch
+strassennamen.fid--3213a59_187d53d4470_1285,5334002,3612,Im Gödersfeld
+strassennamen.fid--3213a59_187d53d4470_1286,5334002,3613,Pfarrer-Henn-Weg
+strassennamen.fid--3213a59_187d53d4470_1287,5334002,3614,Brander-Feld-Weg
+strassennamen.fid--3213a59_187d53d4470_1288,5334002,3615,Mathias-Wilms-Platz
+strassennamen.fid--3213a59_187d53d4470_1289,5334002,3616,Im Klostergarten
+strassennamen.fid--3213a59_187d53d4470_128a,5334002,3617,Arlingtonstraße
+strassennamen.fid--3213a59_187d53d4470_128b,5334002,3618,Kostromastraße
+strassennamen.fid--3213a59_187d53d4470_128c,5334002,3619,Ningbostraße
+strassennamen.fid--3213a59_187d53d4470_128d,5334002,3620,Naumburger Straße
+strassennamen.fid--3213a59_187d53d4470_128e,5334002,3621,Niersteiner Weg
+strassennamen.fid--3213a59_187d53d4470_128f,5334002,3622,Strüverwinkel
+strassennamen.fid--3213a59_187d53d4470_1290,5334002,3623,Professor-Wieler-Straße
+strassennamen.fid--3213a59_187d53d4470_1291,5334002,3624,Friedensweg
+strassennamen.fid--3213a59_187d53d4470_1292,5334002,3626,August-Macke-Straße
+strassennamen.fid--3213a59_187d53d4470_1293,5334002,3627,Paul-Klee-Straße
+strassennamen.fid--3213a59_187d53d4470_1294,5334002,3628,Max-Pechstein-Straße
+strassennamen.fid--3213a59_187d53d4470_1295,5334002,3629,Franz-Marc-Straße
+strassennamen.fid--3213a59_187d53d4470_1296,5334002,3630,Christian-Quix-Straße
+strassennamen.fid--3213a59_187d53d4470_1297,5334002,3631,Wingertsberggasse
+strassennamen.fid--3213a59_187d53d4470_1298,5334002,3632,AachenMünchener-Platz
+strassennamen.fid--3213a59_187d53d4470_1299,5334002,3633,Am Alten Kalkwerk
+strassennamen.fid--3213a59_187d53d4470_129a,5334002,3634,Alter Schlachthof
+strassennamen.fid--3213a59_187d53d4470_129b,5334002,3635,Dohlenweg
+strassennamen.fid--3213a59_187d53d4470_129c,5334002,3636,Heidbendenstraße
+strassennamen.fid--3213a59_187d53d4470_129d,5334002,3637,An den Rollefwiesen
+strassennamen.fid--3213a59_187d53d4470_129e,5334002,3638,Anne-Frank-Straße
+strassennamen.fid--3213a59_187d53d4470_129f,5334002,3639,Am Gutshof
+strassennamen.fid--3213a59_187d53d4470_12a0,5334002,3640,Raphaelshöfe
+strassennamen.fid--3213a59_187d53d4470_12a1,5334002,3641,Im Vennbahnbogen
+strassennamen.fid--3213a59_187d53d4470_12a2,5334002,3642,Am Sportpark Soers
+strassennamen.fid--3213a59_187d53d4470_12a3,5334002,3643,Sutroweg
+strassennamen.fid--3213a59_187d53d4470_12a4,5334002,3644,Papiermühlenweg
+strassennamen.fid--3213a59_187d53d4470_12a5,5334002,3645,Gewerbepark Brand
+strassennamen.fid--3213a59_187d53d4470_12a6,5334002,3646,August-Körver-Weg
+strassennamen.fid--3213a59_187d53d4470_12a7,5334002,3647,Schroufer Damm
+strassennamen.fid--3213a59_187d53d4470_12a8,5334002,3648,Campus-Boulevard
+strassennamen.fid--3213a59_187d53d4470_12a9,5334002,3649,Wilfried-König-Straße
+strassennamen.fid--3213a59_187d53d4470_12aa,5334002,3650,Doris-Schachner-Straße
+strassennamen.fid--3213a59_187d53d4470_12ab,5334002,3651,Alois-Riedler-Straße
+strassennamen.fid--3213a59_187d53d4470_12ac,5334002,3652,Maria-Lipp-Straße
+strassennamen.fid--3213a59_187d53d4470_12ad,5334002,3653,Am Kraftversorgungsturm
+strassennamen.fid--3213a59_187d53d4470_12ae,5334002,3654,Schloss-Rahe-Winkel
+strassennamen.fid--3213a59_187d53d4470_12af,5334002,3655,Alter Tivoli
+strassennamen.fid--3213a59_187d53d4470_12b0,5334002,3656,An der Haupttribüne
+strassennamen.fid--3213a59_187d53d4470_12b1,5334002,3657,Würselener Wall
+strassennamen.fid--3213a59_187d53d4470_12b2,5334002,3658,Stadionweg
+strassennamen.fid--3213a59_187d53d4470_12b3,5334002,3659,Alemannenstraße
+strassennamen.fid--3213a59_187d53d4470_12b4,5334002,3660,In den Kronprinzengärten
+strassennamen.fid--3213a59_187d53d4470_12b5,5334002,3661,Hugo-Baurmann-Weg
+strassennamen.fid--3213a59_187d53d4470_12b6,5334002,3662,Gut Grenzhof
+strassennamen.fid--3213a59_187d53d4470_12b7,5334002,3663,Abteiblick
+strassennamen.fid--3213a59_187d53d4470_12b8,5334002,3664,An der alten Waggonfabrik
+strassennamen.fid--3213a59_187d53d4470_12b9,5334002,3665,An der alten Ziegelei
+strassennamen.fid--3213a59_187d53d4470_12ba,5334002,3666,Holunderweg
+strassennamen.fid--3213a59_187d53d4470_12bb,5334002,3667,Sanddornweg
+strassennamen.fid--3213a59_187d53d4470_12bc,5334002,3668,Schlehenweg
+strassennamen.fid--3213a59_187d53d4470_12bd,5334002,3669,Prinzenhof
+strassennamen.fid--3213a59_187d53d4470_12be,5334002,3670,Wildenhofweg
+strassennamen.fid--3213a59_187d53d4470_12bf,5334002,3671,An der Schmit
+strassennamen.fid--3213a59_187d53d4470_12c0,5334002,3672,Am Sandhäuschen
+strassennamen.fid--3213a59_187d53d4470_12c1,5334002,3673,An der Birk
+strassennamen.fid--3213a59_187d53d4470_12c2,5334002,3674,Im Roth
+strassennamen.fid--3213a59_187d53d4470_12c3,5334002,3675,Moscheeplatz
+strassennamen.fid--3213a59_187d53d4470_12c4,5334002,3676,Am Guten Hirten
+strassennamen.fid--3213a59_187d53d4470_12c5,5334002,3677,Süsterfeldwinkel
+strassennamen.fid--3213a59_187d53d4470_12c6,5334002,3678,Gabriele-Münter-Straße
+strassennamen.fid--3213a59_187d53d4470_12c7,5334002,3679,Hanns-Bolz-Straße
+strassennamen.fid--3213a59_187d53d4470_12c8,5334002,3680,Wassily-Kandinsky-Straße
+strassennamen.fid--3213a59_187d53d4470_12c9,5334002,3681,Max-Ernst-Straße
+strassennamen.fid--3213a59_187d53d4470_12ca,5334002,3682,An der alten Tuchfabrik
+strassennamen.fid--3213a59_187d53d4470_12cb,5334002,3683,Webergasse
+strassennamen.fid--3213a59_187d53d4470_12cc,5334002,3684,Gravensteinerstraße
+strassennamen.fid--3213a59_187d53d4470_12cd,5334002,3685,Mirabellenweg
+strassennamen.fid--3213a59_187d53d4470_12ce,5334002,3686,Münsterbirnenweg
+strassennamen.fid--3213a59_187d53d4470_12cf,5334002,3687,Quittenweg
+strassennamen.fid--3213a59_187d53d4470_12d0,5334002,3688,Renettenweg
+strassennamen.fid--3213a59_187d53d4470_12d1,5334002,3689,Winkelgasse
+strassennamen.fid--3213a59_187d53d4470_12d2,5334002,3690,Gert-Engels-Platz
+strassennamen.fid--3213a59_187d53d4470_12d3,5334002,3691,Platz der Kinderrechte
+strassennamen.fid--3213a59_187d53d4470_12d4,5334002,3692,Klenkeshof

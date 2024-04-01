@@ -27,13 +27,45 @@ public class UserController {
   @Autowired
   ImageRepository imageRepository;
 
+  @PostMapping("/like/{likedThreadId}")
+  public void likedThreadId(@PathVariable Long likedThreadId, @RequestBody Long userId){
+    Optional<User> Optuser = userRepository.findById(userId);
+    User user = Optuser.get();
+    user.addLikedThread(likedThreadId);
+    userRepository.save(user);
+  }
+
+  @PutMapping("/dislike/{likedThreadId}")
+  public void deleteLikedThreadId(@PathVariable Long likedThreadId, @RequestBody Long userId){
+    Optional<User> OptUser = userRepository.findById(userId);
+    User user = OptUser.get();
+    user.deleteLikedThreads(likedThreadId);
+    userRepository.save(user);
+  }
+
+  @PostMapping("/save/{FavThreadId}")
+  public void saveFavThreadId(@PathVariable Long FavThreadId, @RequestBody Long userId){
+    Optional<User> Optuser = userRepository.findById(userId);
+    User user = Optuser.get();
+    user.addFavThreadId(FavThreadId);
+    userRepository.save(user);
+  }
+
+  @PutMapping("/delete/{favThreadId}")
+  public void deleteFavThreadId(@PathVariable Long favThreadId, @RequestBody Long userId){
+    Optional<User> OptUser = userRepository.findById(userId);
+    User user = OptUser.get();
+    user.deleteFavThreadId(favThreadId);
+    userRepository.save(user);
+  }
+
   @DeleteMapping("/delete/image/{userId}")
   public void deletePrfPic(@PathVariable Long userId) {
     Optional<Image> image = imageRepository.findByName(userId);
     if (image.isPresent()) {
       imageRepository.deleteById(image.get().getId());
     } else {
-      throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry not found with this ID");
+      throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Kein Eintrag mit dieser ID gefunden.");
     }
   }
 
@@ -91,7 +123,12 @@ public class UserController {
       user.getFavData(),
       user.getFriends(),
       user.getFriendrequests(),
-      user.isFriendsPrivate()
+      user.isFriendsPrivate(),
+      user.getFavThreadIds(),
+      user.getLikedThreads(),
+      user.getBirthDate(),
+      user.getSelectedCharts(),
+      user.isProfileViewPrivate()
     );
   }
 
@@ -124,7 +161,7 @@ public class UserController {
     if (user.isPresent()) {
       return user.get();
     }
-    throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry not found with this ID");
+    throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Kein Eintrag mit dieser ID gefunden.");
 
   }
 
@@ -133,7 +170,7 @@ public class UserController {
   public void updateEntry(@PathVariable Long entryId, @RequestBody User userUpdate) {
     Optional<User> user = userRepository.findById(entryId);
     if (!user.isPresent()) {
-      throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry not found with this ID");
+      throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Kein Eintrag mit dieser ID gefunden.");
     }
     User userInstance = user.get();
     userInstance.setFirstName(userUpdate.getFirstName());
@@ -143,8 +180,11 @@ public class UserController {
     userInstance.setUserName(userUpdate.getUserName());
     userInstance.setPassword(userUpdate.getPassword());
     userInstance.setRole(userUpdate.getRole());
+    System.out.println("Geburtsdatum: "+ userUpdate.getBirthDate());
     userInstance.setBirthDate(userUpdate.getBirthDate());
     userInstance.setFriendsPrivate(userUpdate.isFriendsPrivate());
+    userInstance.setSelectedCharts(userUpdate.getSelectedCharts());
+    userInstance.setProfileViewPrivate(userUpdate.isProfileViewPrivate());
     userRepository.save(userInstance);
   }
 
@@ -155,7 +195,7 @@ public class UserController {
       userRepository.deleteById(entryId);
       return;
     }
-    throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry not found with this ID"); // ! auf diese Message wird getestet
+    throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Kein Eintrag mit dieser ID gefunden."); // ! auf diese Message wird getestet
   }
 
   @GetMapping("")
@@ -235,10 +275,10 @@ public class UserController {
       User user = optionalUser.get();
       User freund = optionalFriend.get();
       if (user.getFriends().contains(freund)) {
-        return ResponseEntity.ok("Der User ist bereits in deiner Freundschaftsliste");
+        return ResponseEntity.ok("Der Nutzer ist bereits in deiner Freundschaftsliste.");
       } else {
         if (user.getFriendrequests().contains(freund)) {
-          return ResponseEntity.ok("Du hast diesem User bereits eine Freundschaftsanfrage gesendet");
+          return ResponseEntity.ok("Sie haben diesem Nutzer bereits eine Freundschaftsanfrage gesendet.");
         } else {
           user.getFriendrequests().add(freund);
           userRepository.save(user);

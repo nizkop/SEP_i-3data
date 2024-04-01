@@ -1,0 +1,53 @@
+<div class="main-container" >
+  <mat-card class="tablecontainer">
+    <div class="Lieblingsdatentabelle">
+      <table mat-table [dataSource]="dataFavs">
+        <ng-container matColumnDef="data">
+          <th mat-header-cell *matHeaderCellDef>Lieblingsdatensätze von {{profileuser.userName}}</th>
+          <td mat-cell *matCellDef="let data" (click)="onRowClick(data)">{{data}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="['data']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['data'];"></tr>
+      </table>
+    </div>
+  </mat-card>
+
+  <mat-card class="profilecontainer">
+    <img *ngIf="prfPic" [src]="prfPic" class="resized-image">
+    <img *ngIf="!prfPic" src="../../../assets/prfPictures/defaultpfp.jpg" class="resized-image">
+    <div class="profileheader">
+      <div>Profil von {{profileuser.userName}}</div>
+    </div>
+
+    <div class="profiledatacontainer">
+      <mat-list>
+        <mat-list-item>Vorname: {{profileuser.firstName}}</mat-list-item>
+        <mat-list-item>Nachname: {{profileuser.lastName}}</mat-list-item>
+        <mat-list-item>Geburtsdatum: {{profileuser.birthDate}}</mat-list-item>
+        <mat-list-item>E-Mail: {{profileuser.email}}</mat-list-item>
+      </mat-list>
+    </div>
+    <button mat-raised-button *ngIf="profileuser.profileViewPrivate" color="primary" (click)="openProfileView()" [disabled]="!loggedInEqualsUser()">Profilansicht zeigen</button>
+    <button mat-raised-button *ngIf="!profileuser.profileViewPrivate" color="primary" (click)="openProfileView()">Profilansicht zeigen</button>
+    <button mat-raised-button *ngIf="loggedInEqualsUser()" color="primary" (click)="navigateToEditProfile()">Profil bearbeiten</button>
+    <button mat-raised-button *ngIf="!loggedInEqualsUser()" color="primary" (click)="sendRequest()">Freundschaftsanfrage senden</button>
+  </mat-card>
+
+
+  <mat-card [ngClass]="{'friendscontainer-private': profileuser.friendsPrivate, 'friendscontainer': !profileuser.friendsPrivate}">
+    <div class="Freundesliste">
+      <table mat-table [dataSource]="profileuser.friends">
+        <ng-container matColumnDef="userName">
+          <th mat-header-cell *matHeaderCellDef>Freundesliste von {{profileuser.userName}}</th>
+          <td mat-cell [hidden]="profileuser.friendsPrivate" *matCellDef="let friends">{{friends.userName}}</td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="['userName']"></tr>
+        <tr mat-row [hidden]="profileuser.friendsPrivate" *matRowDef="let friend; columns: ['userName'];"></tr>
+      </table>
+    </div>
+    <div class="lock-icon-container" *ngIf="profileuser.friendsPrivate">
+      <mat-icon class="lock-icon">lock</mat-icon>
+    </div>
+  </mat-card>
+</div>

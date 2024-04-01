@@ -1,0 +1,64 @@
+/*Farben:
+  dunkel: #2f71ff
+  hell: #bae1ff;
+*/
+
+.download-card {
+  background-color: #bae1ff;
+  color: black;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  align-self: flex-start;
+}
+
+.download-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.download-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.checkbox-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+}
+
+/*.checkbox-column mat-checkbox {*/
+/*  margin-bottom: 0.5%;*/
+/*}*/
+
+.download-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.download-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('/assets/download/download-solid.svg');
+  background-size: cover;
+}

@@ -1,0 +1,51 @@
+stages: 
+  - build_docker_frontend
+  - build_docker_backend
+
+
+variables:
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_TLS_CERTDIR: ""
+
+
+Docker_backend:
+  image: docker:23
+  stage: build_docker_backend
+  tags: 
+    - vm 
+  services:
+  - docker:23-dind
+  before_script:
+  - docker info
+  - docker pull maven:3.8.6-openjdk-18
+  - docker pull openjdk:18-jdk-alpine
+  script:
+    - docker build -t image_backend . -f Dockerfile_backend
+    - docker image save image_backend -o docker_image_backend.tar
+  after_script:
+  - ls -la
+  artifacts:
+    paths:
+      - docker_image_backend.tar
+
+Docker_frontend:
+  image: docker:23
+  stage: build_docker_frontend 
+  tags:
+    - vm
+  services:
+  - docker:23-dind
+  before_script:
+  - docker info
+  - docker pull node:latest
+  - docker pull nginx:alpine
+  script:
+    - docker build -t image_frontend . -f Dockerfile_frontend
+    - docker image save image_frontend -o docker_image_frontend.tar
+  after_script:
+  - ls -la
+
+  artifacts:
+    paths:
+      - docker_image_frontend.tar
+

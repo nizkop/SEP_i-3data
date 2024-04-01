@@ -1,0 +1,66 @@
+.button-row > button{
+  margin-right: 1vw;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.file-upload label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.file-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.file-upload input[type="file"] {
+  margin-right: 16px;
+}
+
+.spacer {
+  height: 16px;
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: #000000;
+}
+
+
+.app-tableview{
+  /*Hamburger-Menü*/
+  height: 100vh;
+  width: 100vw;
+}
+.mat-button-toggle-group{
+  height: 100px;
+  margin-bottom: 2%;
+}
+.mat-button-toggle {/* Verhältnis Breite/Höhe = 1:1  */
+  width: auto;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.app-downloadbereich {
+  margin-left: auto; /* rechts orientiert */
+  width: 100%;
+}

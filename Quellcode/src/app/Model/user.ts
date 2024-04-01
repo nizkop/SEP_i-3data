@@ -1,4 +1,5 @@
 import {UserRole} from "./userrole";
+import {Thread} from "./thread";
 
 export class User {
   id: number =0;
@@ -14,4 +15,8 @@ export class User {
   friends: User[] = [];
   friendrequests: User[] = [];
   friendsPrivate: boolean | undefined;
+  favThreadIds: number[] = [];
+  likedThreads: number[] = [];
+  selectedCharts : string = '0000000000';
+  profileViewPrivate: boolean | undefined;
 }

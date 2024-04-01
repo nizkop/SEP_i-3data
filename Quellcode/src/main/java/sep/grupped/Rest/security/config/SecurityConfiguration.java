@@ -43,7 +43,7 @@ public class SecurityConfiguration {
       .disable()
       .and()
       .authorizeHttpRequests()
-      .antMatchers("/h2-console/**","/auth/**","/api/**","/user/**","/chat/**").permitAll()
+      .antMatchers("/h2-console/**","/auth/**","/api/**","/user/**","/chat/**", "/thread/**","/chat-bot/**").permitAll()
       .antMatchers(
         "/User/token/*",
         "/User/get/*",
@@ -62,7 +62,20 @@ public class SecurityConfiguration {
         "/User/togglefriends",
         "/User/*/friendsprivacy",
         "/ticket/post",
-        "/chat/**/**"
+        "/chat/**/**",
+        "/User/save/**",
+        "/User/like/**",
+        "/chat/**/**",
+        "/thread/newThread",
+        "/thread/get/allThreads",
+        "/thread/get/*",
+        "/thread/*/likeThread",
+        "/thread/*/dislikeThread",
+        "/thread/*/sendArticle",
+        "/thread/*/deleteArticle",
+        "/thread/*/postFavUser",
+        "/thread/*/removeFavUser",
+        "/chat-bot/**"
         ).hasAnyRole(USER.name(),ADMIN.name())
 
       .antMatchers("/Datensaetze/*/**","/User/*/**","/Datensaetze/*/upload").hasRole(ADMIN.name())

@@ -91,7 +91,7 @@ class UserControllerTest {
     when(userRepository.findById(userId)).thenReturn(Optional.empty());
     ResponseStatusException notFoundException = assertThrows(ResponseStatusException.class, () -> userController.deleteEntry(userId));
     assertEquals(HttpStatus.NOT_FOUND, notFoundException.getStatus());
-    assertEquals("Entry not found with this ID", notFoundException.getReason());
+    assertEquals("Kein Eintrag mit dieser ID gefunden.", notFoundException.getReason());
     verify(userRepository, times(1)).findById(userId);
     verify(userRepository, never()).deleteById(userId);
   }

@@ -37,7 +37,7 @@ public class EmailSenderService {
 
   public void ticketIsFinished(String toEmail){
     String subject = "I-LOVE-DATA: Support-Ticket";
-    String body = "Das von Ihnen erstellte Support-Ticket wurde erfolgreich bearbeitet! \n Vielen Danke für Ihre Hilfe! <3";
+    String body = "Hallo,\nDas von Ihnen erstellte Support-Ticket wurde erfolgreich bearbeitet! \n Vielen Danke für Ihre Hilfe! <3";
     this.sendMail(toEmail, subject, body);
   }
 
@@ -77,10 +77,16 @@ public class EmailSenderService {
   }
 
   public void sendAnfragemail(String toEmail) {
-    String subject = "Freundschaftsanfrage erhalten";
-    String body = "Sie haben eine neue Freundschaftsanfrage erhalten";
+    String subject = "I-LOVE-DATA: Freundschaftsanfrage erhalten";
+    String body = "Hallo,\nSie haben eine neue Freundschaftsanfrage erhalten.";
     this.sendMail(toEmail, subject, body);
     System.out.println("Email Nutzeranfrage");
+  }
+
+  public void sendForumnotif(String toEmail){
+    String subject = "I-LOVE-DATA: Neuer Post in einem Thread";
+    String body ="Hallo,\nIn einem Ihrer favorisierten Threads wurde ein neuer Kommentar veröffentlicht. Schauen Sie doch mal nach.";
+    this.sendMail(toEmail, subject, body);
   }
 
 }

@@ -1,0 +1,88 @@
+
+.thread{
+  width: 100vw;
+  height: 100vh;
+  padding: 5%;
+  display: flex;
+  overflow: auto;
+}
+.title{
+  font-size: 35px;
+}
+a{
+  padding-top:2%;
+}
+td{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 5px;
+  margin-right:2%;
+  float: right;
+}
+.likeBtn{
+  margin-right: 10px;
+}
+mat-card-content{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.title {
+  margin-bottom: 10px;
+  margin-left: 1%;
+}
+
+
+.op{
+  border: 3px solid #ccc;
+  margin-left: 2%;
+  margin-right: 2%;
+  line-break: anywhere;
+}
+
+.openingpost{
+  border: 10px solid #ccc;
+  background-color: #f2f2f2;
+  margin-bottom: 50px;
+  border-radius: 15px;
+
+}
+
+.commentbox {
+  border: 10px solid #ccc;
+  background-color: #f2f2f2;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  padding-left: 2%;
+  padding-right: 2%;
+  line-break: anywhere;
+}
+
+.commentauthor {
+  border-bottom: 1px solid #ccc;
+}
+
+.delete {
+  float: right;
+}
+
+.commentarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.textbox {
+  flex: 1;
+  height: 100%;
+}
+
+.commentarea mat-form-field {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.zuruckbtn{
+  float: right;
+}
+
+

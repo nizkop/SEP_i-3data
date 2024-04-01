@@ -1,0 +1,25 @@
+# 2023.04.12 -- Software Entwicklung & Programmierung
+# Copyright (c) 2023 Patrick Mang. All Rights Reserved.
+image: docker:23
+
+variables:
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_TLS_CERTDIR: ""
+
+services:
+  - docker:23-dind
+
+before_script:
+  - docker info
+
+build:
+  stage: build
+  script:
+    - docker build -t hello-world .
+    - docker save hello-world -o hello-world.tar
+  artifacts:
+    paths:
+      - hello-world.tar 
+
+after_script:
+  - ls -la

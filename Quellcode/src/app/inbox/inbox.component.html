@@ -4,22 +4,22 @@
 <mat-table [dataSource]="friendRequests">
 
   <ng-container matColumnDef="userName">
-    <mat-header-cell *matHeaderCellDef>Username</mat-header-cell>
+    <mat-header-cell *matHeaderCellDef>Nutzername</mat-header-cell>
     <mat-cell *matCellDef="let friendRequest">{{ friendRequest.userName }}</mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="firstName">
-    <mat-header-cell *matHeaderCellDef>First Name</mat-header-cell>
+    <mat-header-cell *matHeaderCellDef>Vorname</mat-header-cell>
     <mat-cell *matCellDef="let friendRequest">{{ friendRequest.firstName }}</mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="lastName">
-    <mat-header-cell *matHeaderCellDef>Last Name</mat-header-cell>
+    <mat-header-cell *matHeaderCellDef>Nachname</mat-header-cell>
     <mat-cell *matCellDef="let friendRequest">{{ friendRequest.lastName }}</mat-cell>
   </ng-container>
 
   <ng-container matColumnDef="actions">
-    <mat-header-cell *matHeaderCellDef>Actions</mat-header-cell>
+    <mat-header-cell *matHeaderCellDef>Aktionen</mat-header-cell>
     <mat-cell *matCellDef="let friendRequest">
       <button mat-raised-button color="primary" (click)="acceptFriendRequest(friendRequest)">Accept</button>
       <button mat-raised-button color="warn" (click)="rejectFriendRequest(friendRequest)">Reject</button>

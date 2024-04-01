@@ -1,0 +1,26 @@
+<div class="forum-container">
+
+  <div class="titel anordnung">
+    <p>Titel</p>
+    <input [(ngModel)]="titel">
+  </div>
+
+  <div class="kategorie anordnung">
+    <p>Kategorie</p>
+    <select [(ngModel)]="selectedOption" (change)="onSelectionChange(selectedOption)">
+      <option value="">Wähle eine Kategorie</option>
+      <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+    </select>
+  </div>
+
+  <div class="inhalt anordnung">
+    <p>Inhalt</p>
+    <textarea [(ngModel)]="inhalt"></textarea>
+  </div>
+
+  <div class="buttons">
+    <button routerLink="/thread-uebersicht" type="button" mat-button>Zurück</button>
+    <button (click)="submit()" type="button" mat-button>Beitrag erstellen</button>
+  </div>
+
+</div>

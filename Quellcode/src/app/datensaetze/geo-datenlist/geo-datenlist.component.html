@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!--= Download-Symbol-->
+
+<mat-card class="app-geotable">
+  <h1>json Geodaten Aachener Wald</h1>
+
+  <button mat-raised-button (click)="dataService.downloadPDF()" class="download-button">
+    <i class="fas fa-download"></i>
+  </button>
+
+  <!--Upload-Bereich mit Info:-->
+  <mat-card class="updatecontainer">
+    <mat-card-content class="container">
+      <div class="upload-form">
+        <h2>Hochladen neuer GeoJSON-Daten</h2>
+        <form id="upload-form" (submit)="uploadFile($event)">
+          <div class="file-upload">
+            <label>Wählen Sie eine Datei aus.</label>
+            <div class="file-input-container">
+              <input type="file" name="file" id="file" accept=".json">
+              <button mat-raised-button type="submit" [disabled]="uploadButtonDisabled">Hochladen</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="info">
+        <h2>Info: Die bereits vorhandene Geo-Daten haben einen der folgenden Typen:</h2>
+        <ul id="datenListe"></ul>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <!--  Tabelle: -->
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)" class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by ID">
+          {{ getColumnLabel('id') }}
+        </th>
+        <td mat-cell *matCellDef="let entry">{{ entry.id }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="geometry">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Geometry">
+          {{ getColumnLabel('geometry') }}
+        </th>
+        <td mat-cell *matCellDef="let entry">{{ entry.geometry }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="laengengrad">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Laengengrad">
+          {{ getColumnLabel('laengengrad') }}
+        </th>
+        <td mat-cell *matCellDef="let entry">{{ entry.laengengrad }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="breitengrad">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Breitengrad">
+          {{ getColumnLabel('breitengrad') }}
+        </th>
+        <td mat-cell *matCellDef="let entry">{{ entry.breitengrad }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="art">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Art">
+          {{ getColumnLabel('art') }}
+        </th>
+        <td mat-cell *matCellDef="let entry">{{ entry.art }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="koordinatensystem">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Koordinatensystem">
+          {{ getColumnLabel('koordinatensystem') }}
+        </th>
+        <td mat-cell *matCellDef="let entry">{{ entry.koordinatensystem }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="ortsbeschreibung">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Ortsbeschreibung">
+          {{ getColumnLabel('ortsbeschreibung') }}
+        </th>
+        <td mat-cell *matCellDef="let entry">{{ entry.ortsbeschreibung }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="icon">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Icon">
+          {{ getColumnLabel('icon') }}
+        </th>
+        <td mat-cell *matCellDef="let entry">{{ entry.icon }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="dataService.displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: dataService.displayedColumns;"></tr>
+    </table>
+  </div>
+  <mat-paginator [pageSizeOptions]="[25,50,100, dataSource.data.length]" showFirstLastButtons></mat-paginator>
+</mat-card>

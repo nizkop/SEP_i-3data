@@ -1,5 +1,9 @@
 package sep.grupped.Rest;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Base64;
 import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -14,6 +18,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import sep.grupped.Rest.User.UserRepository;
 import sep.grupped.Rest.security.auth.AuthenticationService;
 import sep.grupped.Rest.security.auth.RegisterRequest;
+
+import java.io.File;
 
 import static sep.grupped.Rest.User.UserRole.ADMIN;
 import static sep.grupped.Rest.User.UserRole.USER;
@@ -67,18 +73,22 @@ public class RestApplication {
         .birthDate("22.01.1999")
         .email("admin@mail.com")
         .password("password")
-        .prfPicture("")
+        .prfPicture("") // /assets/prfPictures/profilbildBsp.jpg
         .favData("")
         .role(ADMIN)
+        .selectedCharts("")
         .build();
       System.out.println("Admin token: " + service.register(admin).getAccessToken());
     };
   }
+
+
   @Bean
   public CommandLineRunner commandLineRunner1(
     AuthenticationService service
   ) {
-    if(userRepository.findByEmail("nizkop@gmx.de").isPresent()) {
+    String mail = "nizkop@gmx.de"; // datalove987@gmail.com";
+    if(userRepository.findByEmail(mail).isPresent()) {
       return null;
     }
     return args -> {
@@ -87,7 +97,7 @@ public class RestApplication {
         .lastName("Bama")
         .userName("joeB")
         .birthDate("01.08.1990")
-        .email("nizkop@gmx.de")
+        .email(mail)
         .password("password")
         .prfPicture("")
         .favData("")
@@ -107,7 +117,7 @@ public class RestApplication {
       var user2 = RegisterRequest.builder()
         .firstName("Max")
         .lastName("Inton")
-        .userName("MaxI")
+        .userName("max")
         .birthDate("10.05.1985")
         .email("user2@mail.com")
         .password("password")

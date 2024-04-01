@@ -1,0 +1,50 @@
+.container {
+  width: 100%;
+  max-width: 60%; /* Beispielhafte Breite der Tabelle */
+  margin: 3% auto 0;
+}
+
+.likeBtn{
+  margin-right: 5%;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 2vh;
+}
+
+
+td {
+
+  padding: 1%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+td:first-child{
+  border-left:  1px solid black;
+  text-align: left;
+  padding-left: 7%;
+}
+
+td:last-child{
+  border-right: 1px solid black;
+  text-align: right;
+}
+
+tr:hover {
+  background-color: lightgrey;
+}
+
+.ground{
+  height: 90vh;
+}
+
+button{
+  background-color: #d9d2e9;
+  margin-top: 1vh;
+}
+
+

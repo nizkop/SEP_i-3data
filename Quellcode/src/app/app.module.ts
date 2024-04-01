@@ -5,45 +5,44 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TableviewComponent } from './tables/tableview/tableview.component';
-// import {HeaderComponent} from "./header/header.component";
-import {BottomComponent} from "./bottom/bottom.component";
-import {LoginComponent} from "./login/login.component";
-import {RegistrationComponent} from "./registration/registration.component";
-import { Tableview2Component } from './tables/tableview2/tableview2.component';
-import { Tableview3Component } from './tables/tableview3/tableview3.component';
-import { Tableview4Component } from './tables/tableview4/tableview4.component';
-import { Tableview5Component } from './tables/tableview5/tableview5.component';
-import { Tableview6Component } from './tables/tableview6/tableview6.component';
-import { Tableview7Component } from './tables/tableview7/tableview7.component';
-import { Tableview8Component } from './tables/tableview8/tableview8.component';
-import { TwoFAComponent } from './two-fa/two-fa.component';
-import {UserviewComponent} from "./userview/userview.component";
-import { UserlistComponent } from './userlist/userlist.component';
-import { ViewprofileComponent } from './viewprofile/viewprofile.component';
+import { Tableview1Component } from './datensaetze/tables/tableview1/tableview1.component';
+import {BottomComponent} from "./layout/bottom/bottom.component";
+import {LoginComponent} from "./eingangsbereich/login/login.component";
+import {RegistrationComponent} from "./eingangsbereich/registration/registration.component";
+import { Tableview2Component } from './datensaetze/tables/tableview2/tableview2.component';
+import { Tableview3Component } from './datensaetze/tables/tableview3/tableview3.component';
+import { Tableview4Component } from './datensaetze/tables/tableview4/tableview4.component';
+import { Tableview5Component } from './datensaetze/tables/tableview5/tableview5.component';
+import { Tableview6Component } from './datensaetze/tables/tableview6/tableview6.component';
+import { Tableview7Component } from './datensaetze/tables/tableview7/tableview7.component';
+import { Tableview8Component } from './datensaetze/tables/tableview8/tableview8.component';
+import { TwoFAComponent } from './eingangsbereich/two-fa/two-fa.component';
+import {UserviewComponent} from "./userprofile/userview/userview.component";
+import { UserlistComponent } from './userprofile/userlist/userlist.component';
+import { ViewprofileComponent } from './userprofile/viewprofile/viewprofile.component';
 import { DataviewComponent } from './dataview/dataview.component';
-import {EditprofileComponent} from "./editprofile/editprofile.component";
+import {EditprofileComponent} from "./userprofile/editprofile/editprofile.component";
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCardModule } from '@angular/material/card';
-import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatPaginatorIntl, MatPaginatorModule} from "@angular/material/paginator";
 import {MatSortModule} from "@angular/material/sort";
-import {HamburgermenuComponent} from "./hamburgermenu/hamburgermenu.component";
+import {HamburgermenuComponent} from "./layout/hamburgermenu/hamburgermenu.component";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {DashboardComponent} from "./dashboard/dashboard.component";
-import { UsertableComponent } from './usertable/usertable/usertable.component';
-import { Usertable2Component } from './usertable/usertable2/usertable2.component';
-import { Usertable3Component } from './usertable/usertable3/usertable3.component';
-import { Usertable4Component } from './usertable/usertable4/usertable4.component';
-import { Usertable5Component } from './usertable/usertable5/usertable5.component';
-import { Usertable6Component } from './usertable/usertable6/usertable6.component';
-import { Usertable7Component } from './usertable/usertable7/usertable7.component';
-import { Usertable8Component } from './usertable/usertable8/usertable8.component';
+import { Usertable1Component } from './datensaetze/usertable/usertable1/usertable1.component';
+import { Usertable2Component } from './datensaetze/usertable/usertable2/usertable2.component';
+import { Usertable3Component } from './datensaetze/usertable/usertable3/usertable3.component';
+import { Usertable4Component } from './datensaetze/usertable/usertable4/usertable4.component';
+import { Usertable5Component } from './datensaetze/usertable/usertable5/usertable5.component';
+import { Usertable6Component } from './datensaetze/usertable/usertable6/usertable6.component';
+import { Usertable7Component } from './datensaetze/usertable/usertable7/usertable7.component';
+import { Usertable8Component } from './datensaetze/usertable/usertable8/usertable8.component';
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import { AuthInterceptor } from './authenticator/auth.interceptor';
 import { JwtModule } from '@auth0/angular-jwt';
@@ -51,14 +50,13 @@ import {AuthGuard} from "./authenticator/auth.guard";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatMenuModule} from "@angular/material/menu";
 import {AuthRoleGuard} from "./authenticator/auth-role.guard";
-import {MatGridList, MatGridListModule} from "@angular/material/grid-list";
+import {MatGridListModule} from "@angular/material/grid-list";
 import { InboxComponent } from './inbox/inbox.component';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import { TicketErstellungComponent } from './ticket/ticket-erstellung/ticket-erstellung.component';
 import { TicketviewComponent } from './ticket/ticketview/ticketview.component';
-import { AdminTicketviewComponent } from './ticket/admin-ticketview/admin-ticketview.component';
 import { TicketDetailsComponent } from './ticket/ticket-details/ticket-details.component';
-import {GeoDatenlistComponent} from "./geo-datenlist/geo-datenlist.component";
+import {GeoDatenlistComponent} from "./datensaetze/geo-datenlist/geo-datenlist.component";
 import { MapComponent } from './map/map.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatDialogModule} from "@angular/material/dialog";
@@ -68,9 +66,18 @@ import { ChatBoxComponent } from './chat/chat-box/chat-box.component';
 import { ChatListComponent } from './chat/chat-list/chat-list.component';
 import { HeaderboxComponent } from './chat/chat-headerbox/headerbox.component';
 import { MessageComponent } from './chat/message/message.component';
-import { PieChartComponent } from './diagram/piechart/pie-chart.component';
-import { BarChartComponent } from './diagram/barchart/bar-chart.component';
-import { TreeMapComponent } from './diagram/treemap/tree-map.component';
+import {PieChartComponent} from "./datensaetze/diagram/piechart/pie-chart.component";
+import {BarChartComponent} from "./datensaetze/diagram/barchart/bar-chart.component";
+import {TreeMapComponent} from "./datensaetze/diagram/treemap/tree-map.component";
+import {SelectdiagramsComponent} from "./userprofile/selectdiagrams/selectdiagrams.component";
+import {MatRadioModule} from "@angular/material/radio";
+import { PersprofviewComponent } from './userprofile/persprofview/persprofview.component';
+import {DatenbegrenzungTabService} from "./services/datenbegrenzung-tab.service";
+import { ForumErstellungComponent } from './Forum/forum-erstellung/forum-erstellung.component';
+import { ThreadUebersichtComponent } from './Forum/thread-uebersicht/thread-uebersicht.component';
+import { ThreadComponent } from './Forum/thread/thread.component';
+import { DownloadbereichComponent } from './downloadbereich/downloadbereich.component';
+import {ChatBotComponent} from "./chat-bot/chat-bot.component";
 
 export function tokenGetter() {
   return localStorage.getItem('access_token');
@@ -79,7 +86,7 @@ export function tokenGetter() {
 @NgModule({
   declarations: [
     AppComponent,
-    TableviewComponent,
+    Tableview1Component,
     BottomComponent,
     LoginComponent,
     RegistrationComponent,
@@ -99,7 +106,7 @@ export function tokenGetter() {
     EditprofileComponent,
     HamburgermenuComponent,
     DashboardComponent,
-    UsertableComponent,
+    Usertable1Component,
 
     Usertable2Component,
     Usertable3Component,
@@ -113,7 +120,6 @@ export function tokenGetter() {
     MapComponent,
     TicketErstellungComponent,
     TicketviewComponent,
-    AdminTicketviewComponent,
     TicketDetailsComponent,
       PieChartComponent,
       BarChartComponent,
@@ -123,7 +129,27 @@ export function tokenGetter() {
       ChatListComponent,
       HeaderboxComponent,
       MessageComponent,
+      ForumErstellungComponent,
+      ThreadUebersichtComponent,
+      ThreadComponent,
+    SelectdiagramsComponent,
+    PersprofviewComponent,
+      DownloadbereichComponent,
+      ChatBotComponent,
+      PieChartComponent,
+      BarChartComponent,
+      TreeMapComponent,
+      ChatComponent,
+      ChatBoxComponent,
+      ChatListComponent,
+      HeaderboxComponent,
+      MessageComponent,
+      ForumErstellungComponent,
+      ThreadUebersichtComponent,
+      ThreadComponent,
+      DownloadbereichComponent,
   ],
+
     imports: [
         BrowserModule,
         AppRoutingModule,
@@ -153,6 +179,7 @@ export function tokenGetter() {
         MatDialogModule,
         //Authenticator
         HttpClientModule,
+      MatPaginatorModule,
         JwtModule.forRoot({
             config: {
                 tokenGetter: tokenGetter,
@@ -168,6 +195,7 @@ export function tokenGetter() {
     useClass: AuthInterceptor,
     multi: true,
   },
+    {provide: MatPaginatorIntl, useClass: DatenbegrenzungTabService}
   ],
   bootstrap: [AppComponent]
 })

@@ -1,7 +1,7 @@
 <div class="chat-column">
   <div *ngFor="let chatroom of chatRooms" class="chat-entry" [class.selected]="chatroom.id === activeChatroomId" (click)="selectChatroom(chatroom)">
     <div class="chat-entry-content">
-      <img src="./assets/defaultpfp/defaultpfp.jpg" class="resized-image">
+      <img src="../../../assets/prfPictures/defaultpfp.jpg" class="resized-image">
       <span class="chatroom-name">{{ chatroom.name }}</span>
     </div>
     <div class="menu-list">
@@ -11,11 +11,11 @@
       <mat-menu #menu="matMenu">
         <button mat-menu-item *ngIf="chatroom.id !== null" (click)="renameChatRoom(chatroom.id)">
           <mat-icon>text_format</mat-icon>
-          <span>Rename Chat</span>
+          <span>Chat umbenennen</span>
         </button>
         <button mat-menu-item *ngIf="chatroom.id" (click)="deleteChatRoom(chatroom.id)">
           <mat-icon>delete</mat-icon>
-          <span>Delete Chat</span>
+          <span>Chat löschen</span>
         </button>
       </mat-menu>
     </div>

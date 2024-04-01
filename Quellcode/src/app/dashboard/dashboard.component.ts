@@ -37,20 +37,11 @@ export class DashboardComponent  implements OnInit {
   }
   getProfileUser() {
     this.userService.getCurrentUser().subscribe((response:User) => {
-      this.profileuser.id = response.id;
-      this.profileuser.firstName = response.firstName;
-      this.profileuser.lastName = response.lastName;
-      this.profileuser.userName = response.userName;
-      this.profileuser.favData = response.favData;
-      this.profileuser.email = response.email;
-      this.profileuser.password = response.password;
-      this.profileuser.role = response.role;
-      this.profileuser.birthDate = response.birthDate;
-      this.profileuser.prfPicture = response.prfPicture;
-
+      this.profileuser = response;
       if(response != undefined && response.role != undefined){
         this.isAdmin = response.role.toString() === UserRole[UserRole.ADMIN];
       }
+      console.log("Prfiluser:", this.profileuser);
     });
   }
 

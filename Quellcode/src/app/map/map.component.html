@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!--= Download-Symbol-->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> &lt;!&ndash;= Download-Symbol&ndash;&gt;-->
 
 <mat-card class="app-geomap">
   <div class="map-container">
@@ -28,7 +28,7 @@
     </div>
 
     <button mat-raised-button color="primary" [disabled]="!(geoData && geoData.length > 0)" (click)="dataService.downloadPDF()">
-      <i class="fas fa-download"></i>
+      <i class="download-icon"></i>
     </button>
 
   </div>

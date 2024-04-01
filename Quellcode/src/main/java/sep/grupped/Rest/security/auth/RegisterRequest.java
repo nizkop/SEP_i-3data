@@ -21,5 +21,5 @@ public class RegisterRequest {
   private String userName;
   private String favData;
   private String prfPicture;
-
+  private String selectedCharts;
 }

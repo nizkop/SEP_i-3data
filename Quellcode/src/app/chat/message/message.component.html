@@ -4,15 +4,15 @@
       <div class="message-sender">{{ message.senderName }}</div>
       <div class="message-content">{{ message.payload }}</div>
   <div *ngIf="isOwnMessage">
-    <button type="button" (click)="editMessage()">Edit</button>
-    <button type="button" (click)="deleteMessage()">Delete</button>
+    <button type="button" (click)="editMessage()">Bearbeiten</button>
+    <button type="button" (click)="deleteMessage()">Löschen</button>
   </div>
 </div>
 <div *ngIf="isEditing">
   <div *ngIf="isOwnMessage">
     <textarea [(ngModel)]="updatedContent"></textarea>
-    <button type="button" (click)="updateMessage()">Update</button>
-    <button type="button" (click)="cancelEdit()">Cancel</button>
+    <button type="button" (click)="updateMessage()">Ändern</button>
+    <button type="button" (click)="cancelEdit()">Abbrechen</button>
   </div>
 </div>
   </div>

@@ -105,6 +105,8 @@ net/http: request canceled while waiting for connection (Client.Timeout exceeded
 ### Angular 
 .spec.ts (einfach in IntelliJ starten) -> korrigieren der Imports und ggf. Beispieluser für interne Seiten
 
+starten in Kommandozeile (& ohne Browser):  npm run test -- --no-watch --browsers=ChromeHeadlessCI --karma-config=./karma.conf.js
+
 ohne MatInputModule entsteht der seltsame Fehler: Error: mat-form-field must contain a MatFormFieldControl.
 
 

@@ -1,0 +1,64 @@
+.forum-container{
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  height: 70vh;
+
+}
+
+p{
+  font-weight: bold;
+}
+
+.titel{
+}
+
+.anordnung{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2%;
+}
+
+.buttons{
+  width: 100%;
+  float: right;
+
+}
+
+.anordnung > p {
+  margin-right: 10%;
+  width: 10%;
+}
+
+.anordnung > input {
+  width: 40%;
+}
+
+textarea{
+  height: 35vh;
+  width: 70%;
+  resize: none;
+}
+
+input, select{
+  height: 70%;
+}
+
+button{
+  background-color: #d9d2e9;
+  margin-right: 2vw;
+}
+
+.buttons{
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons button:last-child {
+  margin-right: 9%; /* Zurücksetzen des vorherigen margin-right-Werts */
+  /* Automatische Ausrichtung nach links */
+}
+
+

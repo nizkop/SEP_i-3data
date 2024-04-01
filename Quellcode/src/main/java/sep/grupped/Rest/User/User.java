@@ -13,13 +13,11 @@ import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import sep.grupped.Rest.chat.model.ChatRoom;
+import sep.grupped.Rest.forum.forumThread;
 import sep.grupped.Rest.security.token.Token;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 
 @Data
@@ -51,6 +49,9 @@ public class User implements UserDetails {
 
   private String birthDate;
 
+  private String selectedCharts;
+
+  private boolean profileViewPrivate;
 
   private boolean friendsPrivate;
 
@@ -78,6 +79,12 @@ public class User implements UserDetails {
   @OneToMany
   @JsonIgnore
   private List<User> friendrequests;
+
+  @ElementCollection
+  private List<Long> favThreadIds;
+
+  @ElementCollection
+  private List<Long> likedThreads;
 
   public List<User> getFriendrequests() {
     return friendrequests;
@@ -107,6 +114,36 @@ public class User implements UserDetails {
   @ManyToMany(mappedBy = "users")
   @JsonIdentityReference(alwaysAsId = true)
   private List<ChatRoom> chatRooms;
+
+  public void addLikedThread(Long threadId){
+    if(likedThreads == null){
+      likedThreads = new ArrayList<Long>();
+    }
+    likedThreads.add(threadId);
+  }
+
+  public void deleteLikedThreads(Long threadId){
+    likedThreads.remove(threadId);
+  }
+
+  public void addFavThreadId(Long threadId) {
+    if(favThreadIds == null){
+      favThreadIds = new ArrayList<Long>();
+    }
+    favThreadIds.add(threadId);
+  }
+
+  public void deleteFavThreadId(Long threadId){
+    favThreadIds.remove(threadId);
+  }
+
+  public List<Long> getLikedThreads(){ return likedThreads; }
+
+  public void setLikedThreads(List<Long> likedThreads){ this.likedThreads = likedThreads; }
+
+  public List<Long> getFavThreads(){return favThreadIds;}
+
+  public void setFavThreads(List<Long> favThreads){this.favThreadIds = favThreads;}
 
   public List<ChatRoom> getChatRooms() {
     return chatRooms;
@@ -212,5 +249,21 @@ public class User implements UserDetails {
 
   public void setFavData(String favData) {
     this.favData = favData;
+  }
+
+  public String getSelectedCharts() {
+    return selectedCharts;
+  }
+
+  public void setSelectedCharts(String selectedCharts) {
+    this.selectedCharts = selectedCharts;
+  }
+
+  public boolean isProfileViewPrivate() {
+    return profileViewPrivate;
+  }
+
+  public void setProfileViewPrivate(boolean profileViewPrivate) {
+    this.profileViewPrivate = profileViewPrivate;
   }
 }

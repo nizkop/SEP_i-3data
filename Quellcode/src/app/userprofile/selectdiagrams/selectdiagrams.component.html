@@ -1,0 +1,54 @@
+<div>
+  <h2>VNNeugeboreneAC</h2>
+  <mat-checkbox [(ngModel)]="selectedCharts[0]" (change)="updateChartCount(0)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[0]">
+    VNNeugeboreneAC - Balkendiagramm
+  </mat-checkbox>
+  <mat-checkbox [(ngModel)]="selectedCharts[1]" (change)="updateChartCount(1)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[1]">
+    VNNeugeboreneAC - Treemap
+  </mat-checkbox>
+</div>
+
+<div>
+  <h2>SterbefaelleAC</h2>
+  <mat-checkbox [(ngModel)]="selectedCharts[2]" (change)="updateChartCount(2)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[2]">
+    SterbefaelleAC - Kuchendiagramm
+  </mat-checkbox>
+  <mat-checkbox [(ngModel)]="selectedCharts[3]" (change)="updateChartCount(3)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[3]">
+    SterbefaelleAC - Balkendiagramm
+  </mat-checkbox>
+</div>
+
+
+
+<div>
+  <h2>ArbeitssuchendeAC</h2>
+  <mat-checkbox [(ngModel)]="selectedCharts[6]" (change)="updateChartCount(4)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[6]">
+    ArbeitssuchendeAC - Balkendiagramm
+  </mat-checkbox>
+  <mat-checkbox [(ngModel)]="selectedCharts[7]" (change)="updateChartCount(5)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[7]">
+    ArbeitssuchendeAC - Treemap
+  </mat-checkbox>
+</div>
+
+<div>
+  <h2>ArbeitsloseAC</h2>
+  <mat-checkbox [(ngModel)]="selectedCharts[4]" (change)="updateChartCount(6)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[4]">
+    ArbeitsloseAC - Treemap
+  </mat-checkbox>
+  <mat-checkbox [(ngModel)]="selectedCharts[5]" (change)="updateChartCount(7)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[5]">
+    ArbeitsloseAC - Balkendiagramm
+  </mat-checkbox>
+</div>
+<div>
+  <h2>GeburtenAC</h2>
+  <mat-checkbox [(ngModel)]="selectedCharts[8]" (change)="updateChartCount(8)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[8]">
+    GeburtenAC - Kuchendiagramm
+  </mat-checkbox>
+  <mat-checkbox [(ngModel)]="selectedCharts[9]" (change)="updateChartCount(9)" [disabled]="selectedChartsAmount >= 4 && !selectedCharts[9]">
+    GeburtenAC - Balkendiagramm
+  </mat-checkbox>
+</div>
+<mat-slide-toggle [(ngModel)]="profileuser.profileViewPrivate"  (change)="toggleProfileViewPrivate()" [checked]="profileuser.profileViewPrivate">
+  {{ profileuser.profileViewPrivate ? 'persönliche Profilansicht privat' : 'persönliche Profilansicht öffentlich' }}
+</mat-slide-toggle>
+<button mat-raised-button color="accent" (click)="saveSelectedCharts()"[mat-dialog-close]="selectedCharts">Speichern</button>

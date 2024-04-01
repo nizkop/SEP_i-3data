@@ -1,0 +1,18 @@
+<mat-card class="download-card">
+  <mat-card-header>
+    <div class="download-heading">Daten exportieren</div>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="download-content">
+      <div class="checkbox-column">
+        <mat-checkbox *ngIf="balkendiagramm"  [checked]="checkboxes['Balkendiagramm']"  (change)="checkboxes['Balkendiagramm']=!checkboxes['Balkendiagramm']"   color="primary">Balkendiagramm?</mat-checkbox>
+        <mat-checkbox *ngIf="treemap"         [checked]="checkboxes['Treemap']"         (change)="checkboxes['Treemap']=!checkboxes['Treemap']"                 color="primary">Baumkarte?</mat-checkbox>
+        <mat-checkbox *ngIf="kuchendiagramm"  [checked]="checkboxes['Kuchendiagramm']"  (change)="checkboxes['Kuchendiagramm']=!checkboxes['Kuchendiagramm']"   color="primary">Kuchendiagramm?</mat-checkbox>
+      </div>
+      <button mat-raised-button (click)="this.onDownloadClick()" [disabled]="!(this.downloadActive)"
+              color="primary" class="download-icon-container">
+        <i class="download-icon"></i>
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

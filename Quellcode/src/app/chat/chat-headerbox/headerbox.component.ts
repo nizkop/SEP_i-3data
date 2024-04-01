@@ -85,7 +85,7 @@ export class HeaderboxComponent implements OnInit,OnDestroy{
 
   startChat(user: User) {
     const newChatroom: Chatroom = {
-      name: "Private-Chat: " + user.userName,
+      name: "Privater-Chat: " + user.userName,
       users: [],
       messages: []
     };

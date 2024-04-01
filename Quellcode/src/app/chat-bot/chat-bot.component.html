@@ -1,0 +1,30 @@
+
+<div class="chat-container">
+  <div class="chat-box">
+    <div class="topic">
+      <div class="heading">
+        <h2>Chatbot</h2>
+      </div>
+    </div>
+    <div class="chat-messages">
+      <div class="chat-message" *ngFor="let message of messages">
+        <div *ngIf="message.sender === 'user'" class="user-message">
+          <div class="message-content">
+            <strong>You:</strong> {{ message.content }}
+          </div>
+        </div>
+        <div *ngIf="message.sender === 'bot'" class="bot-message">
+          <div class="message-content">
+            <strong>Bot:</strong> {{ message.content }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="user-input-container">
+      <input type="text" [(ngModel)]="userInput" class="user-input" />
+      <button (click)="sendMessage()" class="send-button">Senden</button>
+    </div>
+  </div>
+</div>
+<div class="spacer"></div>
