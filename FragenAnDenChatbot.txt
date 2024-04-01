@@ -1,0 +1,14 @@
+Fragen für den Chatbot
+1.  Wie kann ich ein Support-Ticket öffnen?
+2.  Woher weiß ich, ob mein Ticket bearbeitet wurde?
+3.  Wie kann ich andere Nutzer als Freunde hinzufügen?
+4.  Wie funktioniert das Diskussionsforum?
+5.  Wie werde ich benachrichtigt?
+6.  Wie kann ich meine persönliche Profilansicht erstellen?
+7.  Wie kann ich mir die Schutzhütten im Aachener Wald anzeigen lassen?
+8.  Kann ich auch andere Objekte auf der Karte anzeigen lassen?
+9.  Wie kann ich eigene Geodaten in das System einpflegen?
+10. Wie kann ich mit anderen chatten?
+11. Welche Datensätzen werden im System gespeichert?
+12. Kann ich den Datensatz als Graphen anzeigen lassen?
+13. Kann ich das auch exportieren?
