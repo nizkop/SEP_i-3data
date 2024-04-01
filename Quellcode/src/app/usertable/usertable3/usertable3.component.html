@@ -1,5 +1,15 @@
 <mat-card class="app-tableview3">
   <h1>Anzahl der Arbeitssuchenden in der Städteregion Aachen</h1>
+  <div class="button-row">
+    <mat-form-field>
+      <mat-label>Wähle ein Datum</mat-label>
+      <mat-select (selectionChange)="onDateSelect($event.value)">
+        <mat-option *ngFor="let entry of entries" [value]="entry.datum">{{ entry.datum}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="openBarChart()">Balkendiagramm zeichnen</button>
+    <button mat-raised-button color="primary" (click)="openTreeMap()">Treemap zeichnen</button>
+  </div>
   <mat-button-toggle-group (change)="toggleFav(data)">
     <mat-button-toggle [checked]="isInFavs(data)"> <!-- Überprüfen, ob der Datensatz ein Favorit ist -->
       <mat-icon>favorite</mat-icon>
@@ -10,7 +20,6 @@
   </mat-button-toggle-group>
 
 
-  <div class="spacer"></div>
   <mat-form-field>
     <mat-label>Search</mat-label>
     <input matInput (input)="applyFilter($event)" placeholder="Enter search term">

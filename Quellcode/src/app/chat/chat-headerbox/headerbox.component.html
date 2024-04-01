@@ -1,0 +1,38 @@
+<div class="chat-app">
+  <div class="sidebar">
+    <button class ="button-start-chat button" (click)="openUsersDialog()"><mat-icon> chat</mat-icon></button>
+    <button class = "button-group-chat button" (click)="openGroupChatDialog()"><mat-icon>group_add</mat-icon></button>
+
+    </div>
+  </div>
+<ng-template #usersDialog>
+  <div class="dialog-container">
+    <h2 class="dialog-title">Select User to Start Chat</h2>
+    <div class="user-list">
+      <div *ngFor="let user of users" class="user-item">
+        <div class="user-info">
+          <span class="username">{{ user.userName }}</span>
+        </div>
+        <button class="start-chat-button" (click)="startChat(user)">Start Chat</button>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #groupChatDialog>
+  <div class="dialog-container">
+    <h2 class="dialog-title">Create Group Chat</h2>
+    <div class="form-group">
+      <label for="groupName">Group Name:</label>
+      <input type="text" id="groupName" [(ngModel)]="groupName" class="form-control">
+    </div>
+    <div class="user-list">
+      <div *ngFor="let user of users" class="user-item">
+        <mat-checkbox (change)="toggleUserSelection(user)" [checked]="isSelected(user)">
+          {{ user.userName }}
+        </mat-checkbox>
+      </div>
+    </div>
+    <button class="create-group-button" (click)="createGroup(groupName)">Create Group</button>
+  </div>
+</ng-template>

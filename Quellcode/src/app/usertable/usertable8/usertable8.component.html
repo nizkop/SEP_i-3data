@@ -1,5 +1,15 @@
 <mat-card class="app-tableview8">
   <h1>Geburten der Stadt Aachen nach Monat, 2015-2022</h1>
+  <div class="button-row">
+    <mat-form-field>
+      <mat-label>Wähle ein Jahr</mat-label>
+      <mat-select (selectionChange)="onYearSelect($event.value)">
+        <mat-option *ngFor="let entry of entries" [value]="entry.jahr">{{ entry.jahr }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="openPieChart()">Kuchendiagramm zeichnen</button>
+    <button mat-raised-button color="primary" (click)="openBarChart()">Balkendiagramm zeichnen</button>
+  </div>
   <mat-button-toggle-group (change)="toggleFav(data)">
     <mat-button-toggle [checked]="isInFavs(data)"> <!-- Überprüfen, ob der Datensatz ein Favorit ist -->
       <mat-icon>favorite</mat-icon>
@@ -9,7 +19,6 @@
     </mat-button-toggle>
   </mat-button-toggle-group>
 
-  <div class="spacer"></div>
 
   <h2>Manage Entry</h2>
   <mat-form-field>

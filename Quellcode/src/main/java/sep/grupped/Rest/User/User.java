@@ -1,18 +1,25 @@
 package sep.grupped.Rest.User;
 
 
+import com.fasterxml.jackson.annotation.*;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIdentityReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import sep.grupped.Rest.chat.model.ChatRoom;
 import sep.grupped.Rest.security.token.Token;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 @Data
@@ -20,7 +27,13 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Nutzer")
+@Table(name = "Nutzer", uniqueConstraints = {
+    @UniqueConstraint(columnNames = "userName"),
+    @UniqueConstraint(columnNames = "email")
+})
+@JsonIdentityInfo(
+  generator = ObjectIdGenerators.PropertyGenerator.class,
+  property = "id")
 public class User implements UserDetails {
 
   @Id
@@ -38,6 +51,9 @@ public class User implements UserDetails {
 
   private String birthDate;
 
+
+  private boolean friendsPrivate;
+
   @Enumerated(EnumType.STRING)
   private UserRole role;
 
@@ -48,6 +64,57 @@ public class User implements UserDetails {
   @OneToMany(mappedBy = "user")
   @JsonManagedReference
   private List<Token> tokens;
+
+  //Freundesliste
+  @ManyToMany
+  @JoinTable(
+    name = "user_friends",
+    joinColumns = @JoinColumn(name = "user_id"),
+    inverseJoinColumns = @JoinColumn(name = "friend_id")
+  )
+  @JsonIgnore
+  private List<User> friends;
+
+  @OneToMany
+  @JsonIgnore
+  private List<User> friendrequests;
+
+  public List<User> getFriendrequests() {
+    return friendrequests;
+  }
+
+  public void setFriendrequests(List<User> friendrequests) {
+    this.friendrequests = friendrequests;
+  }
+
+  public List<User> getFriends() {
+    return friends;
+  }
+
+  public void setFriends(List<User> friends) {
+    this.friends = friends;
+  }
+
+  public boolean isFriendsPrivate() {
+    return friendsPrivate;
+  }
+
+  public void setFriendsPrivate(boolean friendsPrivate) {
+    this.friendsPrivate = friendsPrivate;
+  }
+
+
+  @ManyToMany(mappedBy = "users")
+  @JsonIdentityReference(alwaysAsId = true)
+  private List<ChatRoom> chatRooms;
+
+  public List<ChatRoom> getChatRooms() {
+    return chatRooms;
+  }
+
+  public void setChatRooms(List<ChatRoom> chatRooms) {
+    this.chatRooms = chatRooms;
+  }
 
   public Long getId() {
     return id;

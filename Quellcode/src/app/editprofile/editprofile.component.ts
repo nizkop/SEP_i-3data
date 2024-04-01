@@ -1,11 +1,8 @@
-import {Component, Input} from '@angular/core';
-import {OnInit} from "@angular/core";
+import {Component} from '@angular/core';
 import {User} from "../Model/user";
 import {UserService} from "../services/user.service";
-import {UserlistComponent} from "../userlist/userlist.component";
 import {ActivatedRoute, Router} from "@angular/router"
-import {HttpClient, HttpParams} from "@angular/common/http";
-import {MatButtonModule} from "@angular/material/button";
+import {HttpClient,} from "@angular/common/http";
 
 @Component({
   selector: 'app-editprofile',
@@ -33,11 +30,12 @@ export class EditprofileComponent {
   successResponse: string = "";
   prfPic: any;
   dataFavs: string[] = [];
+  friends: User[] = [];
 
   constructor(private userService: UserService,
               private route: ActivatedRoute,
               private httpClient: HttpClient,
-              private router: Router) {
+              private router: Router,){
   }
 
   ngOnInit(): void {
@@ -140,8 +138,12 @@ export class EditprofileComponent {
         this.profileuser.role = response.role;
         this.profileuser.birthDate = response.birthDate;
         this.profileuser.prfPicture = response.prfPicture;
+        this.profileuser.friends = response.friends;
+        this.profileuser.friendrequests = response.friendrequests;
+        this.profileuser.friendsPrivate = response.friendsPrivate;
         this.convertFavs();
         this.viewImage();
+
     });
   }
 
@@ -158,4 +160,43 @@ export class EditprofileComponent {
   addToFavs(){
     this.router.navigateByUrl('/dataview');
   }
+
+  toInbox(){
+    this.router.navigateByUrl('/inbox');
+  }
+
+  deleteFriend(friendId : number) {
+    console.log(friendId);
+    // @ts-ignore
+    this.httpClient.put<any>(`http://localhost:8080/User/${this.profileuser.id}/deletefriend`, friendId, { responseType: 'text' }).subscribe(
+      (response: any) => {
+        // Erfolgreiche Antwort vom Server
+        console.log(response);
+        // Weitere Verarbeitung der Antwort, falls erforderlich
+      },
+      (error: any) => {
+        // Fehlerbehandlung
+        console.error('Fehler beim Löschen des Freundes:', error);
+      }
+
+    );
+    this.userService.updateUser(this.profileuser.id, this.profileuser).subscribe(() => {
+      this.getProfileUser();
+    });
+  };
+  toggleFriendsPrivate() {
+    console.log(this.profileuser.friendsPrivate);
+    // @ts-ignore
+    this.httpClient.put<any>(`http://localhost:8080/User/togglefriends`, this.profileuser.id, {responseType: 'text'}).subscribe(
+      (response: any) => {
+        // Erfolgreiche Antwort vom Server
+        console.log(response);
+        // Weitere Verarbeitung der Antwort, falls erforderlich
+      },
+      (error: any) => {
+        // Fehlerbehandlung
+        console.error('Freundesliste konnte nicht umgeschaltet werden:', error);
+      });
+  }
+
 }

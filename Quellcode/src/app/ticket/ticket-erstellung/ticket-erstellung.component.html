@@ -1,0 +1,24 @@
+<mat-card class="container">
+  <div>
+    <button (click)="meineTickets()" type="button" mat-button class="TcktBtn color">Meine Tickets</button>
+    <button type="button" mat-button class="TcktBtn color">Neues Ticket erstellen</button>
+  </div>
+
+
+  <div class="ticketcontainer">
+    <input  name="betreff" [(ngModel)]="betreff" placeholder="Betreff hier angeben">
+    <select [(ngModel)]="selectedOption" (change)="onSelectionChange(selectedOption)">
+      <option value="">Wähle eine Kategorie</option>
+      <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+    </select>
+
+    <textarea [(ngModel)]="nachricht" class="textbox" type="text"  placeholder="Ticketinhalt hier einfügen"></textarea>
+    <p>{{fehlermeldung}}</p>
+
+    <div class="submit">
+      <button (click)="submit()" type="button" mat-button class="color">Senden</button>
+    </div>
+
+  </div>
+</mat-card>
+

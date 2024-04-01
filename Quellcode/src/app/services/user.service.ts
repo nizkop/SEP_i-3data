@@ -83,4 +83,34 @@ export class UserService {
     const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
     return this.http.get<User>(`${this.apiUrl}/token/${token}`, { headers });
   }
+
+  getFriends(entryId: number): Observable<User> {
+    const token = localStorage.getItem('access_token');
+    if (!token) {
+      throw new Error('User is not logged in');
+    }
+
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<User>(`${this.apiUrl}/${entryId}/friends`);
+  }
+
+  getFriendrequests(entryId: number): Observable<User>{
+    const token = localStorage.getItem('access_token');
+    if (!token) {
+      throw new Error('User is not logged in');
+    }
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<User>(`${this.apiUrl}/${entryId}/friendrequests`);
+  }
+
+  getFriendsprivacy(entryId: number): Observable<boolean>{
+    const token = localStorage.getItem('access_token');
+    if (!token) {
+      throw new Error('User is not logged in');
+    }
+    const headers = new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    return this.http.get<boolean>(`${this.apiUrl}/${entryId}/friendsprivacy`,);
+  }
+
+
 }

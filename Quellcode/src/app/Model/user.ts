@@ -11,4 +11,7 @@ export class User {
   role: UserRole | undefined;
   prfPicture:string = "";
   favData: string = '$';
+  friends: User[] = [];
+  friendrequests: User[] = [];
+  friendsPrivate: boolean | undefined;
 }

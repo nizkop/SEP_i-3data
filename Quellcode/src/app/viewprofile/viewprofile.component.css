@@ -7,18 +7,18 @@
   flex-direction: row-reverse;
 }
 
-.tablecontainer, .profilecontainer {
+.tablecontainer, .profilecontainer, .friendscontainer, .friendscontainer-private{
   flex: 1 0 40%;
   max-width: 400px; /* adjust max-width as needed */
   margin: 1em;
   box-sizing: border-box;
 }
 
-.tablecontainer {
+.tablecontainer, .friendscontainer, .friendscontainer-private {
   background-color: #d9d2e9;
 }
 
-.profilecontainer {
+.profilecontainer{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
   background-color: #B5DDFF;
 }
 
-.profileheader {
+.profileheader{
   font-size: xx-large;
   text-align: center;
   background-color: #ADC6FF;
@@ -52,3 +52,12 @@
   width: 100%;
   overflow-x: auto;
 }
+
+.lock-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Anpassen der Höhe nach Bedarf */
+}
+
+

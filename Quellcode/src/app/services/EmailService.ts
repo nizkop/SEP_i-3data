@@ -8,6 +8,8 @@ export class EmailService{
 
   private emailUrl = "http://localhost:8080/api/email/send";
   private emailUrlReg = "http://localhost:8080/api/email/register";
+  private emailUrlFr = "http://localhost:8080/api/email/anfrage";
+  private emailTicket = "http://localhost:8080/api/email/ticketisfinished";
 
   constructor(private http: HttpClient){}
 
@@ -24,6 +26,19 @@ export class EmailService{
     // console.log("sendEmail in EmailService(", this.emailUrl, ",", emailAddress, ")");
     const headers = new HttpHeaders().set('Content-Type', 'text/plain'); // set headers
     return this.http.post(this.emailUrlReg, emailAddress, {responseType: 'text'});
+  }
+
+
+  sendAnfragemail(emailAddress :string) {
+    console.log("Anfragemail");
+    const headers = new HttpHeaders().set('Content-Type', 'text/plain');
+    console.log(this.emailUrlFr, emailAddress);
+    return this.http.post(this.emailUrlFr, emailAddress, {responseType: 'text'});
+  }
+  ticketIsFinished(emailAddress :String){
+    console.log("Ticket finised Mail");
+    return this.http.post(this.emailTicket, emailAddress, {responseType: 'text'});
+
   }
 
 }

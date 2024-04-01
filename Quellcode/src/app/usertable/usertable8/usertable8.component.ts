@@ -7,6 +7,11 @@ import {Data8Service} from "../../services/data8.service";
 import {LiveAnnouncer} from "@angular/cdk/a11y";
 import {User} from "../../Model/user";
 import {UserService} from "../../services/user.service";
+import * as d3 from "d3";
+import {BarChartComponent} from "../../diagram/barchart/bar-chart.component";
+import {MatDialog} from "@angular/material/dialog";
+import {Diagrammodel} from "../../Model/Diagrammodel";
+import {PieChartComponent} from "../../diagram/piechart/pie-chart.component";
 
 @Component({
   selector: 'app-usertable8',
@@ -14,6 +19,8 @@ import {UserService} from "../../services/user.service";
   styleUrls: ['./usertable8.component.css']
 })
 export class Usertable8Component {
+  diagramData: Diagrammodel[]=[];
+  selectedYear: number = 0;
   data: string='Geburten der Stadt Aachen nach Monat, 2015-2022';
   entries: Geburten[] = [];
   dataSource = new MatTableDataSource<any>(this.entries);
@@ -26,7 +33,57 @@ export class Usertable8Component {
   displayedColumns: string[] = ['id', 'jahr','januar', 'februar', 'maerz', 'april','mai','juni', 'juli', 'august','september','oktober','november','dezember','gesamt'];
   constructor(private data8Service: Data8Service,
               private _liveAnnouncer: LiveAnnouncer,
-              private userService: UserService) { }
+              private userService: UserService,
+              private dialog: MatDialog) { }
+
+  ngOnInit(): void {
+    this.dataSource = new MatTableDataSource(this.entries)
+    this.getEntries();
+    this.getProfileUser();
+  }
+
+  onYearSelect(year: number){
+    this.selectedYear = year;
+  }
+
+  convertData(){
+    let nummer=0;
+    for (let i = 0; i<this.entries.length; i++){
+      if (this.selectedYear==this.entries[i].jahr){
+        nummer=i;
+      }
+    }
+    this.diagramData.push({ name: 'Januar', zahl: this.entries[nummer].januar })
+    this.diagramData.push({ name: 'Februar', zahl: this.entries[nummer].februar })
+    this.diagramData.push({ name: 'Maerz', zahl: this.entries[nummer].maerz })
+    this.diagramData.push({ name: 'April', zahl: this.entries[nummer].april })
+    this.diagramData.push({ name: 'Mai', zahl: this.entries[nummer].mai })
+    this.diagramData.push({ name: 'Juni', zahl: this.entries[nummer].juni })
+    this.diagramData.push({ name: 'Juli', zahl: this.entries[nummer].juli })
+    this.diagramData.push({ name: 'August', zahl: this.entries[nummer].august })
+    this.diagramData.push({ name: 'September', zahl: this.entries[nummer].september })
+    this.diagramData.push({ name: 'Oktober', zahl: this.entries[nummer].oktober })
+    this.diagramData.push({ name: 'November', zahl: this.entries[nummer].november })
+    this.diagramData.push({ name: 'Dezember', zahl: this.entries[nummer].dezember })
+  }
+  openBarChart(){
+    this.convertData();
+    const dialogRef = this.dialog.open(BarChartComponent, {
+      width: '1200px',
+      height: '600px',
+      data: this.diagramData
+    })
+    this.diagramData=[];
+  }
+  openPieChart(){
+    this.convertData();
+    const dialogRef = this.dialog.open(PieChartComponent, {
+      width: '1000px',
+      height: '600px',
+      data: this.diagramData
+    })
+    this.diagramData=[];
+  }
   announceSortChange(sortState: Sort) {
     if (sortState.direction) {
       this._liveAnnouncer.announce(`Sorted ${sortState.direction}ending`);
@@ -37,11 +94,6 @@ export class Usertable8Component {
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
     this.dataSource.filter = filterValue;
-  }
-  ngOnInit(): void {
-    this.dataSource = new MatTableDataSource(this.entries)
-    this.getEntries();
-    this.getProfileUser();
   }
   ngAfterViewInit(): void{
     this.dataSource = new MatTableDataSource(this.entries);

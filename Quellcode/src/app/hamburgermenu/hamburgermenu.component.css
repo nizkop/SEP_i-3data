@@ -40,7 +40,7 @@
   font-size: 55px;
   font-family: Monaco;
   color: #2f71ff;
-
+  cursor: pointer;
 }
 
 
@@ -60,5 +60,8 @@ h1{
 
 
 
-
+a.mat-line { /*damit "Adminbereich" im Menü nicht unterstricehn*/
+  text-decoration: none;
+  color: black;
+}
 

@@ -63,7 +63,7 @@ export class Tableview4Component implements OnInit, AfterViewInit{
     const content = await file.text();
     const lines = content.split('\n');
     const header = lines[0].trim();
-    const expectedHeader = ';Jan';
+    const expectedHeader = ';Feb';
     return header.startsWith(expectedHeader);
   }
 

@@ -27,7 +27,9 @@ export class TwoFAComponent implements CanComponentDeactivate{
       this.securityCodes = value;
       if(this.verificationCode == this.securityCodes[0] || this.verificationCode == this.securityCodes[1]){
         this.twoFactorAuthCompleted = true;
-        this.router.navigate(['login']);
+        this.router.navigate(['dashboard']).then(() => {
+          window.location.reload(); // Seite muss 1x neu laden, damit erkannt wird, ob Nutzer Admin ist (und nicht verspätet) + damit das aktualisierte Hamburgermenü angezeigt wird
+        });
       }
       else {
         this.error.nativeElement.innerHTML = 'Der angegebene Authentifizierungscode ist falsch. Bitte versuchen Sie es erneut!'
@@ -35,8 +37,6 @@ export class TwoFAComponent implements CanComponentDeactivate{
     });
   }
   canDeactivate(): Observable<boolean> | boolean {
-    // Here you can add your logic to check if the user has completed 2FA.
-    // For example:
     if (this.twoFactorAuthCompleted) {
       return true;
     } else {

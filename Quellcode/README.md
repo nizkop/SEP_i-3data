@@ -1,4 +1,19 @@
 # Gruppe-D
+Standarduser: admin@mail.com , password 
+
+
+## zum Aktivieren des JSONArray-Imports: 
+npm install leaflet
+npm install --save-dev @types/leaflet
+
+
+
+
+## Geodaten: 
+
+Leaflet: WGS84-Format (EPSG:4326) = gebräuchlich 
+
+GeoJSON-Datensatz = metrische Koordinaten im EPSG:25832-Koordinatensystem = UTM Zone 32N 
 
 
 ## Add your files
@@ -86,7 +101,11 @@ net/http: request canceled while waiting for connection (Client.Timeout exceeded
 - Persistenz muss bestehen, wenn: docker container löschen, aber image nicht
 
 
+## Modultests 
+### Angular 
+.spec.ts (einfach in IntelliJ starten) -> korrigieren der Imports und ggf. Beispieluser für interne Seiten
 
+ohne MatInputModule entsteht der seltsame Fehler: Error: mat-form-field must contain a MatFormFieldControl.
 
 
 ## Integrate with your tools

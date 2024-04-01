@@ -1,7 +1,6 @@
 import {Component, ComponentFactoryResolver, OnInit, ViewChild, ViewContainerRef} from '@angular/core';
 import {User} from "../Model/user";
 import {UserService} from "../services/user.service";
-import {ViewprofileComponent} from "../viewprofile/viewprofile.component";
 import {Router} from "@angular/router";
 
 @Component({

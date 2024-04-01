@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!--= Download-Symbol-->
+
+<mat-card class="app-geomap">
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+
+  <div class="button-container" >
+    <button mat-raised-button color="primary" [disabled]="!(geoData && geoData.length > 0)" (click)="toggleGeoDataDisplayAlle()">
+      {{ displayGeoData ?  'alle Geo-Daten ausblenden': 'alle Geo-Daten anzeigen' }}
+    </button>
+    <div class="button-row">
+      <button mat-raised-button color="primary" [disabled]="!(dataService.filterNachArt([IconArt.schutzhuette], this.geoData).length > 0)" (click)="toggleSchutzhuettenDisplay()">
+        <img src="/assets/geoIcons/schutzhuettensymbol.png" alt="Icon" class="icon" [class.crossed-out]="!displaySchutzhuetten">
+        {{ displaySchutzhuetten ? 'Schutzhütten ausblenden' : 'Schutzhütten anzeigen' }}
+      </button>
+
+      <button mat-raised-button color="primary" [disabled]="!(dataService.filterNachArt([IconArt.rettungspunkt], this.geoData).length > 0)" (click)="toggleRettungspunkteDisplay()">
+        <img src="/assets/geoIcons/rettungspunktsymbol.png" alt="Icon" class="icon" [class.crossed-out]="!displayRettungspunkte">
+        {{ displayRettungspunkte ? 'Rettungspunkte ausblenden' : 'Rettungspunkte anzeigen' }}
+      </button>
+
+      <button mat-raised-button color="primary"  [disabled]="!(dataService.filterNachArt([IconArt.knotenpunkt], this.geoData).length > 0)" (click)="toggleKnotenpunkteDisplay()">
+        <img src="/assets/geoIcons/knotenpunktsymbol.png" alt="Icon" class="icon" [class.crossed-out]="!displayKnotenpunkte">
+        {{ displayKnotenpunkte ? 'Knotenpunkte ausblenden' : 'Knotenpunkte anzeigen' }}
+      </button>
+
+    </div>
+
+    <button mat-raised-button color="primary" [disabled]="!(geoData && geoData.length > 0)" (click)="dataService.downloadPDF()">
+      <i class="fas fa-download"></i>
+    </button>
+
+  </div>
+
+</mat-card>
+
+

@@ -7,6 +7,11 @@ import {Data4Service} from "../../services/data4.service";
 import {LiveAnnouncer} from "@angular/cdk/a11y";
 import {UserService} from "../../services/user.service";
 import {User} from "../../Model/user";
+import {Diagrammodel} from "../../Model/Diagrammodel";
+import {TreeMapComponent} from "../../diagram/treemap/tree-map.component";
+import {MatDialog} from "@angular/material/dialog";
+import * as d3 from "d3";
+import {BarChartComponent} from "../../diagram/barchart/bar-chart.component";
 
 @Component({
   selector: 'app-usertable4',
@@ -14,6 +19,8 @@ import {User} from "../../Model/user";
   styleUrls: ['./usertable4.component.css']
 })
 export class Usertable4Component {
+  diagramData: Diagrammodel[]=[];
+  selectedDate: string = '';
   data: string='Anzahl der Arbeitslosen in der Städteregion Aachen';
   entries: Arbeitslose[] = [];
   dataSource = new MatTableDataSource<any>(this.entries);
@@ -28,7 +35,8 @@ export class Usertable4Component {
   displayedColumns: string[] = ['id','datum','col1', 'col2', 'col3', 'col4', 'col5','col6','col7', 'col8', 'col9','col10','col11','col12'];
   constructor(private data4Service: Data4Service,
               private _liveAnnouncer: LiveAnnouncer,
-              private userService: UserService) { }
+              private userService: UserService,
+              private dialog: MatDialog) { }
   announceSortChange(sortState: Sort) {
 
     if (sortState.direction) {
@@ -37,14 +45,57 @@ export class Usertable4Component {
       this._liveAnnouncer.announce('Sorting cleared');
     }
   }
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
-    this.dataSource.filter = filterValue;
-  }
+
   ngOnInit(): void {
     this.dataSource = new MatTableDataSource(this.entries)
     this.getEntries();
     this.getProfileUser();
+  }
+  openBarChart(){
+    this.convertData();
+    const dialogRef = this.dialog.open(BarChartComponent, {
+      width: '1200px',
+      height: '600px',
+      data: this.diagramData
+    })
+    this.diagramData=[];
+  }
+  openTreeMap(){
+    this.convertData();
+    const dialogRef = this.dialog.open(TreeMapComponent, {
+      width: '1000px',
+      height: '600px',
+      data: this.diagramData
+    })
+    this.diagramData= [];
+  }
+  convertData(){
+    let nummer = 0;
+    for (let i = 0; i<this.entries.length; i++){
+      if (this.entries[i].datum==this.selectedDate){
+        nummer = i;
+      }
+    }
+    this.diagramData.push({ name: 'Arbeitsuchende (ELB)', zahl: this.entries[nummer].col1 })
+    this.diagramData.push({ name: 'Männer', zahl: this.entries[nummer].col2 })
+    this.diagramData.push({ name: 'Frauen', zahl: this.entries[nummer].col3 })
+    this.diagramData.push({ name: 'unter 25 Jahren', zahl: this.entries[nummer].col4 })
+    this.diagramData.push({ name: '25 bis unter 55 Jahren', zahl: this.entries[nummer].col5 })
+    this.diagramData.push({ name: '55 Jahre und älter', zahl: this.entries[nummer].col6 })
+    this.diagramData.push({ name: 'Langzeitarbeitslose ELB', zahl: this.entries[nummer].col7 })
+    this.diagramData.push({ name: 'Männer', zahl: this.entries[nummer].col8 })
+    this.diagramData.push({ name: 'Frauen', zahl: this.entries[nummer].col9 })
+    this.diagramData.push({ name: 'unter 25 Jahren', zahl: this.entries[nummer].col10 })
+    this.diagramData.push({ name: '25 bis unter 55 Jahren', zahl: this.entries[nummer].col11 })
+    this.diagramData.push({ name: '55 Jahre und älter', zahl: this.entries[nummer].col12 })
+  }
+
+  onDateSelect(date : string){
+    this.selectedDate = date;
+  }
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
+    this.dataSource.filter = filterValue;
   }
   ngAfterViewInit(): void{
     this.dataSource = new MatTableDataSource(this.entries);

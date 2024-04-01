@@ -30,3 +30,13 @@ table {
 th.mat-sort-header-sorted {
   color: #000000;
 }
+
+.app-tableview6{
+  /*Hamburger-Menü*/
+  height: 100vh;
+  width: 100vw;
+}
+.mat-button-toggle-group{
+  height: 100px;
+  margin-bottom: 2%;
+}

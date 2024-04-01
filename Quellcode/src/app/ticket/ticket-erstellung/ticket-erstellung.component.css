@@ -1,0 +1,59 @@
+.container {
+  width: 100vw;
+  height: 110vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vh;
+}
+
+.submit{
+  display: flex;
+  justify-content: flex-end;
+}
+.color{
+  background-color:  #d9d2e9;
+}
+
+.TcktBtn{
+  margin-right: 1vw;
+  margin-bottom: 1vh;
+}
+
+select {
+  font-size: large;
+  width: 20%;
+}
+
+input {
+  height: 5vh;
+  text-align: center;
+}
+
+.ticketcontainer{
+  padding-left: 5vw;
+  padding-right: 5vw;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1%;
+  border-radius: 20px;
+  background-color: #bae1ff;
+  height: 70%;
+}
+
+.ticketcontainer > input{
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.ticketcontainer p{
+  color: red;
+}
+
+.textbox{
+  height: 60vh;
+  font-size: large;
+  margin-top: 2%;
+  resize: none;
+  padding: 2%;
+}

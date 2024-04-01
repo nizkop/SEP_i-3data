@@ -1,0 +1,31 @@
+.chatbox-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.input-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.input-bar input {
+  flex: 1;
+  padding: 5px;
+}
+
+.input-bar button {
+  margin-left: 10px;
+}
+.spacer {
+  height: 20px;
+}

@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {User} from "../Model/user";
 import {UserService} from "../services/user.service";
 import {Router} from "@angular/router";
+import {UserRole} from "../Model/userrole";
 
 @Component({
   selector: 'app-dashboard',
@@ -16,10 +17,13 @@ export class DashboardComponent  implements OnInit {
   apiUrl = 'https://newsapi.org/v2/everything?q=Aachen&pageSize=5&apiKey=02aa8d6dee314d1fba42c1e5719ea099';
   news: any;
 
+  isAdmin=false;
+
 
   constructor(private http: HttpClient,
               private userService: UserService,
-              private router: Router) { }
+              private router: Router) {
+  }
 
   ngOnInit() {
     this.getNews();
@@ -43,6 +47,10 @@ export class DashboardComponent  implements OnInit {
       this.profileuser.role = response.role;
       this.profileuser.birthDate = response.birthDate;
       this.profileuser.prfPicture = response.prfPicture;
+
+      if(response != undefined && response.role != undefined){
+        this.isAdmin = response.role.toString() === UserRole[UserRole.ADMIN];
+      }
     });
   }
 

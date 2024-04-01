@@ -29,5 +29,23 @@
       </mat-list>
     </div>
     <button mat-raised-button color="primary" (click)="navigateToEditProfile()">Edit Profile</button>
+    <button mat-raised-button color="primary" (click)="sendRequest()">Freundschaftsanfrage senden</button>
+  </mat-card>
+
+
+  <mat-card [ngClass]="{'friendscontainer-private': profileuser.friendsPrivate, 'friendscontainer': !profileuser.friendsPrivate}">
+    <div class="Freundesliste">
+      <table mat-table [dataSource]="profileuser.friends">
+        <ng-container matColumnDef="userName">
+          <th mat-header-cell *matHeaderCellDef>Freundesliste von {{profileuser.userName}}</th>
+          <td mat-cell [hidden]="profileuser.friendsPrivate" *matCellDef="let friends">{{friends.userName}}</td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="['userName']"></tr>
+        <tr mat-row [hidden]="profileuser.friendsPrivate" *matRowDef="let friend; columns: ['userName'];"></tr>
+      </table>
+    </div>
+    <div class="lock-icon-container" *ngIf="profileuser.friendsPrivate">
+      <mat-icon class="lock-icon">lock</mat-icon>
+    </div>
   </mat-card>
 </div>

@@ -2,11 +2,14 @@ package sep.grupped.Rest.security.auth;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 import sep.grupped.Rest.User.User;
 import sep.grupped.Rest.User.UserRepository;
 import sep.grupped.Rest.security.config.JwtService;
@@ -28,7 +31,8 @@ public class AuthenticationService {
   private final AuthenticationManager authenticationManager;
 
   public AuthenticationResponse register(RegisterRequest request) {
-    var user = User.builder()
+    try {
+      var user = User.builder()
         .firstName(request.getFirstName())
         .lastName(request.getLastName())
         .email(request.getEmail())
@@ -39,14 +43,23 @@ public class AuthenticationService {
         .prfPicture(request.getPrfPicture())
         .role(request.getRole())
         .build();
-    var savedUser = repository.save(user);
-    var jwtToken = jwtService.generateToken(user);
-    var refreshToken = jwtService.generateRefreshToken(user);
-    saveUserToken(savedUser, jwtToken);
-    return AuthenticationResponse.builder()
+      var savedUser = repository.save(user);
+      var jwtToken = jwtService.generateToken(user);
+      var refreshToken = jwtService.generateRefreshToken(user);
+      saveUserToken(savedUser, jwtToken);
+      return AuthenticationResponse.builder()
         .accessToken(jwtToken)
-            .refreshToken(refreshToken)
+        .refreshToken(refreshToken)
         .build();
+    } catch (DataIntegrityViolationException e) {
+      if (e.getMessage().contains("email")) {
+        throw new ResponseStatusException(HttpStatus.CONFLICT, "EmailConflict");
+      } else if (e.getMessage().contains("userName")) {
+        throw new ResponseStatusException(HttpStatus.CONFLICT, "UserNameConflict");
+      } else {
+        throw e;
+      }
+    }
   }
 
   public AuthenticationResponse authenticate(AuthenticationRequest request) {

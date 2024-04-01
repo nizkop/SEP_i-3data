@@ -27,38 +27,39 @@ public class UserController {
   @Autowired
   ImageRepository imageRepository;
 
-  @DeleteMapping ("/delete/image/{userId}")
+  @DeleteMapping("/delete/image/{userId}")
   public void deletePrfPic(@PathVariable Long userId) {
     Optional<Image> image = imageRepository.findByName(userId);
-    if (image.isPresent()){
+    if (image.isPresent()) {
       imageRepository.deleteById(image.get().getId());
-    }
-    else {
+    } else {
       throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry not found with this ID");
     }
   }
 
   @PostMapping("/upload/image/{userId}")
-  public ResponseEntity <ImageUploadResponse> uploadImage(@RequestBody MultipartFile file,
-                                                          @PathVariable Long userId)
+  public ResponseEntity<ImageUploadResponse> uploadImage(@RequestBody MultipartFile file,
+                                                         @PathVariable Long userId)
     throws IOException {
     imageRepository.save(Image.builder()
       .name(userId)
       .type(file.getContentType())
       .image(file.getBytes()).build());
-  return ResponseEntity.status(HttpStatus.OK)
-    .body(new ImageUploadResponse("Image uploaded successfully: " + file.getOriginalFilename()));
+    return ResponseEntity.status(HttpStatus.OK)
+      .body(new ImageUploadResponse("Image uploaded successfully: " + file.getOriginalFilename()));
   }
 
   @GetMapping(path = {"/get/image/{name}"})
   public Image getImageDetails(@PathVariable("name") Long name) throws NoSuchElementException, IOException {
 
     final Optional<Image> dbImage = imageRepository.findByName(name);
-    if(dbImage.isPresent()){
+    if (dbImage.isPresent()) {
       return Image.builder()
         .type(dbImage.get().getType())
         .image(dbImage.get().getImage()).build();
-    }else{ throw new ResponseStatusException(HttpStatus.OK, "No picture uploaded"); }
+    } else {
+      throw new ResponseStatusException(HttpStatus.OK, "No picture uploaded");
+    }
   }
 
   @GetMapping("/token/{token}")
@@ -87,7 +88,10 @@ public class UserController {
       user.getEmail(),
       user.getRole(),
       user.getPrfPicture(),
-      user.getFavData()
+      user.getFavData(),
+      user.getFriends(),
+      user.getFriendrequests(),
+      user.isFriendsPrivate()
     );
   }
 
@@ -99,11 +103,12 @@ public class UserController {
     }
     throw new ResponseStatusException(HttpStatus.NOT_FOUND);
   }
+
   @GetMapping("/getByUsername/{username}")
-  public User getUserByUsername(@PathVariable String username){
+  public User getUserByUsername(@PathVariable String username) {
     Optional<User> user = userRepository.findByUserName(username);
-    if(user.isPresent()){
-        return user.get();
+    if (user.isPresent()) {
+      return user.get();
     }
     throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Username not found");
   }
@@ -112,10 +117,11 @@ public class UserController {
   public void createEntry(@RequestBody User user) {
     userRepository.save(user);
   }
+
   @GetMapping("/get/{entryId}")
   public User getEntry(@PathVariable Long entryId) {
     Optional<User> user = userRepository.findById(entryId);
-    if(user.isPresent()){
+    if (user.isPresent()) {
       return user.get();
     }
     throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry not found with this ID");
@@ -123,11 +129,10 @@ public class UserController {
   }
 
 
-
   @PutMapping("/update/{entryId}")
   public void updateEntry(@PathVariable Long entryId, @RequestBody User userUpdate) {
     Optional<User> user = userRepository.findById(entryId);
-    if(!user.isPresent()){
+    if (!user.isPresent()) {
       throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry not found with this ID");
     }
     User userInstance = user.get();
@@ -139,20 +144,150 @@ public class UserController {
     userInstance.setPassword(userUpdate.getPassword());
     userInstance.setRole(userUpdate.getRole());
     userInstance.setBirthDate(userUpdate.getBirthDate());
+    userInstance.setFriendsPrivate(userUpdate.isFriendsPrivate());
     userRepository.save(userInstance);
   }
-  @DeleteMapping ("/delete/{entryId}")
+
+  @DeleteMapping("/delete/{entryId}")
   public void deleteEntry(@PathVariable Long entryId) {
     Optional<User> user = userRepository.findById(entryId);
-    if(user.isPresent()){
+    if (user.isPresent()) {
       userRepository.deleteById(entryId);
       return;
     }
-    throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry not found with this ID");
+    throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Entry not found with this ID"); // ! auf diese Message wird getestet
   }
+
   @GetMapping("")
-  public List<User> getAllUsers()
-  {
+  public List<User> getAllUsers() {
     return (List<User>) userRepository.findAll();
+  }
+
+  @PutMapping("/{userId}/acceptrequest")
+  public ResponseEntity<String> acceptFriend(@PathVariable("userId") Long userId, @RequestBody Long friendId) {
+    Optional<User> optionalUser = userRepository.findById(userId);
+    Optional<User> optionalFriend = userRepository.findById(friendId);
+    if (optionalUser.isPresent()) {
+      User user = optionalUser.get();
+      User freund = optionalFriend.get();
+      user.getFriends().add(freund);
+      freund.getFriends().add(user);
+      freund.getFriendrequests().remove(user);
+      userRepository.save(user);
+      userRepository.save(freund);
+      return ResponseEntity.ok("Freund wurde hinzugefügt");
+    } else {
+      return ResponseEntity.notFound().build();
+    }
+  }
+
+  @PutMapping("/{userId}/declinerequest")
+  public ResponseEntity<String> declineRequest(@PathVariable("userId") Long userId, @RequestBody Long friendId) {
+    Optional<User> optionalUser = userRepository.findById(userId);
+    Optional<User> optionalFriend = userRepository.findById(friendId);
+    if (optionalUser.isPresent()) {
+      User user = optionalUser.get();
+      User freund = optionalFriend.get();
+      freund.getFriendrequests().remove(user);
+      userRepository.save(user);
+      return ResponseEntity.ok("Freundschaftsanfrage abgelehnt");
+    } else {
+      return ResponseEntity.notFound().build();
+    }
+  }
+
+  @PutMapping("/{userId}/deletefriend")
+  public ResponseEntity<String> deleteFriend(@PathVariable("userId") Long userId, @RequestBody Long friendId) {
+    Optional<User> optionalUser = userRepository.findById(userId);
+    Optional<User> optionalFriend = userRepository.findById(friendId);
+    if (optionalUser.isPresent()) {
+      User user = optionalUser.get();
+      User freund = optionalFriend.get();
+      user.getFriends().remove(freund);
+      freund.getFriends().remove(user);
+      userRepository.save(user);
+      userRepository.save(freund);
+      return ResponseEntity.ok("Freund wurde entfernt");
+    } else {
+      return ResponseEntity.notFound().build();
+    }
+  }
+
+  @GetMapping("/{userId}/friends")
+  public ResponseEntity<List<User>> getUserFriends(@PathVariable("userId") Long userId) {
+    Optional<User> optionalUser = userRepository.findById(userId);
+    if (optionalUser.isPresent()) {
+      User user = optionalUser.get();
+      List<User> friends = user.getFriends();
+      return ResponseEntity.ok(friends);
+    } else {
+      return ResponseEntity.notFound().build();
+    }
+  }
+
+  //Anfragen
+
+  @PutMapping("/{userId}/request")
+  public ResponseEntity<String> sendRequest(@PathVariable("userId") Long userId, @RequestBody Long friendId) {
+    Optional<User> optionalUser = userRepository.findById(userId);
+    Optional<User> optionalFriend = userRepository.findById(friendId);
+    if (optionalUser.isPresent()) {
+      User user = optionalUser.get();
+      User freund = optionalFriend.get();
+      if (user.getFriends().contains(freund)) {
+        return ResponseEntity.ok("Der User ist bereits in deiner Freundschaftsliste");
+      } else {
+        if (user.getFriendrequests().contains(freund)) {
+          return ResponseEntity.ok("Du hast diesem User bereits eine Freundschaftsanfrage gesendet");
+        } else {
+          user.getFriendrequests().add(freund);
+          userRepository.save(user);
+          return ResponseEntity.ok("Freundschaftsanfrage versendet");
+        }
+      }
+    } else {
+      return ResponseEntity.notFound().build();
+    }
+  }
+
+  @GetMapping("/{userId}/friendrequests")
+  public ResponseEntity<List<User>> getUserRequests(@PathVariable("userId") Long userId) {
+    Optional<User> optionalUser = userRepository.findById(userId);
+    if (optionalUser.isPresent()) {
+      User user = optionalUser.get();
+      List<User> friendrequests = user.getFriendrequests();
+      return ResponseEntity.ok(friendrequests);
+    } else {
+      return ResponseEntity.notFound().build();
+    }
+  }
+
+  @PutMapping("/togglefriends")
+  public ResponseEntity<String> toggleFriendsPrivate(@RequestBody Long userId) {
+    Optional<User> optionalUser = userRepository.findById(userId);
+    if (optionalUser.isPresent()) {
+      User user = optionalUser.get();
+      if (user.isFriendsPrivate() == true) {
+        user.setFriendsPrivate(false);
+      } else {
+        user.setFriendsPrivate(true);
+      }
+      userRepository.save(user);
+      return ResponseEntity.ok("Freundesliste erfolgreich getoggled");
+    } else {
+      return ResponseEntity.notFound().build();
+    }
+  }
+
+  @GetMapping("/{userId}/friendsprivacy")
+  public ResponseEntity<Boolean> getFriendsPrivacy(@PathVariable("userId") Long userId) {
+    Optional<User> optionalUser = userRepository.findById(userId);
+    if (optionalUser.isPresent()) {
+      User user = optionalUser.get();
+      Boolean friendsprivacy = user.isFriendsPrivate();
+      return ResponseEntity.ok(friendsprivacy);
+    } else {
+      return ResponseEntity.notFound().build();
+    }
   }
 }

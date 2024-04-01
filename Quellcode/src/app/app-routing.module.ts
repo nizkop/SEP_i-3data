@@ -32,8 +32,16 @@ import {HTTP_INTERCEPTORS} from "@angular/common/http";
 import {AuthInterceptor} from "./authenticator/auth.interceptor";
 import {AuthRoleGuard} from "./authenticator/auth-role.guard";
 import {CanDeactivateGuard} from "./authenticator/can-deactivate.guard";
+import {InboxComponent} from "./inbox/inbox.component";
+import {TicketErstellungComponent} from "./ticket/ticket-erstellung/ticket-erstellung.component";
+import {TicketviewComponent} from "./ticket/ticketview/ticketview.component";
+import {AdminTicketviewComponent} from "./ticket/admin-ticketview/admin-ticketview.component";
+import {TicketDetailsComponent} from "./ticket/ticket-details/ticket-details.component";
+import {GeoDatenlistComponent} from "./geo-datenlist/geo-datenlist.component";
+import {MapComponent} from "./map/map.component";
+import {ChatComponent} from "./chat/chat/chat.component";
 const routes: Routes = [
-
+  {path: '', redirectTo: 'login', pathMatch: 'full' },
   {path: 'login', component:LoginComponent},
   {path: 'registration', component: RegistrationComponent},
     //Tabellen:
@@ -55,26 +63,32 @@ const routes: Routes = [
     {path: 'usertable/6', component:Usertable6Component, canActivate: [AuthGuard]},
     {path: 'usertable/7', component:Usertable7Component, canActivate: [AuthGuard]},
     {path: 'usertable/8', component:Usertable8Component, canActivate: [AuthGuard]},
-
+    {path: 'map', component:MapComponent, canActivate: [AuthGuard]},
 
     // Eingangsbereich:
-
-
-
     {path: 'two-fa', component: TwoFAComponent, canDeactivate:[CanDeactivateGuard]},
 
     //intern:
     {path: 'hamburgermenu',component: HamburgermenuComponent, canActivate: [AuthGuard]},
     {path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard]},
     {path: 'dataview', component: DataviewComponent, canActivate: [AuthGuard]},
+    {path: 'geo', component: GeoDatenlistComponent, canActivate: [AuthGuard,AuthRoleGuard],data: { roles: ['ADMIN']}},
+
+
+    {path: 'ticketerstellung', component: TicketErstellungComponent, canActivate: [AuthGuard]},
+    {path: 'ticketview', component: TicketviewComponent, canActivate: [AuthGuard]},
+    {path: 'ticketdetails/:id', component: TicketDetailsComponent, canActivate: [AuthGuard]},
+    {path: 'admin-ticketview', component: AdminTicketviewComponent, canActivate: [AuthGuard,AuthRoleGuard], data: {roles: ['ADMIN']}},
 
     //User:
     {path: 'userview', component: UserviewComponent, canActivate: [AuthGuard,AuthRoleGuard],data: { roles: ['ADMIN']}},
     {path: 'userlist', component: UserlistComponent, canActivate: [AuthGuard]},
     { path: 'profile/:id', component: ViewprofileComponent , canActivate: [AuthGuard]},
     {path: 'editprofile/:id', component: EditprofileComponent, canActivate: [AuthGuard]},
+  {path: 'inbox', component: InboxComponent, canActivate:[AuthGuard]},
 
-
+    //Chat
+    {path:'chat', component:ChatComponent, canActivate:[AuthGuard]},
 ];
 
 

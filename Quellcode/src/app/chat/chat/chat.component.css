@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  height: 90vh;
+}
+
+.content{
+  height: 100%;
+  width: 100%;
+}
+
+.chat-section {
+  width: 80vw;
+}
+
+.chatlist-container {
+  width: 20%;
+  border-right: 2px solid black;
+  overflow: auto;
+
+
+}
+
+.chat-container{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid gray;
+  height: 90%;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+  overflow: hidden;
+}
+
+.header-box{
+  width: 20vw;
+  border-right: 1px solid grey;
+  padding-right: 1%;
+  padding-left: 1%;
+  padding-top: 1%;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+.header-box ::ng-deep ::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.header-box ::ng-deep ::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.header-box ::ng-deep ::-webkit-scrollbar-track {
+  background: transparent;
+}
+

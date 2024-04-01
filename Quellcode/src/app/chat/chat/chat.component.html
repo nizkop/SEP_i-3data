@@ -1,0 +1,13 @@
+<mat-card class="container">
+
+  <div class="chat-container">
+    <div class="header-box">
+      <app-headerbox></app-headerbox>
+      <app-chat-list (selected)="activeChatroom = $event"></app-chat-list>
+    </div>
+
+    <div class="content">
+      <app-chat-box [chatroom]="activeChatroom"></app-chat-box>
+    </div>
+  </div>
+</mat-card>

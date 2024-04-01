@@ -1,0 +1,33 @@
+<mat-card class="requestlist">
+  <h2>Freundschaftsanfragen</h2>
+  <mat-card-content>
+<mat-table [dataSource]="friendRequests">
+
+  <ng-container matColumnDef="userName">
+    <mat-header-cell *matHeaderCellDef>Username</mat-header-cell>
+    <mat-cell *matCellDef="let friendRequest">{{ friendRequest.userName }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="firstName">
+    <mat-header-cell *matHeaderCellDef>First Name</mat-header-cell>
+    <mat-cell *matCellDef="let friendRequest">{{ friendRequest.firstName }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="lastName">
+    <mat-header-cell *matHeaderCellDef>Last Name</mat-header-cell>
+    <mat-cell *matCellDef="let friendRequest">{{ friendRequest.lastName }}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="actions">
+    <mat-header-cell *matHeaderCellDef>Actions</mat-header-cell>
+    <mat-cell *matCellDef="let friendRequest">
+      <button mat-raised-button color="primary" (click)="acceptFriendRequest(friendRequest)">Accept</button>
+      <button mat-raised-button color="warn" (click)="rejectFriendRequest(friendRequest)">Reject</button>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="['userName', 'firstName', 'lastName', 'actions']"></mat-header-row>
+  <mat-row *matRowDef="let friendRequest; columns: ['userName', 'firstName', 'lastName', 'actions']"></mat-row>
+</mat-table>
+  </mat-card-content>
+  </mat-card>

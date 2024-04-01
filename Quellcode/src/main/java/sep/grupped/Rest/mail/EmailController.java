@@ -15,13 +15,20 @@ public class EmailController {
   @PostMapping("/send")
   public void sendEmail(@RequestBody String emailAddress) {
     emailSenderService.sendAuthCode(emailAddress);
-    System.out.println("Email wurde versand");
+    System.out.println("Login: Email wurde versandt");
   }
 
   @PostMapping("/register")
   public void sendRegisterConfirm(@RequestBody String emailAddress) {
     emailSenderService.sendRegisterConfirm(emailAddress);
-    System.out.println("Email wurde versandt");
+    System.out.println("Register: Email wurde versandt");
+  }
+
+  @PostMapping("/anfrage")
+  public void sendRequestMail(@RequestBody String emailAddress) {
+    System.out.println("Anfrage erhalten");
+    emailSenderService.sendAnfragemail(emailAddress);
+    System.out.println("Anfrage: Email wurde versandt");
   }
 
 
@@ -29,4 +36,11 @@ public class EmailController {
   public String[] getVerificationCode(){
     return emailSenderService.getVerificationCode();
   }
+
+  @PostMapping("/ticketisfinished")
+  public void ticketIsFinished(@RequestBody String emailAddress){
+    emailSenderService.ticketIsFinished(emailAddress);
+    System.out.println("Ticket: Email wurde versandt");
+  }
+
 }

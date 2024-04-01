@@ -1,0 +1,22 @@
+<mat-card class="container">
+  <div>
+    <button class="TcktBtn" type="button" routerLink="/ticketview" mat-button>Meine Tickets</button>
+    <button class="TcktBtn" type="button" routerLink="/ticketerstellung" mat-button>Neues Ticket erstellen</button>
+  </div>
+
+  <div class="ticket-container">
+    <div class="topBar">
+      <div #id class="id outsideparts">Id</div>
+      <div #betreff class="betreff">Betreff</div>
+      <div #status class="status outsideparts">Status</div>
+    </div>
+    <div class="ticket-content">
+      <div #kategorie class="kategorie">Kategorie</div>
+      <div #inhalt class="content">guten tag der herr</div>
+    </div>
+  </div>
+
+  <div>
+    <button id="button" (click)="ticketFinished()" mat-button>Ticket bearbeitet</button>
+  </div>
+</mat-card>

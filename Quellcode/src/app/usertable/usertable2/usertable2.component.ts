@@ -7,6 +7,11 @@ import {Data2Service} from "../../services/data2.service";
 import {LiveAnnouncer} from "@angular/cdk/a11y";
 import {User} from "../../Model/user";
 import {UserService} from "../../services/user.service";
+import {MatSelectModule} from "@angular/material/select";
+import {MatDialog, MatDialogModule} from "@angular/material/dialog";
+import {PieChartComponent} from "../../diagram/piechart/pie-chart.component";
+import {BarChartComponent} from "../../diagram/barchart/bar-chart.component";
+import {Diagrammodel} from "../../Model/Diagrammodel";
 
 @Component({
   selector: 'app-usertable2',
@@ -14,7 +19,9 @@ import {UserService} from "../../services/user.service";
   styleUrls: ['./usertable2.component.css']
 })
 export class Usertable2Component {
+  selctedyear: number = 0;
   data: string='Sterbefälle Aachen';
+  diagramData: Diagrammodel[] = [];
   entries: Sterbefaelle[] = [];
   dataSource = new MatTableDataSource<any>(this.entries);
   uploadButtonDisabled = false;
@@ -26,7 +33,61 @@ export class Usertable2Component {
   displayedColumns: string[] = ['id','jahr', 'januar', 'februar', 'maerz', 'april','mai','juni', 'juli', 'august','september','oktober','november','dezember','gesamt'];
   constructor(private data2Service: Data2Service,
               private _liveAnnouncer: LiveAnnouncer,
-              private userService: UserService) { }
+              private userService: UserService,
+              private dialog: MatDialog) { }
+
+  ngOnInit(): void {
+    this.dataSource = new MatTableDataSource(this.entries)
+    this.getEntries();
+    this.getProfileUser();
+  }
+
+  onYearSelect(year: number) {
+  this.selctedyear=year;
+  }
+
+  openPieChart() {
+    this.convertSterbe();
+    const dialogRef = this.dialog.open(PieChartComponent, {
+      width: '1000px',
+      height: '600px',
+      data: this.diagramData
+    })
+    this.diagramData=[];
+  }
+
+
+  openBarChart(){
+    this.convertSterbe();
+    const dialogRef = this.dialog.open(BarChartComponent, {
+      width: '1000px',
+      height: '600px',
+      data: this.diagramData
+    })
+    this.diagramData=[];
+  }
+
+  convertSterbe(){
+    let nummer =0;
+  for (let i = 0; i<this.entries.length; i++) {
+    if (this.selctedyear==this.entries[i].jahr){
+      nummer= i;
+    }
+  }
+    this.diagramData.push({ name: 'Januar', zahl: this.entries[nummer].januar });
+    this.diagramData.push({ name: 'Februar', zahl: this.entries[nummer].februar });
+    this.diagramData.push({ name: 'Maerz', zahl: this.entries[nummer].maerz });
+    this.diagramData.push({ name: 'April', zahl: this.entries[nummer].april });
+    this.diagramData.push({ name: 'Mai', zahl: this.entries[nummer].mai });
+    this.diagramData.push({ name: 'Juni', zahl: this.entries[nummer].juni });
+    this.diagramData.push({ name: 'Juli', zahl: this.entries[nummer].juli });
+    this.diagramData.push({ name: 'August', zahl: this.entries[nummer].august });
+    this.diagramData.push({ name: 'September', zahl: this.entries[nummer].september });
+    this.diagramData.push({ name: 'Oktober', zahl: this.entries[nummer].oktober });
+    this.diagramData.push({ name: 'November', zahl: this.entries[nummer].november });
+    this.diagramData.push({ name: 'Dezember', zahl: this.entries[nummer].dezember });
+  }
+
   announceSortChange(sortState: Sort) {
 
     if (sortState.direction) {
@@ -39,11 +100,7 @@ export class Usertable2Component {
     const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
     this.dataSource.filter = filterValue;
   }
-  ngOnInit(): void {
-    this.dataSource = new MatTableDataSource(this.entries)
-    this.getEntries();
-    this.getProfileUser();
-  }
+
   ngAfterViewInit(): void{
     this.dataSource = new MatTableDataSource(this.entries);
     this.dataSource.paginator = this.paginator;

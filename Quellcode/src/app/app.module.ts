@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -52,6 +52,25 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatMenuModule} from "@angular/material/menu";
 import {AuthRoleGuard} from "./authenticator/auth-role.guard";
 import {MatGridList, MatGridListModule} from "@angular/material/grid-list";
+import { InboxComponent } from './inbox/inbox.component';
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import { TicketErstellungComponent } from './ticket/ticket-erstellung/ticket-erstellung.component';
+import { TicketviewComponent } from './ticket/ticketview/ticketview.component';
+import { AdminTicketviewComponent } from './ticket/admin-ticketview/admin-ticketview.component';
+import { TicketDetailsComponent } from './ticket/ticket-details/ticket-details.component';
+import {GeoDatenlistComponent} from "./geo-datenlist/geo-datenlist.component";
+import { MapComponent } from './map/map.component';
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatSelectModule} from "@angular/material/select";
+import { ChatComponent } from './chat/chat/chat.component';
+import { ChatBoxComponent } from './chat/chat-box/chat-box.component';
+import { ChatListComponent } from './chat/chat-list/chat-list.component';
+import { HeaderboxComponent } from './chat/chat-headerbox/headerbox.component';
+import { MessageComponent } from './chat/message/message.component';
+import { PieChartComponent } from './diagram/piechart/pie-chart.component';
+import { BarChartComponent } from './diagram/barchart/bar-chart.component';
+import { TreeMapComponent } from './diagram/treemap/tree-map.component';
 
 export function tokenGetter() {
   return localStorage.getItem('access_token');
@@ -89,42 +108,61 @@ export function tokenGetter() {
     Usertable6Component,
     Usertable7Component,
     Usertable8Component,
+    InboxComponent,
+    GeoDatenlistComponent,
+    MapComponent,
+    TicketErstellungComponent,
+    TicketviewComponent,
+    AdminTicketviewComponent,
+    TicketDetailsComponent,
+      PieChartComponent,
+      BarChartComponent,
+      TreeMapComponent,
+      ChatComponent,
+      ChatBoxComponent,
+      ChatListComponent,
+      HeaderboxComponent,
+      MessageComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    //tableview
-    BrowserModule,
-    FormsModule,
-    BrowserAnimationsModule,
-    MatTableModule,
-    MatButtonModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatCardModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatListModule,
-    MatCheckboxModule,
-    MatButtonToggleModule,
-    MatMenuModule,
-    MatGridListModule,
-    //Authenticator
-    HttpClientModule,
-    JwtModule.forRoot({
-      config: {
-        tokenGetter: tokenGetter,
-        allowedDomains: ['http://localhost:8080'],
-        disallowedRoutes: ['*'],
-      },
-    }),
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        //tableview
+        BrowserModule,
+        FormsModule,
+        BrowserAnimationsModule,
+        MatTableModule,
+        MatButtonModule,
+        MatInputModule,
+        MatFormFieldModule,
+        MatCardModule,
+        MatPaginatorModule,
+        MatSortModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatSidenavModule,
+        MatListModule,
+        MatCheckboxModule,
+        MatButtonToggleModule,
+        MatMenuModule,
+        MatGridListModule,
+        MatSelectModule,
+        MatDialogModule,
+        //Authenticator
+        HttpClientModule,
+        JwtModule.forRoot({
+            config: {
+                tokenGetter: tokenGetter,
+                allowedDomains: ['http://localhost:8080'],
+                disallowedRoutes: ['*'],
+            },
+        }),
+        MatSlideToggleModule,
+        MatExpansionModule,
+    ],
   providers: [AuthGuard,AuthRoleGuard,{
     provide: HTTP_INTERCEPTORS,
     useClass: AuthInterceptor,

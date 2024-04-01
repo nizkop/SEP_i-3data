@@ -23,9 +23,10 @@
       <h2 class="dashboard-heading">Navigation</h2>
     <button mat-button  class ="btn" routerLink="/dataview" >Datensätze</button>
     <button mat-button  class="btn"(click)="onButtonClick()">Profil</button>
-      <button mat-button  class="btn" routerLink="/userlist">User Profile</button>
-      <button mat-button  class="btn" routerLink="/userview">Administratorbereich</button>
+      <button mat-button  class="btn" routerLink="/userlist">Nutzerliste</button>
       <button mat-button class="btn" [matMenuTriggerFor]="menu">Tabellen der Datzensätze</button>
+      <button mat-button class="btn" *ngIf="isAdmin" routerLink="/userview">Nutzerübersicht</button>
+      <button mat-button class="btn" *ngIf="isAdmin" routerLink="/geo">Geodaten einlesen</button>
       <mat-menu #menu="matMenu">
         <button mat-menu-item routerLink="/tableview/1">Vorname Aachen</button>
         <button mat-menu-item routerLink="/tableview/2">Sterbefälle Aachen</button>

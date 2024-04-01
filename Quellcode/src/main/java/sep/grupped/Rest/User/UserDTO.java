@@ -1,6 +1,7 @@
 package sep.grupped.Rest.User;
 
 import lombok.*;
+import java.util.*;
 
 @Data
 @Getter
@@ -17,5 +18,8 @@ public class UserDTO {
   private UserRole role;
   private String prfPicture;
   private String favData;
+  private List<User> friends;
+  private List<User> friendrequests;
+  private Boolean friendsPrivate;
 
 }

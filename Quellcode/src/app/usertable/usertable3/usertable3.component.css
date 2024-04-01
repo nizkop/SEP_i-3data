@@ -1,3 +1,7 @@
+.button-row > button{
+  margin-left: 1vw;
+}
+
 .file-upload {
   display: flex;
   flex-direction: column;
@@ -29,4 +33,14 @@ table {
 
 th.mat-sort-header-sorted {
   color: #000000;
+}
+
+.app-tableview3{
+  /*Hamburger-Menü*/
+  height: 100vh;
+  width: 100vw;
+}
+.mat-button-toggle-group{
+  height: 100px;
+  margin-bottom: 2%;
 }

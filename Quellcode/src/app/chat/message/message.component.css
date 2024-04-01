@@ -1,0 +1,31 @@
+.message-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.own-message {
+  align-self: flex-end;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.receiving-message {
+  align-self: flex-start;
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.message-sender {
+  font-weight: bold;
+}
+
+.message-content {
+  margin-top: 5px;
+}
+
+.message-actions {
+  margin-top: 10px;
+}

@@ -2,6 +2,7 @@
 FROM maven:3.8.6-openjdk-18 AS build
 COPY src/main /usr/src/app/src/main
 COPY src/test /usr/src/app/src/test
+COPY src/assets/geoTestDateien /usr/src/app/src/assets/geoTestDateien
 COPY pom.xml /usr/src/app
 RUN mvn -f /usr/src/app/pom.xml clean install # -e anhängen für mehr Output bei Errors
 

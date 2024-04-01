@@ -7,7 +7,11 @@ import {MatSort, Sort} from "@angular/material/sort";
 import {LiveAnnouncer} from '@angular/cdk/a11y';
 import {UserService} from "../../services/user.service";
 import {User} from "../../Model/user";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import * as d3 from "d3";
+import {MatDialog, MatDialogModule} from "@angular/material/dialog";
+import {BarChartComponent} from "../../diagram/barchart/bar-chart.component";
+import {Diagrammodel} from "../../Model/Diagrammodel";
+import {TreeMapComponent} from "../../diagram/treemap/tree-map.component";
 
 
 @Component({
@@ -16,6 +20,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
   styleUrls: ['./usertable.component.css']
 })
 export class UsertableComponent implements OnInit, AfterViewInit{
+  url : string ='http://localhost:8080/Datensaetze/table1';
+  diagramData: Diagrammodel[]=[];
+  highestValue: number | null = null;
   data: string= 'Vornamen Aachen';
   profileuser: User = new User();
   dataFavs : string[] = [];
@@ -28,7 +35,45 @@ export class UsertableComponent implements OnInit, AfterViewInit{
   displayedColumns: string[] = ['id', 'anzahl', 'vorname', 'geschlecht', 'position'];
   constructor(private dataService: DataService,
               private _liveAnnouncer: LiveAnnouncer,
-              private userService: UserService) { }
+              private userService: UserService,
+              private dialog: MatDialog) { }
+
+  ngOnInit(): void {
+    this.dataSource = new MatTableDataSource(this.entries)
+    this.getEntries();
+    this.getProfileUser();
+  }
+
+  openTreeMap(){
+    this.convertData(50);
+    const dialogRef = this.dialog.open(TreeMapComponent, {
+      width: '1000px',
+      height: '600px',
+      data: this.diagramData
+    })
+  }
+
+
+  openBarChart(){
+    this.convertData(30)
+    // @ts-ignore
+    this.diagramData.sort((a, b) => d3.descending(a.anzahl, b.anzahl));
+      const dialogRef = this.dialog.open(BarChartComponent, {
+        width: '1000px',
+        height: '600px',
+        data: this.diagramData
+      })
+
+  }
+  convertData(length:number){
+    this.diagramData=[];
+    // @ts-ignore
+    this.entries.sort((a, b) => d3.descending(a.anzahl, b.anzahl))
+    for (let i = 0; i<length; i++){
+      this.diagramData.push({ name: this.entries[i].vorname, zahl: this.entries[i].anzahl })
+    }
+  }
+
   announceSortChange(sortState: Sort) {
 
     if (sortState.direction) {
@@ -114,11 +159,7 @@ export class UsertableComponent implements OnInit, AfterViewInit{
     const filterValue = (event.target as HTMLInputElement).value.trim().toLowerCase();
     this.dataSource.filter = filterValue;
   }
-  ngOnInit(): void {
-    this.dataSource = new MatTableDataSource(this.entries)
-    this.getEntries();
-    this.getProfileUser();
-  }
+
   ngAfterViewInit(): void{
     this.dataSource = new MatTableDataSource(this.entries);
     this.dataSource.paginator = this.paginator;

@@ -43,7 +43,7 @@ public class SecurityConfiguration {
       .disable()
       .and()
       .authorizeHttpRequests()
-      .antMatchers("/h2-console/**","/auth/**","/api/**").permitAll()
+      .antMatchers("/h2-console/**","/auth/**","/api/**","/user/**","/chat/**").permitAll()
       .antMatchers(
         "/User/token/*",
         "/User/get/*",
@@ -53,11 +53,21 @@ public class SecurityConfiguration {
         "/User/update/image/*",
         "/User/token/*",
         "/Datensaetze/*",
-        "/Datensaetze/*/get/*"
+        "/Datensaetze/*/get/*",
+        "/User/*/request",
+        "/User/*/acceptrequest",
+        "/User/*/declinerequest",
+        "/User/*/deletefriend",
+        "/User/*/friends",
+        "/User/togglefriends",
+        "/User/*/friendsprivacy",
+        "/ticket/post",
+        "/chat/**/**"
         ).hasAnyRole(USER.name(),ADMIN.name())
 
       .antMatchers("/Datensaetze/*/**","/User/*/**","/Datensaetze/*/upload").hasRole(ADMIN.name())
-
+      .antMatchers(HttpMethod.GET, "geo/**").hasAuthority(ADMIN_READ.name())
+      .antMatchers("/messages/**").authenticated()
       .antMatchers(HttpMethod.GET, "/Datensaetze/*/**","/User/*/**").hasAuthority(ADMIN_READ.name())
       .antMatchers(HttpMethod.POST, "/Datensaetze/*/**","User/*/**","/Datensaetze/*/upload").hasAuthority(ADMIN_CREATE.name())
       .antMatchers(HttpMethod.PUT, "/Datensaetze/*/**","/User/*/**").hasAuthority(ADMIN_UPDATE.name())

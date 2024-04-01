@@ -1,0 +1,23 @@
+<div class="chatbox-container">
+  <div class="messages">
+    <div *ngFor="let message of chatroom.messages">
+      <app-message
+        [message]="message"
+        [senderName]="message.senderName"
+        [isMessageOwnMessage] = "isMessageOwnMessage(message)"
+        [isOwnMessage]="isMessageFromCurrentUser(message)"
+        (update)="updateMessage(message)"
+        (delete)="deleteMessage(message)"
+        (cancel)="cancelEdit(message)"
+        (startEditing)="onStartEditing($event)"
+      ></app-message>
+    </div>
+  </div>
+  <div class="input-bar">
+    <input type="text" [(ngModel)]="newMessage" placeholder="Type a message"(keyup.enter)="sendMessage()" />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>
+<div class="spacer"></div>
+
+

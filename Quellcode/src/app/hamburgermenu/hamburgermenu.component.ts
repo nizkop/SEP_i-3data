@@ -1,10 +1,10 @@
-import {AfterContentInit, Component, EventEmitter, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
-import {AuthService} from "../authenticator/auth.service";
-import {HttpClient, HttpRequest} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import {MatSidenav} from "@angular/material/sidenav";
 import {User} from "../Model/user";
 import {UserService} from "../services/user.service";
+import {UserRole} from "../Model/userrole";
 
 
 @Component({
@@ -16,6 +16,8 @@ import {UserService} from "../services/user.service";
 export class HamburgermenuComponent implements OnInit{
   profileuser= new User();
   menuOpen: boolean = false;
+  isAdmin: boolean = false;
+
   constructor(private router:Router,
               private http:HttpClient,
               private userService:UserService) {
@@ -25,6 +27,10 @@ export class HamburgermenuComponent implements OnInit{
 
   ngOnInit(): void {
     this.getProfileUser();
+  }
+
+  navigateToDashboard(){
+    this.router.navigateByUrl('/dashboard');
   }
   logoutAndClose() {
     this.logout();
@@ -43,6 +49,12 @@ export class HamburgermenuComponent implements OnInit{
       this.profileuser.role = response.role;
       this.profileuser.birthDate = response.birthDate;
       this.profileuser.prfPicture = response.prfPicture;
+
+      if(response != undefined && response.role != undefined){
+        this.isAdmin = response.role.toString() === UserRole[UserRole.ADMIN];
+        console.log("Vergleich: ", response.role.toString() , " ", UserRole[UserRole.ADMIN], " -> ",  response.role.toString() === "ADMIN");
+      }
+
     });
   }
   logout() {
@@ -57,6 +69,7 @@ export class HamburgermenuComponent implements OnInit{
 
 
   onButtonClick() {
+    this.getProfileUser();
     this.router.navigateByUrl('/profile/'+this.profileuser.id);
     // @ts-ignore
     this.sidenav.close();

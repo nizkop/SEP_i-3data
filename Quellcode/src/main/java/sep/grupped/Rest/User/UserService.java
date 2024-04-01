@@ -16,3 +16,4 @@ public class UserService {
     return tokenRepository.findByToken(token).map(Token::getUser);
   }
 }
+
