@@ -1,0 +1,86 @@
+<div class = container-register>
+<mat-card class="card-registration">
+  <mat-card-header class="headline">
+    <div class="button-row">
+    <button mat-button  class ="toLoginBtn" routerLink="/login" >Login</button>
+    <button mat-button  class="toRegistBtn">Registrieren</button>
+    </div>
+  </mat-card-header>
+
+  <mat-card-content class="cardContent">
+    <form (ngSubmit)="register()" #log="ngForm">
+      <div class="part1">
+        <mat-form-field class="form-group">
+          <mat-label>Vorname</mat-label>
+          <input matInput name="firstName" [(ngModel)]="firstName" type="text" id="firstName" placeholder="Vorname" required>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <mat-label>Nachname</mat-label>
+          <input matInput name="lastName" [(ngModel)]="lastName" type="text" id="lastName" placeholder="Nachname" required>
+        </mat-form-field>
+      </div>
+      <div class="part2">
+        <mat-form-field class="form-group">
+          <mat-label>Geburtsdatum</mat-label>
+          <input matInput name="birthDate" [(ngModel)]="birthDate" type="date" id="birthDate" required>
+        </mat-form-field>
+
+        <mat-form-field class="form-group">
+          <mat-label>Nutzername</mat-label>
+          <input matInput name="userName" [(ngModel)]="userName" type="text" id="userName"  placeholder="Nutzername" required>
+        </mat-form-field>
+      </div>
+
+        <section class="form-group-Checkbox">
+          <input type="checkbox"
+                 [(ngModel)]="isChecked"
+                 id="isChecked"
+                 name="isChecked"
+                 checked="false">
+          <label> &nbsp;Systemadministrator?&nbsp; </label>
+        </section>
+      <br>
+      <div class="part1">
+        <mat-form-field class="form-group">
+          <mat-label>E-Mail-Adresse</mat-label>
+          <input matInput name="email" [(ngModel)]="email" type="email" id="email" placeholder="E-Mail" required>
+        </mat-form-field>
+
+        <mat-form-field class="form-group">
+          <mat-label>E-Mail-Adresse wiederholen</mat-label>
+          <input matInput type="email"
+                 name="emailCopy"
+                  id ="emailCopy"
+                  placeholder="E-Mail" required>
+        </mat-form-field>
+      </div>
+
+      <div class="part1">
+        <mat-form-field class="form-group">
+          <mat-label>Passwort</mat-label>
+          <input matInput type="password" [(ngModel)]="password"
+                 name="password"
+                  id ="password"
+                  placeholder="Passwort" required>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <mat-label>Passwort wiederholen</mat-label>
+          <input matInput type="password"
+                 name="passwordCopy"
+                  id ="passwordCopy"
+                  placeholder="Passwort" required>
+        </mat-form-field>
+
+      </div>
+      <ng-container>
+        <button mat-button type="submit" class="RegisterBtn" >Registrieren</button>
+      </ng-container>
+
+
+    </form>
+  </mat-card-content>
+</mat-card>
+
+</div>
+
+

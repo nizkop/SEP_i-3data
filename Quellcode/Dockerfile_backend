@@ -1,0 +1,25 @@
+# build backend:
+FROM maven:3.8.6-openjdk-18 AS build
+COPY src/main /usr/src/app/src/main
+COPY src/test /usr/src/app/src/test
+COPY pom.xml /usr/src/app
+RUN mvn -f /usr/src/app/pom.xml clean install # -e anhängen für mehr Output bei Errors
+
+# run backend:
+FROM openjdk:18-jdk-alpine
+VOLUME /tmp
+COPY --from=build /usr/src/app/target/* /usr/app/
+EXPOSE 8080
+# RUN ls /usr/app/*
+ENTRYPOINT ["java","-jar", "/usr/app/Rest-0.0.1-SNAPSHOT.jar"]
+
+
+# docker build -t image_backend . -f Dockerfile_backend
+# docker run --rm -it image_backend
+
+# bzw. mit tar-Dateien:
+# docker image save image_backend -o docker_image_backend.tar
+# docker load -i docker_image_backend.tar
+# dann: docker run --rm -it image_backend
+
+

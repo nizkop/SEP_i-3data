@@ -1,0 +1,76 @@
+/*Suchfeld Elemente */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+/*TabellenElemente*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.clickable {
+  position: absolute;
+  width: 50%; /* 50% der Zelle ist für den Klickbereich reserviert */
+  height: 100%;
+  cursor: pointer;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/*Karte*/
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 20px;
+}
+
+.heart-button {
+  width: 30px;
+  height: 30px;
+  background-image: url('/assets/likebutton/herz_rot.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.heart-button2 {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url('/assets/likebutton/herz_leer.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

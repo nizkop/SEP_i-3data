@@ -1,0 +1,61 @@
+<div class="dashboard">
+  <body>
+  <div class="card1">
+    <mat-card class="card1">
+
+      <mat-card-content class="content">
+        <div class="logo">
+          <img src="assets/logo/logo.jpg" class="logo">
+        </div>
+        <h1 class="main_heading">
+          Willkommen bei I <3 Data
+        </h1>
+
+        <p class="slogan">
+          Effizientes Verwalten, einfaches Leben - mit unserem Präfekturverwaltungssystem!
+        </p>
+
+      </mat-card-content>
+    </mat-card>
+  </div><div class="card3" >
+  <mat-card class="card3">
+    <mat-card-content class="content">
+      <h2 class="dashboard-heading">Navigation</h2>
+    <button mat-button  class ="btn" routerLink="/dataview" >Datensätze</button>
+    <button mat-button  class="btn"(click)="onButtonClick()">Profil</button>
+      <button mat-button  class="btn" routerLink="/userlist">User Profile</button>
+      <button mat-button  class="btn" routerLink="/userview">Administratorbereich</button>
+      <button mat-button class="btn" [matMenuTriggerFor]="menu">Tabellen der Datzensätze</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/tableview/1">Vorname Aachen</button>
+        <button mat-menu-item routerLink="/tableview/2">Sterbefälle Aachen</button>
+        <button mat-menu-item routerLink="/tableview/3">Anzahl der Arbeitssuchenden in der Städteregion Aachen</button>
+        <button mat-menu-item routerLink="/tableview/4">Anzahl der Arbeitslosen in der Städteregion Aachen</button>
+        <button mat-menu-item routerLink="/tableview/5">Mittlere Jahresbevölkerung nach Geschlecht - kreisfreieStädte und Kreise - Jahr (ab 1975)</button>
+        <button mat-menu-item routerLink="/tableview/6">Privathaushalte- kreisfreie Städte und Kreise – Jahr</button>
+        <button mat-menu-item routerLink="/tableview/7">Straßenliste Aachen</button>
+        <button mat-menu-item routerLink="/tableview/8">Geburten der Stadt Aachen nach Monat, 2015-2022</button>
+      </mat-menu>
+    </mat-card-content>
+  </mat-card>
+</div>
+<br>
+  <div class="card2">
+  <div *ngIf="news">
+    <h1>Top-Headlines aus Aachen</h1>
+    <ul>
+      <li *ngFor="let article of news.articles">
+        <h3>{{ article.title }}</h3>
+        <p>{{ article.description }}</p>
+        <a href="{{ article.url }}">Weiterlesen</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+  </body>
+</div>

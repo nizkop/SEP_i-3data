@@ -1,0 +1,90 @@
+.container-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-registration {
+  background-color: #ADD8E6;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  margin-top: 2vh;
+  width: 93%;
+  display: block;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.toLoginBtn {
+  background-color: #D9D2E9;
+  color: black;
+  font-size: 1.2rem;
+  width: 150px;
+  margin-right: 10px; /* Added */
+}
+
+.toLoginBtn:hover {
+  background-color: #ADD8E6;
+}
+
+.toRegistBtn {
+  background-color: #D9D2E9;
+  color: black;
+  font-size: 1.2rem;
+  width: 150px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 48%;
+}
+
+.RegisterBtn {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: #D9D2E9;
+  margin-top: 20px;
+}
+
+.form-group-Checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-content {
+  flex: 1;
+  align-items: center;
+}
+
+.part1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.part2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.part3 {
+  display: flex;
+  justify-content: space-between;
+}

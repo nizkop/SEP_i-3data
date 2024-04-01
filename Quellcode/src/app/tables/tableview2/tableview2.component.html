@@ -1,0 +1,186 @@
+<mat-card class="app-tableview2">
+  <h1>Sterbefälle Aachen</h1>
+  <h2>Data Management</h2>
+  <div class="input-row">
+    <mat-form-field>
+      <mat-label>ID</mat-label>
+      <input matInput [(ngModel)]="entryData.id" name="ID" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Jahr</mat-label>
+      <input matInput [(ngModel)]="entryData.jahr" name="Jahr" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Januar</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.januar" name="Januar" />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Februar</mat-label>
+      <input matInput [(ngModel)]="entryData.februar" name="Februar"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>März</mat-label>
+      <input matInput [(ngModel)]="entryData.maerz" name="März"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>April</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.april" name="April"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Mai</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.mai" name="Mai"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Juni</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.juni" name="Juni"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Juli</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.juli" name="Juli"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>August</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.august" name="August"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>September</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.september" name="September"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Oktober</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.oktober" name="Oktober"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>November</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.november" name="November"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Dezember</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.dezember" name="Dezember"  />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Gesamt</mat-label>
+      <input matInput type="number" [(ngModel)]="entryData.gesamt" name="Gesamt"  />
+    </mat-form-field>
+
+  </div>
+
+  <div class="button-row">
+    <button mat-raised-button color="primary" (click)="addEntry()">Add Entry</button>
+    <button mat-raised-button color="accent" (click)="updateEntry()">Update Entry</button>
+    <button mat-raised-button color="warn" (click)="deleteEntry()">Delete Entry</button>
+  </div>
+
+  <h2>File Upload</h2>
+  <form id="upload-form" (submit)="uploadFile($event)">
+    <div class="file-upload">
+      <label>Choose a file</label>
+      <div class="file-input-container">
+        <input type="file" name="file" id="file" accept=".csv">
+        <button mat-raised-button type="submit" [disabled]="uploadButtonDisabled" >Upload</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="spacer"></div>
+
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput (input)="applyFilter($event)" placeholder="Enter search term">
+  </mat-form-field>
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)"
+           class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by ID">
+          ID
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="jahr">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Jahr">
+          Jahr
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.jahr}} </td>
+      </ng-container>
+      <ng-container matColumnDef="januar">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Januar">
+          Januar
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.januar}} </td>
+      </ng-container>
+      <ng-container matColumnDef="februar">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Februar">
+          Februar
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.februar}} </td>
+      </ng-container>
+      <ng-container matColumnDef="maerz">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by März">
+          März
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.maerz}} </td>
+      </ng-container>
+      <ng-container matColumnDef="april">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by April">
+          April
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.april}} </td>
+      </ng-container>
+      <ng-container matColumnDef="mai">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Mai">
+          Mai
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.mai}} </td>
+      </ng-container><ng-container matColumnDef="juni">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Juni">
+        Juni
+      </th>
+      <td mat-cell *matCellDef="let entry"> {{entry.juni}} </td>
+    </ng-container><ng-container matColumnDef="juli">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Juli">
+        Juli
+      </th>
+      <td mat-cell *matCellDef="let entry"> {{entry.juli}} </td>
+    </ng-container><ng-container matColumnDef="august">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by August">
+        August
+      </th>
+      <td mat-cell *matCellDef="let entry"> {{entry.august}} </td>
+    </ng-container><ng-container matColumnDef="september">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by September">
+        September
+      </th>
+      <td mat-cell *matCellDef="let entry"> {{entry.september}} </td>
+    </ng-container><ng-container matColumnDef="oktober">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Oktober">
+        Oktober
+      </th>
+      <td mat-cell *matCellDef="let entry"> {{entry.oktober}} </td>
+    </ng-container><ng-container matColumnDef="november">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by November">
+        November
+      </th>
+      <td mat-cell *matCellDef="let entry"> {{entry.november}} </td>
+    </ng-container><ng-container matColumnDef="dezember">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Dezember">
+        Dezember
+      </th>
+      <td mat-cell *matCellDef="let entry"> {{entry.dezember}} </td>
+    </ng-container><ng-container matColumnDef="gesamt">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Gesamt">
+        Gesamt
+      </th>
+      <td mat-cell *matCellDef="let entry"> {{entry.gesamt}} </td>
+    </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  <mat-paginator [pageSizeOptions]="[25,50,100, dataSource.data.length]" showFirstLastButtons></mat-paginator>
+</mat-card>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>

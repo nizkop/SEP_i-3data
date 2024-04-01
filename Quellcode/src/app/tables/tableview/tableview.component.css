@@ -1,0 +1,33 @@
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+
+.file-upload label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.file-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.file-upload input[type="file"] {
+  margin-right: 16px;
+}
+
+.spacer {
+  height: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: #000000;
+}

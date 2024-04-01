@@ -1,0 +1,33 @@
+<div class="main-container" >
+  <mat-card class="tablecontainer">
+    <div class="Lieblingsdatentabelle">
+      <table mat-table [dataSource]="dataFavs">
+        <ng-container matColumnDef="data">
+          <th mat-header-cell *matHeaderCellDef>Lieblingsdatensätze von {{profileuser.userName}}</th>
+          <td mat-cell *matCellDef="let data" (click)="onRowClick(data)">{{data}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="['data']"></tr>
+        <tr mat-row *matRowDef="let row; columns: ['data'];"></tr>
+      </table>
+    </div>
+  </mat-card>
+
+  <mat-card class="profilecontainer">
+    <img *ngIf="prfPic" [src]="prfPic" class="resized-image">
+    <img *ngIf="!prfPic" src="./assets/defaultpfp/defaultpfp.jpg" class="resized-image">
+    <div class="profileheader">
+      <div>Profil von {{profileuser.userName}}</div>
+    </div>
+
+    <div class="profiledatacontainer">
+      <mat-list>
+        <mat-list-item>Vorname: {{profileuser.firstName}}</mat-list-item>
+        <mat-list-item>Nachname: {{profileuser.lastName}}</mat-list-item>
+        <mat-list-item>Geburtsdatum: {{profileuser.birthDate}}</mat-list-item>
+        <mat-list-item>Email: {{profileuser.email}}</mat-list-item>
+      </mat-list>
+    </div>
+    <button mat-raised-button color="primary" (click)="navigateToEditProfile()">Edit Profile</button>
+  </mat-card>
+</div>

@@ -1,0 +1,119 @@
+<mat-card class="app-tableview4">
+  <h1>Anzahl der Arbeitslosen in der Städteregion Aachen</h1>
+  <mat-button-toggle-group (change)="toggleFav(data)">
+    <mat-button-toggle [checked]="isInFavs(data)"> <!-- Überprüfen, ob der Datensatz ein Favorit ist -->
+      <mat-icon>favorite</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle [checked]="!isInFavs(data)" (click)="deleteFromFavs(data)"> <!-- Überprüfen, ob der Datensatz kein Favorit ist -->
+      <mat-icon>favorite_border</mat-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+
+
+  <div class="spacer"></div>
+
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput (input)="applyFilter($event)" placeholder="Enter search term">
+  </mat-form-field>
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)"
+           class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by ID">
+          ID
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="datum">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by Datum">
+          Datum
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.datum}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col1">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col1">
+          Arbeitsuchende,Erwerbsfähige,Leistungsberechtigte(ELB)
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col1}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col2">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col2">
+          Männer
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col2}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col3">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col3">
+          Frauen
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col3}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col4">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col4">
+          unter 25 Jahren
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col4}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col5">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col5">
+          25 bis unter 55 Jahren
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col5}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col6">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col6">
+          55 Jahre und älter
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col6}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col7">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col7">
+          Langzeitarbeitslose ELB
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col7}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col8">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col8">
+          Männer
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col8}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col9">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col9">
+          Frauen
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col9}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col10">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col10">
+          unter 25 Jahren
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col10}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col11">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col11">
+          25 bis unter 55 Jahren
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col11}} </td>
+      </ng-container>
+      <ng-container matColumnDef="col12">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by col12">
+          55 Jahre und älter
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.col12}} </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  <mat-paginator [pageSizeOptions]="[25,50,100, dataSource.data.length]" showFirstLastButtons></mat-paginator>
+</mat-card>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+
+

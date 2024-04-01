@@ -1,0 +1,33 @@
+
+<div class="container" >
+  <div class="search-container">
+    <input type="text" #searchInput placeholder="Suche nach Datensätzen..." class="search-input" (keyup.enter)="searchTable()">
+  </div>
+    <table id="myTable">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">Datensatz</th>
+        <th scope="col">Favorit</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of datas">
+        <td>
+          <div class="clickable" (click)="onRowClick(data)"></div>
+          <span>{{data.name}}</span>
+        </td> <!--Einfügen der Datensätze-->
+        <td>
+          <mat-button-toggle-group (change)="toggleFav(data.name)">
+            <mat-button-toggle [checked]="isInFavs(data.name)"> <!-- Überprüfen, ob der Datensatz ein Favorit ist -->
+              <mat-icon>favorite</mat-icon>
+            </mat-button-toggle>
+            <mat-button-toggle [checked]="!isInFavs(data.name)" (click)="deleteFromFavs(data.name)"> <!-- Überprüfen, ob der Datensatz kein Favorit ist -->
+              <mat-icon>favorite_border</mat-icon>
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+</div>
+

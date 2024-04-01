@@ -1,0 +1,36 @@
+# build:
+FROM node:latest as build
+WORKDIR /app
+RUN npm config set fund false # RUN = build-Befehl (für Image-bau)
+RUN npm install -g npm@9.6.6
+RUN npm install -g @angular/cli # @15.2.0
+#COPY package*.json ./
+#> 1 Datei muss in Ordner kopiert werden
+#COPY package-lock.json .
+COPY . .
+RUN ng build --configuration production --output-path=/dist/out
+#RUN ls /dist/*
+#RUN ls /dist/out/*
+
+
+
+# run:
+FROM nginx:alpine
+COPY --from=build /dist/out /usr/share/nginx/html
+# Sichern der app-Routen:
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+# Ändern des nginx-Portes vom default-Wert 80 auf 4200:
+RUN sed -i 's/listen       80;/listen       4200;/' /etc/nginx/conf.d/default.conf
+EXPOSE 4200
+# CMD = Ausführungsbefehl (für Container):
+CMD ["/bin/sh",  "-c",  "exec nginx -g 'daemon off;'"]
+#(ngserve eher nur für Entwicklung, daher hier mit nginx gestartet (ng auch unbekannt in nginx:alpine)
+
+
+# docker build -t image_frontend . -f Dockerfile_frontend
+# docker run --rm -p 4200:4200 -it image_frontend
+
+# bzw. mit tar-Dateien:
+# docker image save image_frontend -o docker_image_frontend.tar
+# docker load -i docker_image_frontend.tar
+# dann: docker run --rm -p 80:80 -it image_frontend

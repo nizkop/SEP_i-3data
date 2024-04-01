@@ -1,0 +1,64 @@
+<mat-card class="app-tableview">
+  <h1>Straßenliste Aachen</h1>
+  <mat-button-toggle-group (change)="toggleFav(data)">
+    <mat-button-toggle [checked]="isInFavs(data)"> <!-- Überprüfen, ob der Datensatz ein Favorit ist -->
+      <mat-icon>favorite</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle [checked]="!isInFavs(data)" (click)="deleteFromFavs(data)"> <!-- Überprüfen, ob der Datensatz kein Favorit ist -->
+      <mat-icon>favorite_border</mat-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+
+
+  <div class="spacer"></div>
+
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput (input)="applyFilter($event)" placeholder="Enter search term">
+  </mat-form-field>
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)"
+           class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by ID">
+          ID
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="fid">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by FID">
+          FID
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.fid}} </td>
+      </ng-container>
+      <ng-container matColumnDef="strassenschluessel">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by strassenschluessel">
+          Straßenschlüssel
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.strassenschluessel}} </td>
+      </ng-container>
+      <ng-container matColumnDef="gemeindeschluessel">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by gemeindeschluessel">
+          Gemeindeschlüssel
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.gemeindeschluessel}} </td>
+      </ng-container>
+      <ng-container matColumnDef="strasse">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Sort by strasse">
+          Straße
+        </th>
+        <td mat-cell *matCellDef="let entry"> {{entry.strasse}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+  <mat-paginator [pageSizeOptions]="[25,50,100, dataSource.data.length]" showFirstLastButtons></mat-paginator>
+</mat-card>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+

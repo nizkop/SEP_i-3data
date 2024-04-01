@@ -1,0 +1,64 @@
+.hamburgermenu {
+  width: 100vw;
+}
+
+/*mat-sidenav-content{*/
+/*  width: 100vw;*/
+/*  height: 85vh;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*}*/
+.header{
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  set-index:1;
+}
+
+.farbe{
+  background-color: #bae1ff;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*.fullTitle{
+  font-size: 55px;
+  font-family: monaco;
+  text-align: center;
+  color: #2f71ff;
+  /*margin-left: 270%;*/
+  /*margin-top: 50px;*/
+  /*margin: 50px auto 0;
+  margin-top: 50px;
+  margin-left: 200%;
+  left:10%;
+}*/
+
+.fullTitle{
+  font-size: 55px;
+  font-family: Monaco;
+  color: #2f71ff;
+
+}
+
+
+
+h1{
+  font-size: 75px;
+  font-family: monaco;
+  text-align: center;
+  color: #bae1ff;
+
+}
+
+.placeholder{
+  height: 50px;
+  width: 35px;
+}
+
+
+
+
+

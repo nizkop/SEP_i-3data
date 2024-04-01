@@ -1,0 +1,35 @@
+
+version: "1"
+services:
+  angular:
+    container_name: angular
+    build: .
+    depends_on:
+      - spring-boot
+    ports:
+      - "4200:4200"
+    image: image_frontend
+    restart: unless-stopped
+    environment:
+      API_URL:
+    networks:
+      - docker-spring-angular
+
+  spring-boot:
+    container_name: spring-boot
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "8080:8080"
+    image: image_backend
+    volumes:
+      - data:/db
+    restart: unless-stopped
+    networks:
+      - docker-spring-angular
+
+volumes:
+  data:
+networks:
+  docker-spring-angular:
